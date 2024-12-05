@@ -1,6 +1,10 @@
 import { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 
+import adminsModel from '@/models/adminsModel';
+
+import connectMongo from './connectMongo';
+
 const {
   NEXTAUTH_SECRET: secret = '',
   GOOGLE_CLIENT_ID: clientId = '',
@@ -17,9 +21,20 @@ export const authOptions: NextAuthOptions = {
       }
       return true;
     },
-    async session(params) {
-      const { session, token } = params;
+    async session({ session, token }) {
       return { ...session, user: { ...session?.user, isAdmin: Boolean(token?.isAdmin) } };
+    },
+    async jwt({ token }) {
+      const { email = '' } = token ?? {};
+      try {
+        await connectMongo();
+        const admin = await adminsModel.findOne({ email });
+        const isAdmin = !!admin;
+        return { ...token, isAdmin };
+      } catch (error) {
+        console.error('Model find error:', error);
+        return token;
+      }
     },
   },
 };

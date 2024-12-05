@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 
 import { routing } from '@/i18n/routing';
 
+import MongoDBProvider from './MongoDBProvider';
 import NextAuthProvider from './NextAuthProvider';
 
 type ServerProviderProps = RootProvider & { locale: Locale };
@@ -18,11 +19,13 @@ async function ServerProvider({ children, locale }: ServerProviderProps) {
   const messages = await getMessages();
 
   return (
-    <NextAuthProvider>
-      <NextIntlClientProvider messages={messages}>
-        <AntdRegistry>{children}</AntdRegistry>
-      </NextIntlClientProvider>
-    </NextAuthProvider>
+    <MongoDBProvider>
+      <NextAuthProvider>
+        <NextIntlClientProvider messages={messages}>
+          <AntdRegistry>{children}</AntdRegistry>
+        </NextIntlClientProvider>
+      </NextAuthProvider>
+    </MongoDBProvider>
   );
 }
 

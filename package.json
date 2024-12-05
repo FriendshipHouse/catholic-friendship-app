@@ -14,7 +14,9 @@
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/bcrypt": "^5.0.2",
     "antd": "^5.22.3",
+    "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
+    "http-errors": "^2.0.0",
     "mongoose": "^8.8.3",
     "next": "14.2.13",
     "next-auth": "^4.24.10",
@@ -22,9 +24,12 @@
     "prettier": "^3.4.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "react": "^18",
-    "react-dom": "^18"
+    "react-bootstrap-icons": "^1.11.4",
+    "react-dom": "^18",
+    "swr": "^2.2.5"
   },
   "devDependencies": {
+    "@types/http-errors": "^2.0.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

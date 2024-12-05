@@ -12,7 +12,7 @@ export default function IndexPage() {
   }
 
   return (
-    <div className="flex h-full flex-col justify-center items-center text-2xl text-amber-500 font-bold gap-4">
+    <div className="flex h-full w-full flex-col justify-center items-center text-2xl text-amber-500 font-bold gap-4">
       <div>welcome to friendship house</div>
       {!session && (
         <Button type="primary" onClick={() => signIn('google')}>

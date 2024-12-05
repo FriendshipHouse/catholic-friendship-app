@@ -1,0 +1,320 @@
+{
+  "locale": {
+    "en-US": "English",
+    "zh-TW": "繁體中文"
+  },
+  "metadata": {
+    "title": "天主教友誼教友中心暨愛在加納主內聯姻 ",
+    "description": "親愛的教友青年朋友們，教友中心是：您的另一個家‧成長的地方‧朋友相聚的所在‧祈禱的場所. 在信仰旅途過程中，想再度尋找的教友們，教友中心可以是一座橋樑。"
+  },
+  "account": {
+    "signIn": "登入",
+    "signOut": "登出",
+    "user": "個人頁面",
+    "managePage": "後臺管理系統"
+  },
+  "common": {
+    "confirm": "確認",
+    "cancel": "取消",
+    "edit": "編輯",
+    "delete": "刪除"
+  },
+  "toast": {
+    "saveSuccess": "儲存成功",
+    "saveFailed": "儲存失敗",
+    "deleteSuccess": "刪除成功",
+    "deleteFailed": "刪除失敗",
+    "dragFailed": "拖曳失敗"
+  },
+  "uploadImages": {
+    "upload": "上傳",
+    "placeholder": "請選擇圖片",
+    "noticeTitle": "刪除圖片",
+    "noticeContent": "確定要刪除這張圖片嗎?"
+  },
+  "popConfirm": {
+    "okButton": "是",
+    "cancelButton": "否"
+  },
+  "admins": {
+    "title": "權限使用者",
+    "titleRule": "請輸入使用者名稱",
+    "email": "Google帳號",
+    "emailRule": "請輸入正確的Google Email",
+    "emailCreateExist": "此Email已新增",
+    "emailEditExist": "此Email已被使用",
+    "operation": "操作",
+    "formEdit": "編輯使用者",
+    "formCreate": "新增使用者",
+    "popConfirmTitle": "刪除使用者",
+    "popConfirmDescription": "是否確認刪除此列?"
+  },
+  "categories": {
+    "title": "類別名稱",
+    "titleRule": "請輸入類別名稱",
+    "titleCreateExist": "此類別名稱已新增",
+    "titleEditExist": "此類別名稱已被使用",
+    "image": "類別圖示",
+    "imageRule": "請選擇類別圖示",
+    "remark": "類別備註",
+    "remarkPlaceholder": "類別備註非必填",
+    "operation": "操作",
+    "formEdit": "編輯類別",
+    "formCreate": "新增類別",
+    "popConfirmTitle": "刪除類別",
+    "popConfirmDescription": "是否確認刪除此類別並連帶刪除其相關的活動及事件?"
+  },
+  "eventsManage": {
+    "title": "活動名稱",
+    "titleRule": "請輸入活動名稱",
+    "description": "活動敘述",
+    "operation": "操作",
+    "formEdit": "編輯活動",
+    "formCreate": "新增活動",
+    "popConfirmTitle": "刪除活動",
+    "popConfirmDescription": "是否確認刪除此活動並連帶刪除其相關的事件?"
+  },
+  "activities": {
+    "title": "事件名稱",
+    "titleRule": "請輸入事件名稱",
+    "date": "事件日期",
+    "dateRule": "請選擇事件日期",
+    "dateBySingle": "單次新增",
+    "dateByBatch": "批次新增",
+    "time": "事件時間",
+    "timeRule": "請選擇時間區間",
+    "location": "事件地點",
+    "locationRule": "請輸入事件地點",
+    "locationPlaceholder": "現場/線上",
+    "description": "事件內文",
+    "descriptionRule": "請輸入事件內文",
+    "descriptionMaxText": "字數超過",
+    "image": "事件海報文宣",
+    "imageRule": "請選擇或上傳圖片",
+    "registerType": "報名方式",
+    "googleFormLink": "Google表單",
+    "googleFormLinkRule": "請填入Google表單連結",
+    "systemForm": "系統表單",
+    "dueDate": "截止報名",
+    "dueDateRule": "請選擇截止區間",
+    "day": "活動前一天",
+    "week": "活動前一周",
+    "month": "活動前一個月",
+    "extraFields": "報名需求",
+    "birthday": "生日",
+    "id": "身分證字號",
+    "registerDetail": "報名須知",
+    "registerDetailPlaceholder": "報名說明須知非必填: ex: 費用 / 資格 / 報名期限及相關資訊",
+    "registerNotice": "行前通知",
+    "registerNoticePlaceholder": "報名完成說明非必填(資訊顯示於已報名者的個人頁面): ex: 行前須備物品及提醒",
+    "operation": "操作",
+    "formEdit": "編輯事件",
+    "formCreate": "新增事件",
+    "popConfirmTitle": "刪除事件",
+    "popConfirmDescription": "是否確認刪除此事件?",
+    "popConfirmAllDescription": "是否確認刪除所選取的事件?"
+  },
+  "emptyText": {
+    "category": "尚未建立類別, 請點擊下方 +新增類別",
+    "event": "尚未建立活動, 請點擊下方 +新增活動",
+    "activity": "尚未建立事件, 請點擊下方 +新增事件",
+    "upcoming": "此篩選結果無近期活動, 請調整篩選條件",
+    "treeSelect": "未取得資料"
+  },
+  "management": {
+    "events": "中心活動",
+    "management": "管理系統",
+    "categoriesManage": "類別管理",
+    "eventsManage": "活動管理",
+    "activitiesManage": "事件管理",
+    "registerManage": "報名管理",
+    "settings": "設定",
+    "authority": "權限設定",
+    "adminsManage": "帳號管理",
+    "permissionDeny": "非管理者無權限查看",
+    "backHome": "回到首頁"
+  },
+  "menu": {
+    "link": "頁面連結",
+    "languageSwitch": "語言切換",
+    "userInformation": "個人帳戶"
+  },
+  "index": {
+    "title1": "天主教",
+    "title2": "友誼教友中心暨",
+    "title3": "愛在加納主內聯姻"
+  },
+  "footer": {
+    "friendShipCenter": "天主教友誼教友中心"
+  },
+  "header": {
+    "index": "首頁",
+    "about": "關於中心",
+    "events": "中心活動",
+    "upcoming": "近期活動",
+    "guide": "活動引導"
+  },
+  "about": {
+    "member": "中心成員",
+    "priest": "永遠的牧者-歐義明神父",
+    "donate": "奉獻支持",
+    "contact": "聯絡資訊",
+    "friendShip": "社團法人台灣旅北友誼交流協會",
+    "language": "瑪利諾會語言中心"
+  },
+  "about-priest": {
+    "BookPriest": "關於歐神父",
+    "BookElder": "老朋友篇",
+    "BookYouth": "青年篇",
+    "BookColleague": "同事篇",
+    "watchVideo": "點選觀看"
+  },
+  "about-donate": {
+    "creditCard": "信用卡定期定額",
+    "onlinePay": "線上單筆捐款",
+    "counterTransfer": "臨櫃單筆捐款",
+    "cash": "現金捐款",
+    "allocate": "郵局劃撥"
+  },
+  "cana": {
+    "canaWeb": "愛在加納聯姻網"
+  },
+  "pathname": {
+    "index": "首頁",
+    "house": "關於中心",
+    "about": "關於中心",
+    "events": "中心活動",
+    "upcoming": "近期活動",
+    "member": "中心成員",
+    "priest": "永遠的牧者-歐義明神父",
+    "donate": "奉獻支持",
+    "contact": "聯絡資訊",
+    "friendShip": "社團法人台灣旅北友誼交流協會",
+    "language": "瑪利諾會語言中心",
+    "religion": "信仰活動",
+    "group": "青年信仰團體",
+    "growUp": "自我成長",
+    "single": "未婚聯誼",
+    "youth": "青年共融",
+    "marriage": "愛在加納 ‧ 主內聯姻",
+    "guide": "活動引導",
+
+    "activities": "中心活動",
+    "mass": "周末青年彌撒",
+    "music": "青年音樂團體",
+    "pray": "祈禱學校~與周神父學祈禱",
+    "lan": "聖女小德蘭靈修之旅",
+    "mbti": "MBTI 16種性格型態工作坊",
+    "communication": "善意溝通工作坊",
+    "singleEvent": "未婚聯誼活動",
+    "train": "幸福列車",
+    "youthEvent": "台北社青共融日",
+    "outdoor": "戶外活動",
+    "cana": "關於愛在加納",
+    "nonMarriage": "未婚聯誼",
+
+    "BookPriest": "關於歐神父",
+    "BookElder": "老朋友篇",
+    "BookYouth": "青年篇",
+    "BookColleague": "同事篇",
+
+    "aboutCana": "更多內容請參考專頁內文",
+
+    "editor": "後臺編輯系統",
+    "categoriesManage": "類別列表管理",
+    "eventManage": "活動管理",
+    "registerManage": "報名方式管理"
+  },
+  "events": {
+    "eventList": "中心活動列表",
+    "religion": "信仰活動",
+    "group": "青年信仰團體",
+    "growUp": "自我成長",
+    "single": "未婚聯誼",
+    "youth": "青年共融",
+    "marriage": "愛在加納 ‧ 主內聯姻"
+  },
+  "upcoming": {
+    "list": "列表",
+    "grid": "圖示",
+    "calendar": "月曆",
+    "search": "搜尋活動...",
+    "searchTitle": "搜尋活動",
+    "sort": "排序",
+    "filter": "篩選條件",
+    "dateFilter": "時間篩選",
+    "treeSelectPlaceholder": "請選擇顯示類別",
+    "1month": "一個月",
+    "2months": "二個月",
+    "customize": "自訂時間"
+  },
+  "user": {
+    "account": "帳戶資訊",
+    "myActivities": "我的活動",
+    "comingActivities": "即將舉行",
+    "noActivities": "仍未報名活動，請前往報名：",
+    "recentButton": "探索近期活動"
+  },
+  "register": {
+    "title": "報名表單",
+    "loginGoogle": "登入Google",
+    "loginDescription": "即可報名並查詢報名紀錄",
+    "loginPopTitle": "登入網站",
+    "loginPopDescription": "登入Google帳號即可進行報名並紀錄您的報名狀態。",
+    "login": "登入",
+    "date": "報名活動場次",
+    "dateRule": "請至少選擇一個報名活動場次",
+    "submissionTime": "填寫時間",
+    "fullName": "姓名",
+    "fullNameRule": "請填入您的姓名, 並請留本名",
+    "fullNamePlaceholder": "您的姓名, 請留本名",
+    "email": "電子郵件",
+    "emailRule": "請填入您的電子郵件",
+    "emailError": "電子郵件格式錯誤",
+    "emailPlaceholder": "您的電子郵件",
+    "birthday": "生日",
+    "birthdayRule": "請選擇您的生日",
+    "birthdayPlaceholder": "您的生日",
+    "id": "身分證字號",
+    "idRule": "請填入您的身分證字號",
+    "idError": "身分證字號字數或格式有誤",
+    "idPlaceholder": "您的身分證字號, 僅用於戶外活動保險用",
+    "phone": "手機號碼",
+    "phoneRule": "請填入您的手機號碼",
+    "phoneError": "手機號碼字數或格式有誤",
+    "phonePlaceholder": "您的手機號碼, 例如： 0912345678",
+    "lineId": "LINE ID",
+    "lineIdRule": "請填入您的LINE ID",
+    "lineIdPlaceholder": "您的LINE ID",
+    "parish": "堂區",
+    "parishRule": "請填入您的堂區",
+    "parishPlaceholder": "您的堂區",
+    "sharePicture": "是否同意當日活動拍攝之照片／影片將運用於後續分享與宣傳?",
+    "sharePictureRule": "請選擇",
+    "knowInfo": "如何得知課程資訊?",
+    "knowInfoRule": "請至少選擇一項",
+    "bulletin": "堂區報告 / 佈告欄海報",
+    "web": "台北天主教教友中心臉書 / 官網",
+    "lineGroup": "教會 LINE 群組",
+    "friends": "友人介紹",
+    "apostles": "婚姻使徒邀請",
+    "others": "其他",
+    "othersPlaceholder": "請填入資訊來源",
+    "beenHere": "您是否來過教友中心?",
+    "popoverContent": "此欄僅用於戶外活動保險, 將於活動後自動刪除",
+    "cancelConfirmTitle": "取消報名",
+    "cancelConfirmContent": "是否離開報名表單?"
+  },
+  "registerManage": {
+    "selectEvents": "活動選擇",
+    "showColumns": "顯示欄位",
+    "sharePictureColumn": "分享照片",
+    "knowInfoColumn": "資訊來源",
+    "beenHereColumn": "來過中心",
+    "yes": "是",
+    "no": "否"
+  },
+  "button": {
+    "register": "我要報名"
+  }
+}

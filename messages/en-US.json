@@ -1,0 +1,322 @@
+{
+  "locale": {
+    "en-US": "English",
+    "zh-TW": "繁體中文"
+  },
+  "metadata": {
+    "title": "Catholic Friendship House and Miracle in Cana",
+    "description": "Dear young friends in faith, Catholic Friendship House is like another home for you— a place where you can grow, meet friends, and find a peaceful space for prayer. For those who are looking to reconnect with their faith journey, we can be a bridge that guides you back to a community filled with support and spiritual growth."
+  },
+  "account": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "user": "Account",
+    "managePage": "Management"
+  },
+  "common": {
+    "confirm": "Submit",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "toast": {
+    "saveSuccess": "Save successful",
+    "saveFailed": "Save failed",
+    "deleteSuccess": "Delete successful",
+    "deleteFailed": "Delete failed",
+    "dragFailed": "Drag failed"
+  },
+  "uploadImages": {
+    "upload": "Upload",
+    "placeholder": "Please select",
+    "noticeTitle": "Delete the image",
+    "noticeContent": "Are you sure to delete this image?"
+  },
+  "popConfirm": {
+    "okButton": "OK",
+    "cancelButton": "Cancel"
+  },
+  "admins": {
+    "title": "Administer",
+    "titleRule": "Please input Administer.",
+    "email": "Google Account",
+    "emailRule": "Please input Google Email.",
+    "emailCreateExist": "Email address has been added.",
+    "emailEditExist": "Email address has been used.",
+    "operation": "Operation",
+    "formEdit": "Edit Administer",
+    "formCreate": "Create Administer",
+    "popConfirmTitle": "Delete Administer",
+    "popConfirmDescription": "Are you sure to delete this administer?"
+  },
+  "categories": {
+    "title": "Category name",
+    "titleRule": "Please input category name.",
+    "titleCreateExist": "Category name has been added.",
+    "titleEditExist": "Category name has been used.",
+    "image": "Category Image",
+    "imageRule": "Please select image.",
+    "remark": "Category Remark",
+    "remarkPlaceholder": "Category Remark (Optional)",
+    "operation": "Operation",
+    "formEdit": "Edit Category",
+    "formCreate": "Create Category",
+    "popConfirmTitle": "Delete Category",
+    "popConfirmDescription": "Are you sure to delete this category and relative events & activities?"
+  },
+  "eventsManage": {
+    "title": "Event name",
+    "titleRule": "Please input event name.",
+    "description": "Event introduction",
+    "operation": "Operation",
+    "formEdit": "Edit Event",
+    "formCreate": "Create Event",
+    "popConfirmTitle": "Delete Event",
+    "popConfirmDescription": "Are you sure to delete this event and relative activities?"
+  },
+  "activities": {
+    "title": "Activity name",
+    "titleRule": "Please input activity name.",
+    "date": "Date",
+    "dateRule": "Please select date.",
+    "dateBySingle": "Create by single",
+    "dateByBatch": "Create by batch",
+    "time": "Time",
+    "timeRule": "Please select activity period.",
+    "location": "Location",
+    "locationRule": "Please input location.",
+    "locationPlaceholder": "Location / Online",
+    "description": "Activity introduction",
+    "descriptionRule": "Please input activity introduction",
+    "descriptionMaxText": "Texts is over the limit.",
+    "image": "Poster / image",
+    "imageRule": "Please select a image.",
+    "registerType": "Registration",
+    "googleFormLink": "Google Form Link",
+    "googleFormLinkRule": "Please input Google Form Link",
+    "systemForm": "System Form",
+    "dueDate": "Dateline",
+    "dueDateRule": "Please select a dateline duration.",
+    "day": "Before 1 day",
+    "week": "Before 1 week",
+    "month": "Before 1 month",
+    "extraFields": "Register Information",
+    "birthday": "Birthday",
+    "id": "ID",
+    "registerDetail": "Register Details",
+    "registerDetailPlaceholder": "Registration Description (Optional): e.g., Fees / Qualifications / Registration Deadline and Related Information",
+    "registerNotice": "Pre-Departure Notice",
+    "registerNoticePlaceholder": "Completion Instructions (Optional) (Information displayed on the personal page of registered users): e.g., Items to Prepare Before Departure and Reminders",
+    "operation": "Operation",
+    "formEdit": "Edit Activity",
+    "formCreate": "Create Activity",
+    "popConfirmTitle": "Delete Activity",
+    "popConfirmDescription": "Are your sure to delete this activity?",
+    "popConfirmAllDescription": "Are you sure to delete all selected activities?"
+  },
+  "emptyText": {
+    "category": "Category not created yet, please click + Add Category below.",
+    "event": "Event not created yet, please click + Add Event below.",
+    "activity": "Activity not created yet, please click + Add Activity below.",
+    "upcoming": "The filtered results have no recent activity. Please adjust the filter criteria.",
+    "treeSelect": "No data obtained."
+  },
+  "management": {
+    "events": "Events",
+    "management": "Management",
+    "categoriesManage": "Categories",
+    "eventsManage": "Events",
+    "activitiesManage": "Activities",
+    "registerManage": "Register",
+    "settings": "Settings",
+    "authority": "Authority Settings",
+    "adminsManage": "Administrator",
+    "permissionDeny": "Permissions denied",
+    "backHome": "Go back to Home"
+  },
+  "menu": {
+    "link": "Link",
+    "languageSwitch": "Language",
+    "userInformation": "Account"
+  },
+  "index": {
+    "title1": "Catholic",
+    "title2": "Friendship House",
+    "title3": "with Miracle in Cana"
+  },
+  "footer": {
+    "friendShipCenter": "Catholic Friendship House"
+  },
+  "header": {
+    "index": "Index",
+    "about": "About Us",
+    "events": "Events",
+    "upcoming": "Upcoming",
+    "guide": "Event Guide"
+  },
+  "about": {
+    "member": "Members of House",
+    "priest": "Forever Shepherd - Father Alan",
+    "donate": "Donation Support",
+    "contact": "Contact Information",
+    "friendShip": "Friendship House",
+    "language": "Language Service Center"
+  },
+  "about-priest": {
+    "BookPriest": "About Father Alan",
+    "BookElder": "Elder Friends",
+    "BookYouth": "Youth Friends",
+    "BookColleague": "Colleague",
+    "watchVideo": "Watch the video"
+  },
+  "about-donate": {
+    "creditCard": "Credit Card Recurring Donation",
+    "onlinePay": "Online Single Donation",
+    "counterTransfer": "Counter Single Donation",
+    "cash": "Cash Donation",
+    "allocate": "Postal Remittance"
+  },
+  "cana": {
+    "canaWeb": "Miracle in Cana"
+  },
+  "pathname": {
+    "index": "Index",
+    "house": "About Us",
+    "about": "About Us",
+    "events": "Events",
+    "upcoming": "Upcoming",
+    "member": "Members of House",
+    "priest": "Forever Shepherd - Father Alan",
+    "donate": "Donation Support",
+    "contact": "Contact Information",
+    "friendShip": "Friendship House",
+    "language": "Language Service Center",
+    "religion": "Religious activities",
+    "group": "Youth Faith Group",
+    "growUp": "Personal growth",
+    "single": "Singles events",
+    "youth": "Youth activities",
+    "marriage": "Miracle In Cana",
+    "guide": "Event Guide",
+
+    "activities": "Events",
+    "mass": "mass",
+    "music": "music",
+    "pray": "pray",
+    "lan": "lan",
+    "mbti": "MBTI",
+    "communication": "communication",
+    "singleEvent": "singleEvent",
+    "train": "train",
+    "youthEvent": "youthEvent",
+    "outdoor": "outdoor",
+    "cana": "cana",
+    "nonMarriage": "nonMarriage",
+
+    "BookPriest": "About Father Alan",
+    "BookElder": "Elder Friends",
+    "BookYouth": "Youth Friends",
+    "BookColleague": "Colleague",
+
+    "aboutCana": "Click here for more details",
+
+    "editor": "Web Backend Editing System",
+    "categoriesManage": "Categories Management",
+    "eventManage": "Event Management",
+    "registerManage": "Register Management"
+  },
+
+  "events": {
+    "eventList": "Central Activity List",
+    "religion": "Religious activities",
+    "group": "Youth Faith Group",
+    "growUp": "Personal growth",
+    "single": "Singles events",
+    "youth": "Youth activities",
+    "marriage": "Miracle In Cana"
+  },
+  "upcoming": {
+    "list": "List",
+    "grid": "Grid",
+    "calendar": "Calendar",
+    "search": "Search",
+    "searchTitle": "Search Events",
+    "sort": "Sort",
+    "filter": "Filter",
+    "dateFilter": "Date Filter",
+    "treeSelectPlaceholder": "Please select categories.",
+    "1month": "1 month",
+    "2months": "2 months",
+    "customize": "Customize"
+  },
+  "user": {
+    "account": "Account",
+    "myActivities": "Activities",
+    "comingActivities": "Upcoming Activities",
+    "noActivities": "Registration is not yet completed. Please proceed to register:",
+    "recentButton": "Explore recent events."
+  },
+  "register": {
+    "title": "Registration Form",
+    "loginGoogle": "Login with Google",
+    "loginDescription": "You can register and check your registration records",
+    "loginPopTitle": "Login to Website",
+    "loginPopDescription": "Log in with your Google account to register and track your registration status.",
+    "login": "Login",
+    "date": "Activity Session Registration",
+    "dateRule": "Please select at least one activity session",
+    "submissionTime": "Submission Time",
+    "fullName": "Name",
+    "fullNameRule": "Please enter your full name",
+    "fullNamePlaceholder": "Your full name",
+    "email": "Email",
+    "emailRule": "Please enter your email",
+    "emailError": "The email address format is incorrect",
+    "emailPlaceholder": "Your email",
+    "birthday": "Birthday",
+    "birthdayRule": "Please select your birthday",
+    "birthdayPlaceholder": "Your birthday",
+    "id": "ID Number",
+    "idRule": "Please enter your ID number",
+    "idError": "ID number format is incorrect",
+    "idPlaceholder": "Your ID number, used for outdoor activity insurance only",
+    "phone": "Contact Number",
+    "phoneRule": "Please enter your primary contact number (mobile)",
+    "phoneError": "The phone number format is incorrect",
+    "phonePlaceholder": "Your primary contact number (mobile)",
+    "lineId": "LINE ID",
+    "lineIdRule": "Please enter your LINE ID",
+    "lineIdPlaceholder": "Your LINE ID",
+    "parish": "Parish",
+    "parishRule": "Please enter your parish",
+    "parishPlaceholder": "Your parish",
+    "sharePicture": "Do you agree to allow photos/videos taken during the event to be used for future sharing and promotion?",
+    "sharePictureRule": "Please choose",
+    "sharePictureColumn": "Share pictures?",
+    "knowInfo": "How did you hear about the course?",
+    "knowInfoRule": "Please select at least one option",
+    "bulletin": "Parish announcement / Bulletin board poster",
+    "web": "Taipei Catholic Lay Center Facebook / Website",
+    "lineGroup": "Church LINE group",
+    "friends": "Introduced by a friend",
+    "apostles": "Invited by the Apostles of Marriage",
+    "others": "Other",
+    "othersPlaceholder": "Please enter how did you know of information",
+    "beenHere": "Have you joined our events before?",
+    "popoverContent": "This field is used only for outdoor activity insurance and will be automatically deleted after the event",
+    "cancelConfirmTitle": "Cancel Registration",
+    "cancelConfirmContent": "Do you wish to leave the registration form?"
+  },
+  "registerManage": {
+    "selectEvents": "Select Events",
+    "showColumns": "Show Columns",
+    "sharePictureColumn": "Share Pictures",
+    "knowInfoColumn": "Info Source",
+    "beenHereColumn": "Been Here",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "button": {
+    "register": "Registration"
+  }
+}

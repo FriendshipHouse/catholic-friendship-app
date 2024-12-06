@@ -1,33 +1,74 @@
 'use client';
 
-import { Button, Spin } from 'antd';
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import {
+  ArrowDownShort,
+  ArrowLeftShort,
+  ArrowRightShort,
+  ArrowUpShort,
+} from 'react-bootstrap-icons';
 
-export default function IndexPage() {
-  const { data: session, status } = useSession();
-  const isSessionLoading = status === 'loading';
+import TitleHighlight from '@/components/TitleHighlight';
+import FloatButton from '@/components/index/FloatButton';
+import IndexButton from '@/components/index/IndexButton';
 
-  if (isSessionLoading) {
-    return <Spin />;
-  }
+import backgroundImage from '@/../public/general/background-index.png';
+import imageJesus from '@/../public/general/img-index.png';
+
+export default function Index() {
+  const t = useTranslations();
+
+  const themeButtonList = [
+    { value: 'about', pathname: '/house/about' },
+    { value: 'cana', pathname: '/cana' },
+    { value: 'events', pathname: '/events/activities' },
+    { value: 'upcoming', pathname: '/upcoming' },
+  ];
 
   return (
-    <div className="flex h-full w-full flex-col justify-center items-center text-2xl text-amber-500 font-bold gap-4">
-      <div>welcome to friendship house</div>
-      {!session && (
-        <Button type="primary" onClick={() => signIn('google')}>
-          Sign In
-        </Button>
-      )}
-      {session && (
-        <div className="flex flex-col gap-4 text-sm text-gray-900">
-          <Button type="primary" onClick={() => signOut()}>
-            Sign Out
-          </Button>
-          {session.user?.name}
-          {session.user?.email}
+    <div className="relative w-full">
+      <FloatButton />
+      <div className="fixed z-0 hidden h-full w-full items-center justify-center md:flex">
+        <Image
+          src={backgroundImage}
+          alt="backgroundImage"
+          priority={true}
+          className="!max-w-none md:min-h-screen lg:w-full"
+        />
+      </div>
+      <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">
+        <Image src={imageJesus} alt="imageJesus" />
+      </div>
+      <div className="relative z-10 mx-auto flex h-full max-w-screen-lg items-center justify-center">
+        <div className="mb:px-5 flex w-screen items-center justify-between px-10">
+          <div className="flex flex-col gap-12">
+            <div className="flex text-3xl text-gray-40 md:text-4xl md:text-gray-40">
+              <ArrowUpShort />
+              <ArrowDownShort />
+              <ArrowLeftShort />
+              <ArrowRightShort />
+            </div>
+            <div>
+              <div className="flex flex-col flex-wrap gap-2 sm:gap-4">
+                <TitleHighlight>{t('index.title1')}</TitleHighlight>
+                <TitleHighlight>{t('index.title2')}</TitleHighlight>
+                <TitleHighlight>{t('index.title3')}</TitleHighlight>
+              </div>
+            </div>
+            <div className="flex max-w-md flex-wrap gap-4 md:max-w-xl md:gap-5">
+              {themeButtonList.map(({ value, pathname }) => (
+                <IndexButton key={value} pathname={pathname}>
+                  {t(`pathname.${value}`)}
+                </IndexButton>
+              ))}
+            </div>
+          </div>
+          <div className="hidden h-2/3 md:flex">
+            <Image src={imageJesus} alt="imageJesus" />
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

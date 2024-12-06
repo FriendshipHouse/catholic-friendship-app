@@ -1,27 +1,46 @@
-@tailwind base;
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffe999;
+  border-radius: 5px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffdb70;
+}
+
+.headerLink {
+  @apply text-primary-110 hover:text-primary-80 !important;
+}
+
+.darkGrayLink {
+  @apply text-gray-80 hover:text-primary-80 !important;
+}
+
+.footerTextLink {
+  @apply hover:text-primary-70 active:text-primary-80 text-gray-50 !important;
+}
+
+.footerLogoLink {
+  @apply text-gray-70 hover:text-primary-70 active:text-primary-80 !important;
 }

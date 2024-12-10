@@ -10,3 +10,12 @@ type AdminFormValue = {
   _id: string;
   key?: string;
 };
+
+type CategoriesFormValue = {
+  name: string;
+  image: string;
+  remark?: string;
+  order: number;
+  _id: string;
+  key?: string;
+};

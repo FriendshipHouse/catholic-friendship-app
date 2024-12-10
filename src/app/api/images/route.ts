@@ -28,16 +28,18 @@ export async function POST(req: NextRequest) {
 
   const { searchParams } = new URL(req.url);
   const filename = searchParams.get('filename');
-  const prefix = searchParams.get('filename');
+  const prefix = searchParams.get('prefix');
 
   if (!prefix) NextResponse.json({ message: 'Prefix is not exist' }, { status: 400 });
 
   if (!filename || !req.body) {
-    return NextResponse.json({ message: 'Invalid file data' }, { status: 400 });
+    return NextResponse.json({ message: 'invalid file data' }, { status: 400 });
   }
 
   try {
-    const blob = await put(`${prefix}/${filename}`, req.body, { access: 'public' });
+    const blob = await put(`${prefix}/${filename}`, req.body, {
+      access: 'public',
+    });
 
     return NextResponse.json(blob, { status: 200 });
   } catch (error) {
@@ -55,7 +57,7 @@ export async function DELETE(req: NextRequest) {
   }
 
   const { searchParams } = new URL(req.url);
-  const urlToDelete = searchParams.get('url');
+  const urlToDelete = searchParams.get('url') as string;
 
   if (!urlToDelete) {
     return NextResponse.json({ message: 'invalid file url' }, { status: 400 });

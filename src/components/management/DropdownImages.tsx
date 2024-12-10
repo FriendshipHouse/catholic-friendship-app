@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 
 import { DeleteOutlined, UploadOutlined } from '@ant-design/icons';
 import { App, Button, Divider, Popconfirm, Select, Upload, UploadProps } from 'antd';
@@ -9,7 +9,7 @@ import Image from 'next/image';
 import useImages from '@/hooks/useImages';
 
 type DropdownImagesProps = {
-  onChange?: (value?: ReactNode) => void;
+  onChange?: (value?: string) => void;
   value?: string;
   defaultValue?: string;
   prefix: 'categories/images' | 'activities/images';
@@ -34,10 +34,10 @@ function DropdownImages({
   const {
     data: categoryImages = [],
     mutate,
-    isLoading: isCategoriesImagesLoading,
+    isLoading: isCategoryImagesLoading,
   } = useImages(prefix);
 
-  const isLoading = isUploading || isCategoriesImagesLoading;
+  const isLoading = isUploading || isCategoryImagesLoading;
 
   const options = categoryImages.map(({ url, pathname }) => {
     const filename = getFileNameByPathname(pathname);
@@ -61,6 +61,8 @@ function DropdownImages({
       }
       message.success(t('toast.saveFailed'));
     }
+
+    setIsUploading(false);
   };
 
   const onRemoveImage = async (url: string) => {
@@ -121,7 +123,7 @@ function DropdownImages({
       defaultValue={defaultValue}
       value={value}
       onSelect={(value, { label }) => {
-        if (onChange) onChange(label);
+        if (onChange) onChange(label!);
       }}
       dropdownRender={(menu) => (
         <>

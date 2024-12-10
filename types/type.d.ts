@@ -19,3 +19,12 @@ type CategoriesFormValue = {
   _id: string;
   key?: string;
 };
+
+type EventsFormValue = {
+  name: string;
+  description?: string;
+  categoryId: string;
+  order: number;
+  _id: string;
+  key?: string;
+};

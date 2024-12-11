@@ -28,3 +28,30 @@ type EventsFormValue = {
   _id: string;
   key?: string;
 };
+
+type RegisterType = 'google' | 'system';
+
+type ExtraField = 'birthday' | 'id';
+
+type SystemFormInfo = {
+  dueDate?: string;
+  extraFields?: ExtraField[];
+  detail?: string;
+  notice?: string;
+};
+
+type ActivitiesFormValue = {
+  categoryId: string;
+  eventId: string;
+  name: string;
+  date: string | string[];
+  time: (string | null)[];
+  location: string;
+  description: string;
+  image: string;
+  registerType: RegisterType;
+  googleFormLink?: string;
+  systemFormInfo?: SystemFormInfo;
+  _id: string;
+  key?: string;
+};

@@ -9,9 +9,12 @@ import { useTranslations } from 'next-intl';
 
 import Logos from '@/components/Logos';
 
+import useCategories from '@/hooks/useCategories';
+import useEvents from '@/hooks/useEvents';
 import { Link } from '@/i18n/routing';
 
 import AccountDropdown from './AccountDropdown';
+import DrawerMenu from './DrawerMenu';
 import LanguageSwitcher from './LanguageSwitcher';
 
 type menuItemType = {
@@ -22,6 +25,25 @@ type menuItemType = {
 
 function PageHeader() {
   const t = useTranslations();
+
+  const { data: categories = [] } = useCategories();
+  const { data: events = [] } = useEvents();
+
+  const eventList = categories.map(({ _id: categoryId, name: categoryName }) => {
+    const currentEvents = events.filter((event) => event.categoryId === categoryId);
+    return {
+      key: categoryId,
+      label: categoryName,
+      children: currentEvents.map(({ _id: eventId, name: eventName }) => ({
+        key: eventId,
+        label: <Link href={`/events/${eventId}`}>{eventName}</Link>,
+      })),
+    };
+  });
+  const eventListItems = [
+    { key: 'activities', label: <Link href={`/events`}>{t(`pathname.activities`)}</Link> },
+    ...eventList,
+  ];
 
   const aboutList: menuItemType = [
     { key: 'about', label: 'about' },
@@ -64,7 +86,12 @@ function PageHeader() {
             <Link href="/cana" className="headerLink !p-0 !font-semibold">
               {t('pathname.cana')}
             </Link>
-            <Dropdown trigger={['click']} overlayClassName="!pt-5 w-36" className="headerLink">
+            <Dropdown
+              menu={{ items: eventListItems }}
+              trigger={['click']}
+              overlayClassName="!pt-5 w-36"
+              className="headerLink"
+            >
               <Button
                 type="link"
                 onClick={(e) => e.preventDefault()}
@@ -80,13 +107,15 @@ function PageHeader() {
               {t('pathname.upcoming')}
             </Link>
           </div>
-          <div className="h-3 border-l-2 text-primary-70"></div>
+          <div className="h-3 border-l text-primary-70" />
           <div className="flex items-center gap-4 lg:gap-6">
             <LanguageSwitcher />
             <AccountDropdown />
           </div>
         </div>
-        <div className="flex items-center justify-end md:hidden"></div>
+        <div className="flex items-center justify-end md:hidden">
+          <DrawerMenu />
+        </div>
       </div>
     </div>
   );

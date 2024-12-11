@@ -12,8 +12,8 @@ import {
 import TitleHighlight from '@/components/TitleHighlight';
 import FloatButton from '@/components/index/FloatButton';
 import IndexButton from '@/components/index/IndexButton';
+import Background from '@/components/layout/Background';
 
-import backgroundImage from '@/../public/general/background-index.png';
 import imageJesus from '@/../public/general/img-index.png';
 
 export default function Index() {
@@ -29,14 +29,7 @@ export default function Index() {
   return (
     <div className="relative w-full">
       <FloatButton />
-      <div className="fixed z-0 hidden h-full w-full items-center justify-center md:flex">
-        <Image
-          src={backgroundImage}
-          alt="backgroundImage"
-          priority={true}
-          className="!max-w-none md:min-h-screen lg:w-full"
-        />
-      </div>
+      <Background />
       <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">
         <Image src={imageJesus} alt="imageJesus" />
       </div>

@@ -128,11 +128,13 @@ function CategoriesFormTable() {
       title: t('categories.title'),
       dataIndex: 'name',
       key: 'name',
+      className: 'min-w-[140px]',
     },
     {
       title: t('categories.image'),
       dataIndex: 'image',
       key: 'image',
+      className: 'min-w-[140px]',
       render: (_: any, { image }: CategoriesFormValue) => {
         const { url = '' } =
           categoryImages.find((imageInfo) => {
@@ -163,6 +165,7 @@ function CategoriesFormTable() {
       title: t('categories.remark'),
       dataIndex: 'remark',
       key: 'remark',
+      className: 'min-w-[160px]',
     },
     {
       title: t('categories.operation'),
@@ -270,6 +273,7 @@ function CategoriesFormTable() {
             footer={footer}
             loading={isLoading}
             locale={{ emptyText }}
+            scroll={{ x: 1024 }}
           />
           <CategoriesFormModal
             open={open}

@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 
 import useCategories from '@/hooks/useCategories';
 
-// import DropdownImages from '../DropdownImages';
+import DropdownImages from '../DropdownImages';
 
 type CategoriesFormModalProps = {
   open: boolean;
@@ -97,12 +97,12 @@ function CategoriesFormModal({
       ],
       component: <Input placeholder={t('categories.title')} />,
     },
-    // {
-    //   key: 'image',
-    //   label: t('categories.image'),
-    //   rules: [{ required: true, message: t('categories.imageRule') }],
-    //   component: <DropdownImages prefix="categories/images" />,
-    // },
+    {
+      key: 'image',
+      label: t('categories.image'),
+      rules: [{ required: true, message: t('categories.imageRule') }],
+      component: <DropdownImages prefix="categories/images" />,
+    },
     {
       key: 'remark',
       label: t('categories.remark'),

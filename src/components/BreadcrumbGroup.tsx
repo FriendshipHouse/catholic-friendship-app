@@ -38,19 +38,22 @@ function BreadcrumbGroup() {
 
   return (
     <div>
-      <div className="hidden gap-2 text-sm !text-gray-60 sm:flex">
+      <div className="hidden gap-3 text-sm !text-gray-60 xs:flex">
         {Array.isArray(breadcrumbs) &&
           breadcrumbs.map(({ key, path }, index) => (
-            <div className="flex gap-2 [&>a:hover]:text-gray-50 [&>a]:text-gray-60" key={key}>
+            <div
+              className="flex items-center gap-3 [&>a:hover]:text-gray-50 [&>a]:text-gray-60"
+              key={key}
+            >
               <Link href={path}>{t(key)}</Link>
               {index < breadcrumbs.length - 1 && (
-                <div className="h-4 rotate-12 border-l border-gray-70" />
+                <div className="h-2 rotate-12 border-l border-gray-70" />
               )}
             </div>
           ))}
       </div>
       {previousPath && (
-        <Link href={previousPath} className="flex gap-2 text-sm !text-gray-60 sm:hidden">
+        <Link href={previousPath} className="flex gap-2 text-sm !text-gray-60 xs:hidden">
           <ArrowLeftOutlined />
           <div>{t(previousKey)}</div>
         </Link>

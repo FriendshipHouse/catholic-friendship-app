@@ -2,7 +2,7 @@ import useSWRImmutable from 'swr/immutable';
 
 import { fetcher } from '@/lib/fetcher';
 
-type MyRegistration = {
+export type MyRegistration = {
   categoryId: string;
   eventId: string;
   eventName: string;

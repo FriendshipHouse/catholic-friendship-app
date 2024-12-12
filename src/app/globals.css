@@ -38,9 +38,31 @@
 }
 
 .footerTextLink {
-  @apply hover:text-primary-70 active:text-primary-80 text-gray-50 !important;
+  @apply text-gray-50 hover:text-primary-70 active:text-primary-80 !important;
 }
 
 .footerLogoLink {
   @apply text-gray-70 hover:text-primary-70 active:text-primary-80 !important;
+}
+
+.ant-table-wrapper .ant-table {
+  scrollbar-color: unset !important;
+
+  ::-webkit-scrollbar {
+    width: 8px !important ;
+    height: 10px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0 !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ffe999 !important;
+    border-radius: 5px !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffdb70 !important;
+  }
 }

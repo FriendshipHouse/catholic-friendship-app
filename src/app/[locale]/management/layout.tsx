@@ -6,11 +6,7 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/i18n/routing';
 
-type LayoutProps = {
-  children?: React.ReactNode;
-};
-
-function ManagementLayout({ children }: Readonly<LayoutProps>) {
+function ManagementLayout({ children }: Readonly<RootProvider>) {
   const t = useTranslations();
   const { data: session, status } = useSession();
 

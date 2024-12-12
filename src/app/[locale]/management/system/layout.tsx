@@ -11,11 +11,7 @@ import ExportRegistrationsButton from '@/components/management/registers/ExportR
 
 import { usePathname } from '@/i18n/routing';
 
-type LayoutProps = {
-  children?: React.ReactNode;
-};
-
-function SystemLayout({ children }: Readonly<LayoutProps>) {
+function SystemLayout({ children }: Readonly<RootProvider>) {
   const t = useTranslations();
   const pathname = usePathname();
 

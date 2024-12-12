@@ -55,3 +55,26 @@ type ActivitiesFormValue = {
   _id: string;
   key?: string;
 };
+
+type YesNoType = 'yes' | 'no';
+
+type KnowInfo = 'bulletin' | 'web' | 'lineGroup' | 'friends' | 'apostles' | 'others';
+
+type RegisterFormValue<ActivityId = string> = {
+  _id?: string;
+  categoryId: string;
+  eventId: string;
+  activityId: ActivityId;
+  fullName: string;
+  email: string;
+  birthday?: string;
+  id?: string;
+  phone: string;
+  lineId?: string;
+  parish: string;
+  sharePicture: YesNoType;
+  knowInfo: KnowInfo[];
+  beenHere: YesNoType;
+  submissionTime?: string;
+  otherKnowInfo?: string;
+};

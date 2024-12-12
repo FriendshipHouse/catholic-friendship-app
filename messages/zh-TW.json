@@ -94,6 +94,7 @@
     "registerType": "報名方式",
     "googleFormLink": "Google表單",
     "googleFormLinkRule": "請填入Google表單連結",
+    "googleFormLinkError": "Google表單連結錯誤",
     "systemForm": "系統表單",
     "dueDate": "截止報名",
     "dueDateRule": "請選擇截止區間",

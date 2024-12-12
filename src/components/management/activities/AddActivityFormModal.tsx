@@ -217,7 +217,20 @@ function ActivitiesFormModal({
           {registerType === 'google' && (
             <Form.Item
               name="googleFormLink"
-              rules={[{ required: true, message: t('activities.googleFormLinkRule') }]}
+              rules={[
+                { required: true, message: t('activities.googleFormLinkRule') },
+                () => ({
+                  validator(rule, value) {
+                    const isValid =
+                      value.startsWith('https://') &&
+                      (value.includes('docs.google.com/forms') || value.includes('forms.gle'));
+
+                    return isValid
+                      ? Promise.resolve()
+                      : Promise.reject(new Error(t('activities.googleFormLinkError')));
+                  },
+                }),
+              ]}
               initialValue={initialValue?.googleFormLink}
             >
               <Input placeholder={t('activities.googleFormLinkRule')} disabled={isLoading} />

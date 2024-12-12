@@ -94,6 +94,7 @@
     "registerType": "Registration",
     "googleFormLink": "Google Form Link",
     "googleFormLinkRule": "Please input Google Form Link",
+    "googleFormLinkError": "Google Form Link error",
     "systemForm": "System Form",
     "dueDate": "Dateline",
     "dueDateRule": "Please select a dateline duration.",

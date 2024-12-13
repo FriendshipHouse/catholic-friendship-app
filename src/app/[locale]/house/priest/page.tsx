@@ -118,7 +118,7 @@ function Priest() {
           />
         </div>
 
-        <div className="w-full border-t border-solid border-primary-30"></div>
+        <div className="w-full border-t border-solid border-primary-30" />
         <div className="text-lg font-bold">逝世週年追思文集</div>
         <div className="flex flex-col items-start gap-x-4 gap-y-2 md:min-w-[400px] md:flex-row">
           {bookButtonList.map(({ value, url }) => {

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import friendshipImage from '@/../public/about/img-about-friendship.png';
+import friendshipImage from '@/../public/about/img-friendshipLogo.png';
 
 const taskList = [
   {

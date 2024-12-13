@@ -14,12 +14,10 @@ import { INITIAL_REGISTER_EVENT_VALUE, registerEventModal } from '@/jotai/regist
 export type SubTitleProps = {
   title: string | React.ReactNode;
   buttonLabel?: string | React.ReactNode;
-  isActivity?: boolean;
-  pathname?: string;
-  isModal?: boolean;
+  isRegistrationShow?: boolean;
 };
 
-function SubTitle({ title, buttonLabel, isActivity, pathname, isModal }: Readonly<SubTitleProps>) {
+function SubTitle({ title, buttonLabel, isRegistrationShow }: Readonly<SubTitleProps>) {
   const setRegisterEventModalOpen = useSetAtom(registerEventModal);
   const setOpenLoginModal = useSetAtom(loginModal);
 
@@ -27,13 +25,10 @@ function SubTitle({ title, buttonLabel, isActivity, pathname, isModal }: Readonl
   const isLogin = status === 'authenticated';
 
   const onClick = () => {
-    if (pathname && window?.open()) {
-      window.open(pathname, '_blank');
-    }
     if (!isLogin) {
       setOpenLoginModal(true);
     }
-    if (isModal && isLogin) {
+    if (isRegistrationShow && isLogin) {
       setRegisterEventModalOpen({ open: true, registerFormValue: INITIAL_REGISTER_EVENT_VALUE });
     }
   };
@@ -44,7 +39,7 @@ function SubTitle({ title, buttonLabel, isActivity, pathname, isModal }: Readonl
         <BreadcrumbGroup />
         <div className="flex flex-col items-start gap-5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-10">
           <TitleHighlight>{title}</TitleHighlight>
-          {isActivity && (
+          {isRegistrationShow && (
             <Button type="link" className="!group !p-0 !text-gray-80" onClick={onClick}>
               <div className="flex w-fit flex-row items-center justify-center gap-2 rounded-lg border border-gray-40 px-4 py-1 text-sm font-bold hover:border-primary-40">
                 {buttonLabel}
@@ -54,7 +49,7 @@ function SubTitle({ title, buttonLabel, isActivity, pathname, isModal }: Readonl
           )}
         </div>
       </div>
-      <div className="border-b border-primary-30"></div>
+      <div className="border-b border-primary-30" />
     </div>
   );
 }

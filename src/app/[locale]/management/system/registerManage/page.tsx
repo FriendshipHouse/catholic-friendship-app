@@ -69,7 +69,7 @@ function RegisterManage() {
     <div className="flex flex-col gap-4 p-5">
       <div className="flex items-center gap-8">
         <CategorySelector onChange={() => setSelectionRows([])} />
-        {events && <div className="h-4 rotate-12 border-l border-gray-50"></div>}
+        {events && <div className="h-4 rotate-12 border-l border-gray-50" />}
         <div className="flex items-end">
           <EventSelector onChange={() => setSelectionRows([])} />
         </div>

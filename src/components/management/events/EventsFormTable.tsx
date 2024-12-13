@@ -244,7 +244,7 @@ function EventsFormTable() {
           loading={isLoading}
           locale={{ emptyText }}
           scroll={{ x: 1024 }}
-        ></Table>
+        />
         <EventsFormModal
           open={open}
           isEdit={isEdit}

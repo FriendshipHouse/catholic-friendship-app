@@ -35,7 +35,7 @@ function DateFormat({ date, isTableList, isModal }: Readonly<DateFormatType>) {
         <div className="flex w-full items-center gap-2">
           <div>{month}</div>
           <div className="text-primary">{day}</div>
-          <div className="h-3 border-r border-solid"></div>
+          <div className="h-3 border-r border-solid" />
           <div>{week}</div>
         </div>
       )) ??

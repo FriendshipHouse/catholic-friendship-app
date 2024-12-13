@@ -30,7 +30,7 @@ function AboutLayout({ children }: Readonly<RootProvider>) {
         <div className="flex h-full flex-col">
           <div className="flex flex-col gap-10 px-5 pt-5 md:px-10 md:pt-10">
             <TitleHighlight>{t(title)}</TitleHighlight>
-            <div className="w-full border-b border-primary-30"></div>
+            <div className="w-full border-b border-primary-30" />
           </div>
           <div className="h-full p-5 md:p-10">{children}</div>
         </div>

@@ -27,14 +27,14 @@ function Footer() {
             <LogoFS />
             <div className="hidden text-sm font-medium lg:flex">{t('footer.friendShipCenter')}</div>
           </Link>
-          <div className="h-4 rotate-12 border-l border-gray-70 md:hidden"></div>
+          <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>
-        <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex"></div>
+        <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex" />
         <Link href="https://www.lovecana.org.tw/index.php" className="footerLogoLink">
           <LogoCana />
         </Link>
       </div>
-      <div className="w-full border-t border-solid border-gray-30 md:h-full md:w-0 md:border-l md:border-t-0"></div>
+      <div className="w-full border-t border-solid border-gray-30 md:h-full md:w-0 md:border-l md:border-t-0" />
       <div className="flex flex-wrap justify-center gap-3 py-2 md:py-0">
         <div className="text-gray-60 md:hidden lg:flex">{t('menu.link')}</div>
         <div className="flex flex-wrap justify-center gap-3">
@@ -45,7 +45,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="w-full border-t border-solid border-gray-30 md:h-full md:w-0 md:border-l md:border-t-0"></div>
+      <div className="w-full border-t border-solid border-gray-30 md:h-full md:w-0 md:border-l md:border-t-0" />
       <div className="flex items-center gap-4">
         <Link
           href="https://www.facebook.com/groups/113455488704730/?ref=share"

@@ -146,7 +146,7 @@
     "title3": "with Miracle in Cana"
   },
   "footer": {
-    "friendShipCenter": "Catholic Friendship House"
+    "friendshipCenter": "Catholic Friendship House"
   },
   "header": {
     "index": "Index",
@@ -160,7 +160,7 @@
     "priest": "Forever Shepherd - Father Alan",
     "donate": "Donation Support",
     "contact": "Contact Information",
-    "friendShip": "Friendship House",
+    "friendship": "Friendship House",
     "language": "Language Service Center"
   },
   "about-priest": {
@@ -190,7 +190,7 @@
     "priest": "Forever Shepherd - Father Alan",
     "donate": "Donation Support",
     "contact": "Contact Information",
-    "friendShip": "Friendship House",
+    "friendship": "Friendship House",
     "language": "Language Service Center",
     "religion": "Religious activities",
     "group": "Youth Faith Group",

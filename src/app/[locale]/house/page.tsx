@@ -11,7 +11,7 @@ const aboutButtonList = [
   { value: 'priest' },
   { value: 'donate' },
   { value: 'contact' },
-  { value: 'friendShip' },
+  { value: 'friendship' },
   { value: 'language' },
 ];
 

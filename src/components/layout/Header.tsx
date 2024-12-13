@@ -51,7 +51,7 @@ function PageHeader() {
     { key: 'priest', label: 'priest' },
     { key: 'donate', label: 'donate' },
     { key: 'contact', label: 'contact' },
-    { key: 'friendShip', label: 'friendShip' },
+    { key: 'friendship', label: 'friendship' },
     { key: 'language', label: 'language' },
   ];
 

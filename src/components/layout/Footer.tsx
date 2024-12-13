@@ -25,7 +25,7 @@ function Footer() {
         <div className="flex items-center gap-3">
           <Link href="/" className="footerLogoLink group flex items-center gap-2">
             <LogoFS />
-            <div className="hidden text-sm font-medium lg:flex">{t('footer.friendShipCenter')}</div>
+            <div className="hidden text-sm font-medium lg:flex">{t('footer.friendshipCenter')}</div>
           </Link>
           <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>

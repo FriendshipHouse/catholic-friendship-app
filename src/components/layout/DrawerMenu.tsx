@@ -25,7 +25,7 @@ const aboutList = [
   { value: 'priest' },
   { value: 'donate' },
   { value: 'contact' },
-  { value: 'friendShip' },
+  { value: 'friendship' },
   { value: 'language' },
 ];
 

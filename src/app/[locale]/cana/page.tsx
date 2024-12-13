@@ -10,14 +10,11 @@ import canaImage from '@/../public/general/img-cana.png';
 function Cana() {
   const t = useTranslations();
 
-  const canaDescription = (
-    <div className="leading-6">
-      專屬天主教友的服務，<br></br>
-      從婚前主內聯姻教育到協助未婚青年尋找相同信仰的對象；<br></br>
-      婚姻是一件聖事，標記着天主的愛~<br></br>
-      讓我們的教會有一個更健康的未來。
-    </div>
-  );
+  const canaDescription = {
+    content:
+      '專屬天主教友的服務，\n從婚前主內聯姻教育到協助未婚青年尋找相同信仰的對象；\n婚姻是一件聖事，標記着天主的愛~\n讓我們的教會有一個更健康的未來。',
+  };
+
   const contentList = [
     {
       key: '1',
@@ -62,7 +59,7 @@ function Cana() {
             <ArrowRightOutlined className="text-xs" />
           </Button>
         </div>
-        <div className="leading-6">{canaDescription}</div>
+        <div className="leading-7 whitespace-pre-wrap">{canaDescription.content}</div>
       </div>
       <div className="border-b border-b-primary-30" />
       <div className="flex flex-col gap-8 md:p-5 leading-6">{canaContent}</div>

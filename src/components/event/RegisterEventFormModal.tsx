@@ -1,7 +1,7 @@
 'use client';
 
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import { App, Checkbox, DatePicker, Form, Input, Modal, Popover, Radio, Select } from 'antd';
@@ -14,6 +14,7 @@ import { useParams } from 'next/navigation';
 
 import useActivities from '@/hooks/useActivities';
 import useEvents from '@/hooks/useEvents';
+import useMyRegistrations from '@/hooks/useMyRegistrations';
 import { INITIAL_REGISTER_EVENT_VALUE, registerEventModal } from '@/jotai/registerEventModal';
 
 function RegisterEventFormModal() {
@@ -28,8 +29,9 @@ function RegisterEventFormModal() {
   const [openModal, setOpenModal] = useAtom(registerEventModal);
 
   const [openCancelConfirm, setOpenCancelConfirm] = useState<boolean>(false);
-  const [othersClick, setOthersClick] = useState<boolean>(false);
+  const [isKnowInfoOthers, setIsKnowInfoOthers] = useState<boolean>(false);
   const [isFetchLoading, setIsFetchLoading] = useState<boolean>(false);
+  const [dateSelect, setDateSelect] = useState<string>();
 
   const { message } = App.useApp();
 
@@ -41,6 +43,8 @@ function RegisterEventFormModal() {
     categoryId,
     eventId as string
   );
+
+  const { data: myRegistrations } = useMyRegistrations();
 
   const isLoading = isActivitiesLoading || isFetchLoading;
 
@@ -75,9 +79,27 @@ function RegisterEventFormModal() {
       }
       return false;
     })
-    .map((item) => ({ label: `${item.name}: ${item.date}`, value: item._id }));
+    .map((item) => ({ label: `${item.name}: ${item.date}`, value: item._id, date: item.date }));
+
+  const isRegistered = useMemo(
+    () =>
+      dateOptions
+        .map((option) => {
+          const registeredId = myRegistrations?.some(
+            (data) => data.activityId === option.value && data.date === option.date
+          );
+          return registeredId ? option.value : null;
+        })
+        .filter((id) => id !== null),
+    [dateOptions, myRegistrations]
+  );
 
   const onFinish = async (formData: RegisterFormValue<string[]>) => {
+    const isActivityRegistered =
+      Array.isArray(dateSelect) && dateSelect?.some((date: string) => isRegistered?.includes(date));
+
+    if (isActivityRegistered) return message.error(t('toast.dataDuplicated'));
+
     const { id, knowInfo, birthday, activityId } = formData;
     setIsFetchLoading(true);
 
@@ -189,6 +211,7 @@ function RegisterEventFormModal() {
               placeholder={t('register.dateRule')}
               options={dateOptions}
               loading={isActivitiesLoading}
+              onChange={(value) => setDateSelect(value)}
             />
           </Form.Item>
 
@@ -304,13 +327,13 @@ function RegisterEventFormModal() {
               <Checkbox value="lineGroup">{t('register.lineGroup')}</Checkbox>
               <Checkbox value="friends">{t('register.friends')}</Checkbox>
               <Checkbox value="apostles">{t('register.apostles')}</Checkbox>
-              <Checkbox value="others" onChange={(e) => setOthersClick(e.target.checked)}>
+              <Checkbox value="others" onChange={(e) => setIsKnowInfoOthers(e.target.checked)}>
                 {t('register.others')}
               </Checkbox>
             </Checkbox.Group>
           </Form.Item>
 
-          {othersClick && (
+          {isKnowInfoOthers && (
             <Form.Item name="otherKnowInfo">
               <Input placeholder={t('register.othersPlaceholder')} />
             </Form.Item>

@@ -1,5 +1,6 @@
 'use client';
 
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 
 import { QuestionCircleOutlined } from '@ant-design/icons';
@@ -9,7 +10,6 @@ import dayjs from 'dayjs';
 import { useAtom } from 'jotai';
 import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 import { activityModal } from '@/jotai/activityModal';
 import {
@@ -135,7 +135,7 @@ function RegisterActivityFormModal() {
         <div className="text-lg font-bold">{t('register.title')}</div>
         <div className="flex gap-2">
           {avatar && (
-            <Image
+            <img
               src={avatar}
               alt="avatar"
               className="h-4 w-4 overflow-hidden rounded-full lg:h-[20px] lg:w-[20px]"

@@ -1,5 +1,8 @@
 'use client';
 
+import { useState } from 'react';
+
+import { Button } from 'antd';
 import { useTranslations } from 'next-intl';
 import { Facebook, Line } from 'react-bootstrap-icons';
 
@@ -7,6 +10,8 @@ import LogoCana from '@/components/icon/LogoCana';
 import LogoFS from '@/components/icon/LogoFS';
 
 import { Link } from '@/i18n/routing';
+
+import LineModal from './LineModal';
 
 const linkItems = [
   { value: 'about', href: '/house/about' },
@@ -19,6 +24,9 @@ const linkItems = [
 
 function Footer() {
   const t = useTranslations();
+
+  const [lineModalOpen, setLineModalOpen] = useState(false);
+
   return (
     <div className="relative z-10 flex w-full flex-col items-center gap-3 border-t border-gray-30 bg-gray-10 p-3 md:flex-row md:justify-around md:gap-2 md:bg-transparent">
       <div className="flex items-center justify-center gap-3 sm:flex-row">
@@ -53,9 +61,14 @@ function Footer() {
         >
           <Facebook />
         </Link>
-        <Link href="/" className="footerLogoLink text-lg">
-          <Line />
-        </Link>
+        <Button
+          type="text"
+          className="footerLogoLink text-lg !p-0 hover:!bg-transparent !w-5"
+          onClick={() => setLineModalOpen(true)}
+        >
+          <Line className="w-full h-full" />
+        </Button>
+        <LineModal open={lineModalOpen} setOpen={setLineModalOpen} />
       </div>
     </div>
   );

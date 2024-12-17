@@ -22,6 +22,7 @@
   "toast": {
     "saveSuccess": "儲存成功",
     "saveFailed": "儲存失敗",
+    "dataDuplicated": "您已報名，無需重複提交",
     "deleteSuccess": "刪除成功",
     "deleteFailed": "刪除失敗",
     "dragFailed": "拖曳失敗"

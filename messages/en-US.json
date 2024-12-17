@@ -22,6 +22,7 @@
   "toast": {
     "saveSuccess": "Save successful",
     "saveFailed": "Save failed",
+    "dataDuplicated": "You are already registered; no need to resubmit.",
     "deleteSuccess": "Delete successful",
     "deleteFailed": "Delete failed",
     "dragFailed": "Drag failed"

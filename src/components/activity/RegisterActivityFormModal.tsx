@@ -1,7 +1,7 @@
 'use client';
 
 /* eslint-disable @next/next/no-img-element */
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import { App, Checkbox, DatePicker, Form, Input, Modal, Popover, Radio } from 'antd';
@@ -11,6 +11,7 @@ import { useAtom } from 'jotai';
 import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 
+import useMyRegistrations from '@/hooks/useMyRegistrations';
 import { activityModal } from '@/jotai/activityModal';
 import {
   INITIAL_REGISTER_ACTIVITY_VALUE,
@@ -44,6 +45,13 @@ function RegisterActivityFormModal() {
     date = '',
   } = activityData || {};
 
+  const { data: myRegistrations } = useMyRegistrations();
+
+  const isRegistered = useMemo(() => {
+    const { _id, date } = activityData;
+    return myRegistrations?.find((data) => data.activityId === _id && data.date === date);
+  }, [activityData, myRegistrations]);
+
   const popover = (popoverTitle: string, popoverContent: string) => (
     <Popover content={t(`register.${popoverContent}`)} className="flex items-center gap-2">
       <div>{t(`register.${popoverTitle}`)}</div>
@@ -54,6 +62,8 @@ function RegisterActivityFormModal() {
   );
 
   const onFinish = async (formData: RegisterFormValue) => {
+    if (isRegistered) return message.error(t('toast.dataDuplicated'));
+
     const { id, birthday, knowInfo } = formData;
     setIsFetchLoading(true);
 

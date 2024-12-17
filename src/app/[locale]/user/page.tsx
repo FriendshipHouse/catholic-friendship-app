@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { Button, Empty, Table, Tabs } from 'antd';
 import axios from 'axios';
+import dayjs from 'dayjs';
 import { useSetAtom } from 'jotai';
 import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
@@ -66,6 +67,8 @@ function User() {
       render: (_: string, data: MyRegistration) => {
         return <DateFormat date={data.date} isTableList={true} />;
       },
+      sorter: (a: { date: string }, b: { date: string }) =>
+        dayjs(a.date).valueOf() - dayjs(b.date).valueOf(),
     },
     {
       key: 'activityName',
@@ -73,6 +76,8 @@ function User() {
       render: (_: string, data: MyRegistration) => {
         return <div className="cursor-default">{data.activityName}</div>;
       },
+      sorter: (a: { activityName: string }, b: { activityName: any }) =>
+        a.activityName.localeCompare(b.activityName),
     },
     {
       key: 'time',
@@ -104,6 +109,8 @@ function User() {
     },
   ];
 
+  const tableDataSource = myRegistrations.map((item) => ({ ...item, key: item._id }));
+
   const onRowForModal = (MyRegistration: MyRegistration) => {
     const { activityId } = MyRegistration;
     const activityModalData = activities.flat().find((data) => data._id === activityId);
@@ -133,7 +140,7 @@ function User() {
         <div className="relative flex w-full flex-col">
           <Tabs items={tabItems} className="[&>.ant-tabs-nav]:!mb-0" />
           <Table
-            dataSource={myRegistrations}
+            dataSource={tableDataSource}
             loading={isMyRegistrationLoading || isActivitiesLoading}
             columns={columns}
             size="small"

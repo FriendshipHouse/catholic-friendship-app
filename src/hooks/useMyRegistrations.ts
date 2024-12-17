@@ -3,6 +3,7 @@ import useSWRImmutable from 'swr/immutable';
 import { fetcher } from '@/lib/fetcher';
 
 export type MyRegistration = {
+  _id: string;
   categoryId: string;
   eventId: string;
   eventName: string;

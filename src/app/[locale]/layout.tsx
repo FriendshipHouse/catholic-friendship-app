@@ -4,8 +4,6 @@ import PageLayout from '@/components/layout/PageLayout';
 import ClientProvider from '@/components/providers/ClientProvider';
 import ServerProvider from '@/components/providers/ServerProvider';
 
-import { routing } from '@/i18n/routing';
-
 type LocaleLayoutProps = RootProvider & {
   params: { locale: Locale };
 };
@@ -17,10 +15,6 @@ export async function generateMetadata({ params: { locale } }: LocaleLayoutProps
     title: t('metadata.title'),
     description: t('metadata.description'),
   };
-}
-
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {

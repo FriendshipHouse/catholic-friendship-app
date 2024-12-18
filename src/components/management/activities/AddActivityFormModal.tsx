@@ -13,6 +13,7 @@ import {
   Radio,
   TimePicker,
 } from 'antd';
+import { RangePickerProps } from 'antd/es/date-picker';
 import axios from 'axios';
 import dayjs from 'dayjs';
 import { useTranslations } from 'next-intl';
@@ -49,13 +50,18 @@ function ActivitiesFormModal({
   const categoryId = searchParams.get('categoryId');
   const eventId = searchParams.get('eventId');
 
-  const { mutate } = useActivities(categoryId, eventId);
+  const { data: activities, mutate } = useActivities(categoryId, eventId);
 
   const [datePickerType, setDatePickerType] = useState<DatePickerType>('dateBySingle');
 
   useEffect(() => {
     if (!open) setDatePickerType('dateBySingle');
   }, [open]);
+
+  const disabledDate: RangePickerProps['disabledDate'] = (current) => {
+    const existedDates = activities?.map(({ date }) => dayjs(`${date}`)) || [];
+    return existedDates.some((date) => date.isSame(current, 'day'));
+  };
 
   const onCreate = async (formData: ActivitiesFormValue[]) => {
     setIsFetchLoading(true);
@@ -150,6 +156,7 @@ function ActivitiesFormModal({
               disabled={isLoading}
               maxTagCount="responsive"
               format="YYYY-MM-DD"
+              disabledDate={disabledDate}
             />
           </Form.Item>
 

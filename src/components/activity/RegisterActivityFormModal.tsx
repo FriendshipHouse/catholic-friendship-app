@@ -45,7 +45,7 @@ function RegisterActivityFormModal() {
     date = '',
   } = activityData || {};
 
-  const { data: myRegistrations } = useMyRegistrations();
+  const { data: myRegistrations = [] } = useMyRegistrations();
 
   const isRegistered = useMemo(() => {
     const { _id, date } = activityData;

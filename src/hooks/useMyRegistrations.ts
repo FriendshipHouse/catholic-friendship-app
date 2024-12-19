@@ -1,3 +1,4 @@
+import { useSession } from 'next-auth/react';
 import useSWRImmutable from 'swr/immutable';
 
 import { fetcher } from '@/lib/fetcher';
@@ -21,7 +22,12 @@ export type MyRegistration = {
 };
 
 const useMyRegistrations = () => {
-  return useSWRImmutable<MyRegistration[]>('/api/myRegistrations', fetcher);
+  const { status } = useSession();
+  const isLogin = status === 'authenticated';
+
+  const key = isLogin ? '/api/myRegistrations' : null;
+
+  return useSWRImmutable<MyRegistration[]>(key, fetcher);
 };
 
 export default useMyRegistrations;

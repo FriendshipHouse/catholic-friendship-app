@@ -44,7 +44,7 @@ function RegisterEventFormModal() {
     eventId as string
   );
 
-  const { data: myRegistrations } = useMyRegistrations();
+  const { data: myRegistrations = [] } = useMyRegistrations();
 
   const isLoading = isActivitiesLoading || isFetchLoading;
 

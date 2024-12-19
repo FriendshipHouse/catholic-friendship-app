@@ -1,5 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
+
+import { notification } from 'antd';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
@@ -7,6 +10,7 @@ import {
   ArrowLeftShort,
   ArrowRightShort,
   ArrowUpShort,
+  PinMap,
 } from 'react-bootstrap-icons';
 
 import TitleHighlight from '@/components/TitleHighlight';
@@ -19,6 +23,21 @@ import imageJesus from '@/../public/general/img-index.png';
 export default function Index() {
   const t = useTranslations();
 
+  const [api, contextHolder] = notification.useNotification();
+
+  const openNotification = () => {
+    api.open({
+      message: '我們搬家囉~',
+      description: '教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩~',
+      icon: <PinMap width={14} />,
+      duration: 5.5,
+    });
+  };
+
+  useEffect(() => {
+    openNotification();
+  }, []);
+
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
     { value: 'cana', pathname: '/cana' },
@@ -28,6 +47,7 @@ export default function Index() {
 
   return (
     <div className="relative w-full">
+      {contextHolder}
       <FloatButton />
       <Background />
       <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">

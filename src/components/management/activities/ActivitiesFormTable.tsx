@@ -257,7 +257,7 @@ function ActivitiesFormTable() {
 
   const tableColumns = columns.map((item) => ({
     ...item,
-    hidden: !checkboxList.includes(item.key as string),
+    hidden: !checkboxList.includes(item.key),
   }));
 
   const expandedRowRender = (formData: ActivitiesFormValue) => {
@@ -319,7 +319,7 @@ function ActivitiesFormTable() {
         columns={tableColumns}
         rowSelection={rowSelection}
         loading={isLoading}
-        expandable={{ expandedRowRender, expandIconColumnIndex: 7 }}
+        expandable={{ expandedRowRender }}
         locale={{ emptyText }}
         footer={footer}
         scroll={{ x: 1024 }}

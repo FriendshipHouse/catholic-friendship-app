@@ -28,7 +28,7 @@ export default function Index() {
   const openNotification = () => {
     api.open({
       message: '我們搬家囉~',
-      description: '教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩~',
+      description: '教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~',
       icon: <PinMap width={14} />,
       duration: 5.5,
     });

@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { checkAuthorization } from '@/lib/checkAuthorization';
 import connectMongo from '@/lib/connectMongo';
 import Activity from '@/models/activitiesModel';
+import Registrations from '@/models/registrationsModel';
 
 type Query = {
   categoryId?: string;
@@ -101,19 +102,39 @@ export async function DELETE(req: NextRequest) {
 
   const activityIds = await req.json();
 
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
   try {
     const objectIds = activityIds?.map(
       (activityId: string) => new mongoose.Types.ObjectId(activityId)
     );
 
+    const queryRegistrations = { $or: [{ activityId: { $in: objectIds } }] };
+
+    const registrations = await Registrations.find(queryRegistrations);
+
+    const registrationIds = registrations.map((_id) => _id).filter((id) => id);
+
+    await Registrations.deleteMany({ _id: registrationIds });
+
     const result = await Activity.deleteMany({ _id: objectIds });
 
     if (result?.deletedCount === 0) {
+      session.abortTransaction();
+      session.endSession();
+
       return NextResponse.json({ message: 'Activity not found' }, { status: 404 });
     }
 
+    session.commitTransaction();
+    session.endSession();
+
     return NextResponse.json({ message: 'Activity deleted successfully' }, { status: 200 });
   } catch (error) {
+    session.abortTransaction();
+    session.endSession();
+
     if (error instanceof mongoose.Error.ValidationError) {
       return NextResponse.json({ message: error.message }, { status: 400 });
     }

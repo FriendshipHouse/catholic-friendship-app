@@ -3,7 +3,9 @@ import mongoose from 'mongoose';
 import { NextRequest, NextResponse } from 'next/server';
 
 import { checkAuthorization } from '@/lib/checkAuthorization';
+import Activity from '@/models/activitiesModel';
 import Event from '@/models/eventsModel';
+import Registrations from '@/models/registrationsModel';
 
 type NextParams = {
   params: {
@@ -20,17 +22,38 @@ export async function DELETE(req: NextRequest, { params }: NextParams) {
 
   const { eventId } = params;
 
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
   try {
     const objectId = new mongoose.Types.ObjectId(eventId);
+
+    const activities = await Activity.find({ eventId });
+    const registrations = await Registrations.find({ eventId });
+
+    const activityIds = (activities ?? []).map((_id) => _id).filter((id) => id);
+    const registrationIds = (registrations ?? []).map((_id) => _id).filter((id) => id);
+
+    await Activity.deleteMany({ _id: activityIds });
+    await Registrations.deleteMany({ _id: registrationIds });
 
     const result = await Event.deleteOne({ _id: objectId });
 
     if (result?.deletedCount === 0) {
+      await session.abortTransaction();
+      session.endSession();
+
       return NextResponse.json({ message: 'Event not found' }, { status: 404 });
     }
 
+    await session.commitTransaction();
+    session.endSession();
+
     return NextResponse.json({ message: 'Event deleted successfully' }, { status: 200 });
   } catch (error) {
+    await session.abortTransaction();
+    session.endSession();
+
     if (error instanceof mongoose.Error.ValidationError) {
       return NextResponse.json({ message: error.message }, { status: 400 });
     }

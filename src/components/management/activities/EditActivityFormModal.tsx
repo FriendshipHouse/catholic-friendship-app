@@ -73,6 +73,10 @@ function ActivitiesFormModal({
   };
 
   const onFinish = async (formData: ActivitiesFormValue) => {
+    if (formData.registerType === 'system') {
+      delete formData.googleFormLink;
+    }
+
     const { date, time } = formData;
 
     const activityTime = (time ?? []).map((dateTime) => dayjs(dateTime).format('HH:mm'));

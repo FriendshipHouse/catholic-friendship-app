@@ -78,6 +78,10 @@ function ActivitiesFormModal({
   };
 
   const onFinish = async (formData: ActivitiesFormValue) => {
+    if (formData.registerType === 'system') {
+      delete formData.googleFormLink;
+    }
+
     const { date, time } = formData;
 
     const activityTime = (time ?? []).map((dateTime) => dayjs(dateTime).format('HH:mm'));
@@ -213,7 +217,7 @@ function ActivitiesFormModal({
             name="registerType"
             label={t('activities.registerType')}
             rules={[{ required: true, message: t('activities.googleFormLinkRule') }]}
-            initialValue={initialValue?.registerType ?? 'google'}
+            initialValue={initialValue?.registerType ?? 'system'}
           >
             <Radio.Group disabled={isLoading}>
               <Radio value="google">{t('activities.googleFormLink')}</Radio>

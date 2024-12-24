@@ -25,6 +25,7 @@ export default function Index() {
 
   const [api, contextHolder] = notification.useNotification();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const openNotification = () => {
     api.open({
       message: '我們搬家囉~',
@@ -36,7 +37,7 @@ export default function Index() {
 
   useEffect(() => {
     openNotification();
-  }, []);
+  }, [openNotification]);
 
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },

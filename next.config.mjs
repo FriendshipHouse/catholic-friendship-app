@@ -9,16 +9,16 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'tcupa6ohiuf8fs5q.public.blob.vercel-storage.com',
+        hostname: process.env.NEXT_PUBLIC_IMAGE_HOSTNAME,
         port: '',
       },
     ],
   },
 };
 
-export default withSentryConfig(nextConfig, {
-  org: 'friendshiphouse',
-  project: 'catholic-friendship-app',
+export default withSentryConfig(withNextIntl(nextConfig), {
+  org: process.env.SENTRY_ORG,
+  project: process.env.SENTRY_PROJECT,
   authToken: process.env.SENTRY_AUTH_TOKEN,
   silent: !process.env.CI,
   widenClientFileUpload: true,

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, ReactNode, useState } from 'react';
 
 import { DeleteOutlined, UploadOutlined } from '@ant-design/icons';
 import { App, Button, Divider, Popconfirm, Select, Upload, UploadProps } from 'antd';
@@ -15,17 +15,95 @@ type DropdownImagesProps = {
   prefix: 'categories/images' | 'activities/images';
 };
 
+type DropdownRenderProps = {
+  menu: ReactElement;
+  props: UploadProps;
+};
+
+type OptionRenderProps = {
+  label?: ReactNode;
+  value?: any;
+  onRemoveImage: (url: string) => Promise<void>;
+  isLoading: boolean;
+};
+
 const getFileNameByPathname = (pathname: string) => {
   const filename = pathname.split('/').pop();
   return filename;
 };
+
+const CustomDropdown = ({ menu, props }: DropdownRenderProps) => {
+  const t = useTranslations();
+  return (
+    <>
+      {menu}
+      <Divider style={{ margin: '8px 0' }} />
+      <div className="w-full justify-end">
+        <Upload {...props}>
+          <Button type="text" block icon={<UploadOutlined />}>
+            {t('uploadImages.upload')}
+          </Button>
+        </Upload>
+      </div>
+    </>
+  );
+};
+
+const dropdownRender = ({ menu, props }: DropdownRenderProps) => (
+  <CustomDropdown menu={menu} props={props} />
+);
+
+const CustomOption = ({ label, value, onRemoveImage, isLoading }: OptionRenderProps) => {
+  const t = useTranslations();
+
+  return (
+    <div className="flex w-full items-center justify-between px-3 py-[5px]">
+      <div className="flex items-center gap-3">
+        <Image
+          src={value}
+          alt="Image"
+          width={300}
+          height="0"
+          className="h-auto w-full max-w-[48px]"
+        />
+        <div>{label}</div>
+      </div>
+      <Popconfirm
+        title={t('uploadImages.noticeTitle')}
+        description={t('uploadImages.noticeContent')}
+        okText={t('common.confirm')}
+        cancelText={t('common.cancel')}
+        onConfirm={(e) => {
+          if (e) e.stopPropagation();
+          onRemoveImage(value);
+        }}
+        onCancel={(e) => {
+          if (e) e.stopPropagation();
+        }}
+        cancelButtonProps={{ disabled: isLoading }}
+      >
+        <Button
+          type="text"
+          icon={<DeleteOutlined />}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+        />
+      </Popconfirm>
+    </div>
+  );
+};
+
+const optionRender = ({ label, value, onRemoveImage, isLoading }: OptionRenderProps) => (
+  <CustomOption label={label} value={value} onRemoveImage={onRemoveImage} isLoading={isLoading} />
+);
 
 function DropdownImages({
   onChange,
   value,
   defaultValue,
   prefix = 'categories/images',
-}: DropdownImagesProps) {
+}: Readonly<DropdownImagesProps>) {
   const t = useTranslations();
   const { message } = App.useApp();
 
@@ -59,10 +137,10 @@ function DropdownImages({
         message.error(error?.message);
         return;
       }
-      message.success(t('toast.saveFailed'));
+      message.error(t('toast.saveFailed'));
+    } finally {
+      setIsUploading(false);
     }
-
-    setIsUploading(false);
   };
 
   const onRemoveImage = async (url: string) => {
@@ -80,8 +158,9 @@ function DropdownImages({
         return;
       }
       message.error(t('toast.saveFailed'));
+    } finally {
+      setIsUploading(false);
     }
-    setIsUploading(false);
   };
 
   const props: UploadProps = {
@@ -110,7 +189,15 @@ function DropdownImages({
 
       return isImage && isLt2M && !isMultiple;
     },
-    customRequest: ({ file }) => onUpload(file as File),
+    customRequest: ({ file }) => {
+      onUpload(file as File)
+        .then(() => {
+          message.success('Upload successful!');
+        })
+        .catch((error) => {
+          message.error(`Upload failed: ${error.message}`);
+        });
+    },
   };
 
   return (
@@ -123,60 +210,10 @@ function DropdownImages({
       defaultValue={defaultValue}
       value={value}
       onSelect={(value, { label }) => {
-        if (onChange) onChange(label!);
+        if (onChange) onChange(label);
       }}
-      dropdownRender={(menu) => (
-        <>
-          {menu}
-          <Divider style={{ margin: '8px 0' }} />
-          <div className="w-full justify-end">
-            <Upload {...props}>
-              <Button type="text" block icon={<UploadOutlined />}>
-                {t('uploadImages.upload')}
-              </Button>
-            </Upload>
-          </div>
-        </>
-      )}
-      optionRender={(option) => {
-        const { label, value } = option;
-        return (
-          <div className="flex w-full items-center justify-between px-3 py-[5px]">
-            <div className="flex items-center gap-3">
-              <Image
-                src={value as string}
-                alt="Image"
-                width={300}
-                height="0"
-                className="h-auto w-full max-w-[48px]"
-              />
-              <div>{label}</div>
-            </div>
-            <Popconfirm
-              title={t('uploadImages.noticeTitle')}
-              description={t('uploadImages.noticeContent')}
-              okText={t('common.confirm')}
-              cancelText={t('common.cancel')}
-              onConfirm={(e) => {
-                if (e) e.stopPropagation();
-                onRemoveImage(value as string);
-              }}
-              onCancel={(e) => {
-                if (e) e.stopPropagation();
-              }}
-              cancelButtonProps={{ disabled: isLoading }}
-            >
-              <Button
-                type="text"
-                icon={<DeleteOutlined />}
-                onClick={(e) => {
-                  e.stopPropagation();
-                }}
-              />
-            </Popconfirm>
-          </div>
-        );
-      }}
+      dropdownRender={(menu: ReactElement) => dropdownRender({ menu, props })}
+      optionRender={({ label, value }) => optionRender({ label, value, onRemoveImage, isLoading })}
       options={options}
     />
   );

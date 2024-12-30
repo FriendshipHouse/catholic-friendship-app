@@ -24,7 +24,7 @@ function EventCard({ activities, isActivitiesLoading }: Readonly<EventCardType>)
     useImages('activities/images');
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    <div className="grid gap-4 xs:grid-cols-2 md:grid-cols-3">
       {activities.map((activityData) => {
         const { _id, image, date, name, time, location } = activityData ?? {};
 

@@ -31,7 +31,7 @@ function BreadcrumbGroup() {
 
   const previous = useMemo(() => {
     if (breadcrumbs.length < 2) return null;
-    return breadcrumbs[breadcrumbs.length - 2];
+    return breadcrumbs[breadcrumbs.length - 1];
   }, [breadcrumbs]);
 
   const { path: previousPath, key: previousKey } = previous ?? {};

@@ -20,9 +20,7 @@ function EventsIndexPage() {
 
   return (
     <Spin spinning={isLoading}>
-      <div
-        className={`xs:grid-cols-2 grid w-full flex-wrap justify-center gap-4 sm:grid-cols-4 md:grid-cols-5 ${categories.length > 5 && 'lg:grid-cols-6'}`}
-      >
+      <div className="xs:grid-cols-2 grid w-full flex-wrap justify-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {categories.map(({ _id: categoryId, name: categoryName, image, remark }) => {
           const { url = '' } =
             categoryImages.find((imageInfo) => {
@@ -36,33 +34,35 @@ function EventsIndexPage() {
               key={categoryId}
               className="container flex flex-col items-center gap-6 rounded-lg border border-primary-30 p-5 shadow-4xl"
             >
-              <div>
-                <Spin spinning={isCategoriesImageLoading} indicator={<LoadingOutlined spin />}>
-                  {url && (
-                    <Image
-                      src={url}
-                      alt="image"
-                      width={100}
-                      height={100}
-                      className="h-auto w-28"
-                      loading="lazy"
-                    />
-                  )}
-                </Spin>
-              </div>
-              <div className="text-lg font-bold">{categoryName}</div>
-              <div className="flex h-full flex-col justify-between gap-2">
-                {filterEvents.map(({ _id: eventId, name: eventName }, index) => (
-                  <div key={eventId} className="flex flex-col gap-2 text-center">
-                    <Link href={`/events/${eventId}`} className="footerLogoLink">
-                      {eventName}
-                    </Link>
-                    {index !== filterEvents.length - 1 && (
-                      <div className="border-b border-primary-30" />
-                    )}
-                  </div>
-                ))}
-                <div className="mt-6 text-center text-primary-50">{remark}</div>
+              <Spin spinning={isCategoriesImageLoading} indicator={<LoadingOutlined spin />}>
+                {url && (
+                  <Image
+                    src={url}
+                    alt="image"
+                    width={100}
+                    height={100}
+                    className="h-auto w-28"
+                    loading="lazy"
+                  />
+                )}
+              </Spin>
+              <div className="flex h-full flex-col justify-between">
+                <div className="flex flex-col gap-2">
+                  <div className="text-lg font-bold text-center pb-4">{categoryName}</div>
+                  {filterEvents.map(({ _id: eventId, name: eventName }, index) => (
+                    <div key={eventId} className="flex flex-col justify-start gap-2 text-center">
+                      <Link href={`/events/${eventId}`} className="footerLogoLink">
+                        {eventName}
+                      </Link>
+                      {index !== filterEvents.length - 1 && (
+                        <div className="border-b border-primary-30" />
+                      )}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-6 text-center justify-end flex flex-col text-primary-70">
+                  {remark}
+                </div>
               </div>
             </div>
           );

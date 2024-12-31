@@ -3,9 +3,6 @@
 import { Dispatch, SetStateAction } from 'react';
 
 import { Modal } from 'antd';
-import Image from 'next/image';
-
-import lineIdImage from '@/../public/general/img-lineId-cana.png';
 
 type LineModalProps = {
   open: boolean;
@@ -17,12 +14,12 @@ function LineModal({ open, setOpen }: Readonly<LineModalProps>) {
     <Modal
       open={open}
       footer={null}
-      title={<div className="text-lg font-bold">愛在加納LINE ID</div>}
+      title={<div>愛在加納LINE ID:</div>}
       onCancel={() => setOpen(false)}
       destroyOnClose
       className="flex flex-col justify-center items-center"
     >
-      <Image src={lineIdImage} alt="lineIdImage" className="w-40" />
+      <div className='font-bold text-xl p-10'>LOVECANA2015</div>
     </Modal>
   );
 }

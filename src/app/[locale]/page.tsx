@@ -25,19 +25,15 @@ export default function Index() {
 
   const [api, contextHolder] = notification.useNotification();
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const openNotification = () => {
+  useEffect(() => {
     api.open({
-      message: '我們搬家囉~',
+      message: <div className="font-bold">我們搬家囉~</div>,
       description: '教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~',
       icon: <PinMap width={14} />,
-      duration: 5.5,
+      duration: null,
+      placement: 'top',
     });
-  };
-
-  useEffect(() => {
-    openNotification();
-  }, [openNotification]);
+  }, [api]);
 
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },

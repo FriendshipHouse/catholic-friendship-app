@@ -66,3 +66,7 @@
     background: #ffdb70 !important;
   }
 }
+
+.ant-notification {
+  inset: 65px auto auto 50% !important;
+}

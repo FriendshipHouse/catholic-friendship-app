@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import PageLayout from '@/components/layout/PageLayout';
 import ClientProvider from '@/components/providers/ClientProvider';
 import ServerProvider from '@/components/providers/ServerProvider';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 type LocaleLayoutProps = RootProvider & {
   params: { locale: Locale };
@@ -23,6 +24,7 @@ export default async function LocaleLayout({ children, params: { locale } }: Loc
       <body>
         <ServerProvider locale={locale}>
           <ClientProvider>
+            <GoogleAnalytics />
             <PageLayout>{children}</PageLayout>
           </ClientProvider>
         </ServerProvider>

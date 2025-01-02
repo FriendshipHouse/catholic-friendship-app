@@ -11,19 +11,15 @@
   ],
   "redirects": [
     {
-      "source": "/:path*",
-      "destination": "/zh-TW/:path*",
+      "source": "/",
+      "destination": "/zh-TW",
       "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/zh-TW/:path*",
-      "destination": "/zh-TW/:path*"
-    },
-    {
-      "source": "/en-US/:path*",
-      "destination": "/en-US/:path*"
+      "source": "/",
+      "destination": "/zh-TW"
     }
   ],
   "trailingSlash": false

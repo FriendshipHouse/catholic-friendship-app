@@ -1,6 +1,5 @@
 import { useMemo } from 'react';
 
-import { ArrowLeftOutlined } from '@ant-design/icons';
 import { useTranslations } from 'next-intl';
 
 import { Link, usePathname } from '@/i18n/routing';
@@ -29,13 +28,6 @@ function BreadcrumbGroup() {
     return pathnamesWithPath;
   }, [pathname]);
 
-  const previous = useMemo(() => {
-    if (breadcrumbs.length < 2) return null;
-    return breadcrumbs[breadcrumbs.length - 1];
-  }, [breadcrumbs]);
-
-  const { path: previousPath, key: previousKey } = previous ?? {};
-
   return (
     <div>
       <div className="hidden gap-3 text-sm !text-gray-60 xs:flex">
@@ -52,12 +44,6 @@ function BreadcrumbGroup() {
             </div>
           ))}
       </div>
-      {previousPath && (
-        <Link href={previousPath} className="flex gap-2 text-sm !text-gray-60 xs:hidden">
-          <ArrowLeftOutlined />
-          <div>{t(previousKey)}</div>
-        </Link>
-      )}
     </div>
   );
 }

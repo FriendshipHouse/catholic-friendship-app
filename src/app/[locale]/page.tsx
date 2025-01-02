@@ -1,8 +1,8 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
-import { notification } from 'antd';
+import { Modal } from 'antd';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
@@ -10,7 +10,6 @@ import {
   ArrowLeftShort,
   ArrowRightShort,
   ArrowUpShort,
-  PinMap,
 } from 'react-bootstrap-icons';
 
 import TitleHighlight from '@/components/TitleHighlight';
@@ -20,20 +19,32 @@ import Background from '@/components/layout/Background';
 
 import imageJesus from '@/../public/general/img-index.png';
 
+type NotificationModalProps = {
+  open: boolean,
+  onCancel: () => void,
+}
+
+function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>) {
+
+  return (
+    <Modal
+      open={open}
+      footer={null}
+      title={<div className="font-bold">我們搬家囉~</div>}
+      onCancel={onCancel}
+      destroyOnClose
+    >
+      <div>{`教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~`}</div>
+    </Modal>
+  )
+}
+
 export default function Index() {
   const t = useTranslations();
 
-  const [api, contextHolder] = notification.useNotification();
+  const [openNotification, setOpenNotification] = useState(false)
 
-  useEffect(() => {
-    api.open({
-      message: <div className="font-bold">我們搬家囉~</div>,
-      description: '教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~',
-      icon: <PinMap width={14} />,
-      duration: null,
-      placement: 'top',
-    });
-  }, [api]);
+  useEffect(() => { setOpenNotification(true) }, [])
 
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
@@ -44,7 +55,7 @@ export default function Index() {
 
   return (
     <div className="relative w-full">
-      {contextHolder}
+      <NotificationModal open={openNotification} onCancel={() => setOpenNotification(false)} />
       <FloatButton />
       <Background />
       <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">

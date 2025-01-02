@@ -1,8 +1,11 @@
-import createMiddleware from "next-intl/middleware";
-import { routing } from "./i18n/routing";
+import createMiddleware from 'next-intl/middleware';
 
-export default createMiddleware(routing);
+import { routing } from './i18n/routing';
+
+export default createMiddleware(routing, {
+  localeDetection: true,
+});
 
 export const config = {
-  matcher: ["/", "/(en-US|zh-TW)/:path*"],
+  matcher: ['/', '/(en-US|zh-TW)/:path*'],
 };

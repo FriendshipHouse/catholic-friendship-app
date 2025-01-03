@@ -157,6 +157,7 @@ function Upcoming() {
             treeDataSimpleMode
             multiple
             treeCheckable
+            showSearch={false}
             showCheckedStrategy={SHOW_PARENT}
             treeData={treeData}
             loadData={onLoadData}

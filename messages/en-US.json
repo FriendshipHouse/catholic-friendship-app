@@ -149,20 +149,12 @@
   "footer": {
     "friendshipCenter": "Catholic Friendship House"
   },
-  "header": {
-    "index": "Index",
-    "about": "About Us",
-    "events": "Events",
-    "upcoming": "Upcoming",
-    "guide": "Event Guide"
-  },
   "about": {
     "member": "Members of House",
     "priest": "Forever Shepherd - Father Alan",
     "donate": "Donation Support",
     "contact": "Contact Information",
-    "friendship": "Friendship House",
-    "language": "Language Service Center"
+    "friendship": "Friendship House"
   },
   "about-priest": {
     "BookPriest": "About Father Alan",
@@ -193,50 +185,22 @@
     "donate": "Donation Support",
     "contact": "Contact Information",
     "friendship": "Friendship House",
-    "language": "Language Service Center",
     "religion": "Religious activities",
     "group": "Youth Faith Group",
     "growUp": "Personal growth",
     "single": "Singles events",
     "youth": "Youth activities",
     "marriage": "Miracle In Cana",
-    "guide": "Event Guide",
-
+    "cana": "About Miracle In Cana",
     "activities": "Events",
-    "mass": "mass",
-    "music": "music",
-    "pray": "pray",
-    "lan": "lan",
-    "mbti": "MBTI",
-    "communication": "communication",
-    "singleEvent": "singleEvent",
-    "train": "train",
-    "youthEvent": "youthEvent",
-    "outdoor": "outdoor",
-    "cana": "cana",
-    "nonMarriage": "nonMarriage",
-
     "BookPriest": "About Father Alan",
     "BookElder": "Elder Friends",
     "BookYouth": "Youth Friends",
     "BookColleague": "Colleague",
-
-    "aboutCana": "Click here for more details",
-
     "editor": "Web Backend Editing System",
     "categoriesManage": "Categories Management",
     "eventManage": "Event Management",
     "registerManage": "Register Management"
-  },
-
-  "events": {
-    "eventList": "Central Activity List",
-    "religion": "Religious activities",
-    "group": "Youth Faith Group",
-    "growUp": "Personal growth",
-    "single": "Singles events",
-    "youth": "Youth activities",
-    "marriage": "Miracle In Cana"
   },
   "upcoming": {
     "list": "List",

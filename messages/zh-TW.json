@@ -149,20 +149,13 @@
   "footer": {
     "friendshipCenter": "天主教友誼教友中心"
   },
-  "header": {
-    "index": "首頁",
-    "about": "關於中心",
-    "events": "中心活動",
-    "upcoming": "近期活動",
-    "guide": "活動引導"
-  },
+
   "about": {
     "member": "中心成員",
     "priest": "永遠的牧者-歐義明神父",
     "donate": "奉獻支持",
     "contact": "聯絡資訊",
-    "friendship": "社團法人台灣旅北友誼交流協會",
-    "language": "瑪利諾會語言中心"
+    "friendship": "社團法人台灣旅北友誼交流協會"
   },
   "about-priest": {
     "BookPriest": "關於歐神父",
@@ -193,49 +186,22 @@
     "donate": "奉獻支持",
     "contact": "聯絡資訊",
     "friendship": "社團法人台灣旅北友誼交流協會",
-    "language": "瑪利諾會語言中心",
     "religion": "信仰活動",
     "group": "青年信仰團體",
     "growUp": "自我成長",
     "single": "未婚聯誼",
     "youth": "青年共融",
     "marriage": "愛在加納 ‧ 主內聯姻",
-    "guide": "活動引導",
-
-    "activities": "中心活動",
-    "mass": "周末青年彌撒",
-    "music": "青年音樂團體",
-    "pray": "祈禱學校~與周神父學祈禱",
-    "lan": "聖女小德蘭靈修之旅",
-    "mbti": "MBTI 16種性格型態工作坊",
-    "communication": "善意溝通工作坊",
-    "singleEvent": "未婚聯誼活動",
-    "train": "幸福列車",
-    "youthEvent": "台北社青共融日",
-    "outdoor": "戶外活動",
     "cana": "關於愛在加納",
-    "nonMarriage": "未婚聯誼",
-
+    "activities": "中心活動",
     "BookPriest": "關於歐神父",
     "BookElder": "老朋友篇",
     "BookYouth": "青年篇",
     "BookColleague": "同事篇",
-
-    "aboutCana": "更多內容請參考專頁內文",
-
     "editor": "後臺編輯系統",
     "categoriesManage": "類別列表管理",
     "eventManage": "活動管理",
     "registerManage": "報名方式管理"
-  },
-  "events": {
-    "eventList": "中心活動列表",
-    "religion": "信仰活動",
-    "group": "青年信仰團體",
-    "growUp": "自我成長",
-    "single": "未婚聯誼",
-    "youth": "青年共融",
-    "marriage": "愛在加納 ‧ 主內聯姻"
   },
   "upcoming": {
     "list": "列表",

@@ -54,7 +54,7 @@ function Cana() {
       <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-around">
         <div className="flex flex-col gap-4">
           <Image src={canaImage} alt="canaImage" />
-          <Button type="default" href="https://www.lovecana.org.tw/index.php">
+          <Button type="default" target="_blank" href="https://www.lovecana.org.tw/index.php">
             {t('cana.canaWeb')}
             <ArrowRightOutlined className="text-xs" />
           </Button>

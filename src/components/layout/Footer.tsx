@@ -38,7 +38,7 @@ function Footer() {
           <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>
         <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex" />
-        <Link href="https://www.lovecana.org.tw/index.php" className="footerLogoLink">
+        <Link href="https://www.lovecana.org.tw/index.php" target="_blank" className="footerLogoLink">
           <LogoCana />
         </Link>
       </div>
@@ -57,6 +57,7 @@ function Footer() {
       <div className="flex items-center gap-4">
         <Link
           href="https://www.facebook.com/groups/113455488704730/?ref=share"
+          target='_blank'
           className="footerLogoLink text-lg"
         >
           <Facebook />

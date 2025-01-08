@@ -10,7 +10,7 @@ function Logos() {
         <LogoFS />
       </Link>
       <div className="h-4 rotate-12 border-l border-primary-70" />
-      <Link href="https://www.lovecana.org.tw/index.php" className="headerLink h-8 w-auto">
+      <Link href="https://www.lovecana.org.tw/index.php" target="_blank" className="headerLink h-8 w-auto">
         <LogoCana />
       </Link>
     </div>

@@ -127,6 +127,7 @@ function Priest() {
                 type="default"
                 key={value}
                 href={url}
+                target="_blank"
                 className="!w-full !text-wrap !bg-white/20 !shadow-4xl !backdrop-blur"
               >
                 {t(value)}

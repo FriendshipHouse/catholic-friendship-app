@@ -17,7 +17,7 @@ const carContent =
     <div>附近停車場：</div>
     {carParking.map(({ parkingLot, mapHref }) => <div className="flex gap-2 items-center
     " key={parkingLot}>
-      <Button type="text" href={mapHref} className='!text-sm !p-0 !text-primary-70'><GeoAlt /></Button>
+      <Button type="text" target="_blank" href={mapHref} className='!text-sm !p-0 !text-primary-70'><GeoAlt /></Button>
       {parkingLot}
     </div>)}
   </div>

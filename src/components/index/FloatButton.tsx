@@ -17,7 +17,7 @@ function FloatButton() {
         </div>
       </Link>
       <Link
-        href="https://www.facebook.com/groups/113455488704730/?ref=share"
+        href="https://www.facebook.com/groups/113455488704730/?ref=share" target="_blank"
         className="flex h-8 w-8 items-end justify-center rounded-2xl bg-primary shadow-lg hover:bg-primary-50 overflow-hidden"
       >
         <div className="h-6 text-white">

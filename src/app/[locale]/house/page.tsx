@@ -12,7 +12,6 @@ const aboutButtonList = [
   { value: 'donate' },
   { value: 'contact' },
   { value: 'friendship' },
-  { value: 'language' },
 ];
 
 const content = {

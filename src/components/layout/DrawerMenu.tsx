@@ -26,7 +26,6 @@ const aboutList = [
   { value: 'donate' },
   { value: 'contact' },
   { value: 'friendship' },
-  { value: 'language' },
 ];
 
 function DrawerMenu() {

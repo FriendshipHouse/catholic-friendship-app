@@ -52,7 +52,6 @@ function PageHeader() {
     { key: 'donate', label: 'donate' },
     { key: 'contact', label: 'contact' },
     { key: 'friendship', label: 'friendship' },
-    { key: 'language', label: 'language' },
   ];
 
   const aboutListItems: MenuProps['items'] = aboutList.map(({ key, label }) => ({

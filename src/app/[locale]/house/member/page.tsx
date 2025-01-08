@@ -8,8 +8,7 @@ import avatarQiu from '@/../public/about/avatars/img-member-qiu.png';
 import avatarSu from '@/../public/about/avatars/img-member-su.png';
 import avatarTang from '@/../public/about/avatars/img-member-tang.png';
 import avatarWang from '@/../public/about/avatars/img-member-wang.png';
-import avatarYeh from '@/../public/about/avatars/img-member-yeh.png';
-import avatarYou from '@/../public/about/avatars/img-member-you.png';
+
 
 function Members() {
   const memberList = [
@@ -19,8 +18,6 @@ function Members() {
     { value: 'su', position: '牧靈工作者', name: '蘇美紗 小姐', avatarSrc: avatarSu },
     { value: 'qiu', position: '牧靈工作者', name: '邱加利 老師', avatarSrc: avatarQiu },
     { value: 'wang', position: '牧靈工作者', name: '王沛琪 小姐', avatarSrc: avatarWang },
-    { value: 'you', position: '語言老師', name: '游惠茹 老師', avatarSrc: avatarYou },
-    { value: 'yeh', position: '語言老師', name: '葉秋雨 老師', avatarSrc: avatarYeh },
   ];
 
   return (

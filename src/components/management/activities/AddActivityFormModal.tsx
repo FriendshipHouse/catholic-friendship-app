@@ -133,7 +133,7 @@ function ActivitiesFormModal({
             rules={[{ required: true, message: t('activities.titleRule') }]}
             initialValue={initialValue?.name}
           >
-            <Input placeholder={t('activities.title')} disabled={isLoading} />
+            <Input placeholder={t('activities.title')} disabled={isLoading} maxLength={20} showCount />
           </Form.Item>
 
           <Form.Item required label={t('activities.date')} className="!mb-0">
@@ -185,7 +185,7 @@ function ActivitiesFormModal({
               rules={[{ required: true, message: t('activities.locationRule') }]}
               initialValue={initialValue?.location}
             >
-              <Input placeholder={t('activities.locationPlaceholder')} disabled={isLoading} />
+              <Input placeholder={t('activities.locationPlaceholder')} disabled={isLoading} maxLength={20} showCount />
             </Form.Item>
           </div>
 

@@ -1,34 +1,46 @@
 'use client';
 
 import Script from 'next/script';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
 
 const GoogleAnalytics = () => {
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+
     useEffect(() => {
         if (!GA_TRACKING_ID) return;
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag(...args: any[]) {
-            window.dataLayer.push(args);
-        }
+        const handleRouteChange = () => {
+            let queryString = '';
+            if (searchParams) {
+                queryString = '?' + searchParams.toString();
+            }
 
-        window.gtag = gtag;
+            const url = pathname + queryString;
+            window.gtag('config', GA_TRACKING_ID, { page_path: url });
+        };
 
-        window.gtag('js', new Date());
-        window.gtag('config', GA_TRACKING_ID, {
-            page_path: window.location.pathname,
-        });
-    }, []);
-
-    if (!GA_TRACKING_ID) return null;
+        handleRouteChange();
+    }, [pathname, searchParams]);
 
     return (
-        <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-            strategy="afterInteractive"
-        />
+        <>
+            <Script
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_TRACKING_ID}');
+                `}
+            </Script>
+        </>
     );
 };
 

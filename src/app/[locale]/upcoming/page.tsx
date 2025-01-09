@@ -15,8 +15,8 @@ import ActivityModal from '@/components/activity/ActivityModal';
 import ActivitiesInputSearch from '@/components/upcoming/ActivitiesInputSearch';
 import DateSelectFilter from '@/components/upcoming/DateSelectFilter';
 import ActivityCalendar from '@/components/upcoming/views/ActivityCalendar';
-import ActivityCard from '@/components/upcoming/views/ActivityCard';
 import ActivityList from '@/components/upcoming/views/ActivityList';
+import ActivityCard from '@/components/ActivityCard';
 
 import useCategories from '@/hooks/useCategories';
 import useEvents from '@/hooks/useEvents';

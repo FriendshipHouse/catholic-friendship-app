@@ -25,7 +25,9 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
 
   return (
     <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-      {activities.map(({ _id, image, date, name, time, location }) => {
+      {activities.map((activityData) => {
+        const { _id, image, date, name, time, location } = activityData ?? {};
+
         const { url = '' } =
           activityImages.find((imageInfo) => {
             const filename = (imageInfo?.pathname ?? '').split('/').pop();
@@ -45,6 +47,7 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
                   width={300}
                   height="0"
                   className="flex min-h-64 w-full items-center sm:min-h-52"
+                  loading="lazy"
                 />
               </div>
             }
@@ -69,7 +72,7 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
                       <div className="text-primary">
                         <GeoAltFill />
                       </div>
-                      <div>{location}</div>
+                      <div className="text-wrap">{location}</div>
                     </div>
                   </div>
                 </div>

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import LoginModal from '@/components/LoginModal';
 import ActivityModal from '@/components/activity/ActivityModal';
-import EventCard from '@/components/event/EventCard';
+import ActivityCard from '@/components/ActivityCard';
 import RegisterEventFormModal from '@/components/event/RegisterEventFormModal';
 
 import eventEmptyImage from '@/../public/general/img-empty.png';
@@ -56,7 +56,7 @@ function EventPage({ params: { eventId } }: Readonly<EventPageProps>) {
           </div>
         )}
         <LoginModal />
-        <EventCard activities={activities} isActivitiesLoading={isActivitiesLoading} />
+        <ActivityCard activities={activities} isLoading={isActivitiesLoading} />
         <ActivityModal />
         <RegisterEventFormModal />
       </div>

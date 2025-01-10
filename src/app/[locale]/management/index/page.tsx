@@ -22,6 +22,7 @@ function ManagementIndex() {
     { value: 'eventsManage' },
     { value: 'activitiesManage' },
     { value: 'registerManage' },
+    { value: 'postersManage' },
   ];
 
   return (

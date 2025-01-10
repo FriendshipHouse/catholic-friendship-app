@@ -37,6 +37,20 @@
     "okButton": "是",
     "cancelButton": "否"
   },
+  "posters": {
+    "title": "海報名稱",
+    "titleRule": "請輸入海報名稱",
+    "link": "Google Drive連結",
+    "linkPlaceHolder": "Google Drive連結 (需開啟共享模式)",
+    "linkRule": "請確認Google Drive連結是否正確",
+    "linkCreateExist": "此連結已新增",
+    "linkEditExist": "此連結已被使用",
+    "operation": "操作",
+    "formEdit": "編輯海報",
+    "formCreate": "新增海報",
+    "popConfirmTitle": "刪除海報",
+    "popConfirmDescription": "是否確認刪除此列?"
+  },
   "admins": {
     "title": "權限使用者",
     "titleRule": "請輸入使用者名稱",
@@ -130,6 +144,7 @@
     "eventsManage": "活動管理",
     "activitiesManage": "事件管理",
     "registerManage": "報名管理",
+    "postersManage": "海報管理",
     "settings": "設定",
     "authority": "權限設定",
     "adminsManage": "帳號管理",
@@ -181,6 +196,7 @@
     "events": "中心活動",
     "upcoming": "近期活動",
     "user": "個人頁面",
+    "poster": "海報分享",
     "member": "中心成員",
     "priest": "永遠的牧者-歐義明神父",
     "donate": "奉獻支持",

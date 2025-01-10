@@ -51,6 +51,7 @@ export default function Index() {
     { value: 'cana', pathname: '/cana' },
     { value: 'events', pathname: '/events/activities' },
     { value: 'upcoming', pathname: '/upcoming' },
+    { value: 'poster', pathname: '/poster' },
   ];
 
   return (

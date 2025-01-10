@@ -37,6 +37,19 @@
     "okButton": "OK",
     "cancelButton": "Cancel"
   },
+  "posters": {
+    "title": "Poster Name",
+    "titleRule": "Please input Poster Name",
+    "link": "Google Drive Link (Any One With The Link)",
+    "linkRule": "Please input correct Google Drive Link.",
+    "linkCreateExist": "This link has been added.",
+    "linkEditExist": "This link has been added.",
+    "operation": "Operation",
+    "formEdit": "Edit Poster",
+    "formCreate": "Create Poster",
+    "popConfirmTitle": "Delete Poster",
+    "popConfirmDescription": "Are you sure to delete this item?"
+  },
   "admins": {
     "title": "Administer",
     "titleRule": "Please input Administer.",
@@ -130,6 +143,7 @@
     "eventsManage": "Events",
     "activitiesManage": "Activities",
     "registerManage": "Register",
+    "postersManage": "Poster",
     "settings": "Settings",
     "authority": "Authority Settings",
     "adminsManage": "Administrator",
@@ -180,6 +194,7 @@
     "events": "Events",
     "upcoming": "Upcoming",
     "user": "Account",
+    "poster": "Poster Sharing",
     "member": "Members of House",
     "priest": "Forever Shepherd - Father Alan",
     "donate": "Donation Support",

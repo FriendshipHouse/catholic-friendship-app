@@ -78,3 +78,10 @@ type RegisterFormValue<ActivityId = string> = {
   submissionTime?: string;
   otherKnowInfo?: string;
 };
+
+type PosterFormValue = {
+  title: string;
+  link: string;
+  _id: string;
+  key?: string;
+};

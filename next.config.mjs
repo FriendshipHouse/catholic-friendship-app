@@ -12,6 +12,14 @@ const nextConfig = {
         hostname: process.env.NEXT_PUBLIC_IMAGE_HOSTNAME,
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+      },
     ],
   },
 };

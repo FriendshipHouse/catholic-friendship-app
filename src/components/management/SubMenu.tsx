@@ -36,6 +36,10 @@ function SubMenu() {
           title: 'registerManage',
           key: 'registerManage',
         },
+        {
+          title: 'postersManage',
+          key: 'postersManage',
+        },
       ],
     },
   ];

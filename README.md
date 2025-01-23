@@ -59,6 +59,29 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Environment Variables
+
+The environment variables save in .env in local and Vercel settings:
+
+```plaintext
+MONGODB_URI =
+
+NEXTAUTH_URL =
+NEXTAUTH_SECRET =
+BLOB_READ_WRITE_TOKEN =
+
+NEXT_PUBLIC_IMAGE_HOSTNAME =
+
+GOOGLE_CLIENT_ID =
+GOOGLE_CLIENT_SECRET =
+
+SENTRY_ORG =
+SENTRY_PROJECT =
+SENTRY_AUTH_TOKEN =
+
+NEXT_PUBLIC_GA_TRACKING_ID =
+```
+
 ## Project Structure
 
 The main structure of the project is as follows:

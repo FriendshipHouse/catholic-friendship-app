@@ -31,14 +31,23 @@ function Footer() {
     <div className="relative z-10 flex w-full flex-col items-center gap-3 border-t border-gray-30 bg-gray-10 p-3 md:flex-row md:justify-around md:gap-2 md:bg-transparent">
       <div className="flex items-center justify-center gap-3 sm:flex-row">
         <div className="flex items-center gap-3">
-          <Link href="/" className="footerLogoLink group flex items-center gap-2">
+          <Link
+            href="/"
+            className="footerLogoLink group flex items-center gap-2"
+            aria-label="Go to index page"
+          >
             <LogoFS />
             <div className="hidden text-sm font-medium lg:flex">{t('footer.friendshipCenter')}</div>
           </Link>
           <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>
         <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex" />
-        <Link href="https://www.lovecana.org.tw/index.php" target="_blank" className="footerLogoLink">
+        <Link
+          href="https://www.lovecana.org.tw/index.php"
+          target="_blank"
+          className="footerLogoLink"
+          aria-label="Go out to love cana page"
+        >
           <LogoCana />
         </Link>
       </div>
@@ -47,7 +56,12 @@ function Footer() {
         <div className="text-gray-60 md:hidden lg:flex">{t('menu.link')}</div>
         <div className="flex flex-wrap justify-center gap-3">
           {linkItems.map(({ value, href }) => (
-            <Link key={value} href={href} className="footerTextLink">
+            <Link
+              key={value}
+              href={href}
+              className="footerTextLink"
+              aria-label={`Go to ${value} page`}
+            >
               {t(`pathname.${value}`)}
             </Link>
           ))}
@@ -57,8 +71,9 @@ function Footer() {
       <div className="flex items-center gap-4">
         <Link
           href="https://www.facebook.com/groups/113455488704730/?ref=share"
-          target='_blank'
+          target="_blank"
           className="footerLogoLink text-lg"
+          aria-label="Go out to facebook page"
         >
           <Facebook />
         </Link>
@@ -66,6 +81,7 @@ function Footer() {
           type="text"
           className="footerLogoLink text-lg !p-0 hover:!bg-transparent !w-5"
           onClick={() => setLineModalOpen(true)}
+          aria-label="Show a model of Line ID"
         >
           <Line className="w-full h-full" />
         </Button>

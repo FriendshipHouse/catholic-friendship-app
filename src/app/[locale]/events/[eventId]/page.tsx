@@ -3,9 +3,9 @@
 import { Spin } from 'antd';
 import Image from 'next/image';
 
+import ActivityCard from '@/components/ActivityCard';
 import LoginModal from '@/components/LoginModal';
 import ActivityModal from '@/components/activity/ActivityModal';
-import ActivityCard from '@/components/ActivityCard';
 import RegisterEventFormModal from '@/components/event/RegisterEventFormModal';
 
 import eventEmptyImage from '@/../public/general/img-empty.png';
@@ -51,6 +51,7 @@ function EventPage({ params: { eventId } }: Readonly<EventPageProps>) {
               width={200}
               height="0"
               className="opacity-40"
+              loading="lazy"
             />
             <div className="font-bold text-gray-60">活動尚未建立，敬請期待。</div>
           </div>

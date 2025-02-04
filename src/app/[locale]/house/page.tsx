@@ -24,10 +24,10 @@ function HouseIndex() {
   return (
     <div className="relative flex flex-col items-center gap-5 md:flex-row md:justify-between">
       <div className="hidden items-center p-5 md:flex">
-        <Image src={aboutImage} alt="aboutImage" />
+        <Image src={aboutImage} alt="aboutImage" loading="lazy" />
       </div>
       <div className="absolute z-0 flex items-center p-5 opacity-10 md:hidden">
-        <Image src={aboutImage} alt="aboutImage" />
+        <Image src={aboutImage} alt="aboutImage" loading="lazy" />
       </div>
       <div className="z-10 flex flex-col gap-6 md:w-1/2">
         <div className="flex flex-col gap-4 whitespace-pre-wrap leading-6">

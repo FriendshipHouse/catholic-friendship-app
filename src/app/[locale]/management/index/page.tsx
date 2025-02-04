@@ -55,7 +55,7 @@ function ManagementIndex() {
             </div>
           </div>
           <div className="hidden md:flex">
-            <Image src={imageDance} alt="imageDance" />
+            <Image src={imageDance} alt="imageDance" loading="lazy" />
           </div>
         </div>
       </div>

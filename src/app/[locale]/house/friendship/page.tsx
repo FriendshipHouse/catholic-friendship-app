@@ -28,7 +28,7 @@ function Friendship() {
   return (
     <div className="flex flex-col items-center gap-5 md:flex-row md:justify-around">
       <div className="p-5">
-        <Image src={friendshipImage} alt="friendshipImage" />
+        <Image src={friendshipImage} alt="friendshipImage" loading="lazy" />
       </div>
       <div className="flex flex-col gap-5 leading-6 text-gray-80 md:w-3/5">
         <div>本會為依法設立，非以營利為目的之社會團體。</div>

@@ -20,12 +20,11 @@ import Background from '@/components/layout/Background';
 import imageJesus from '@/../public/general/img-index.png';
 
 type NotificationModalProps = {
-  open: boolean,
-  onCancel: () => void,
-}
+  open: boolean;
+  onCancel: () => void;
+};
 
 function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>) {
-
   return (
     <Modal
       open={open}
@@ -36,15 +35,17 @@ function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>)
     >
       <div>{`教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~`}</div>
     </Modal>
-  )
+  );
 }
 
 export default function Index() {
   const t = useTranslations();
 
-  const [openNotification, setOpenNotification] = useState(false)
+  const [openNotification, setOpenNotification] = useState(false);
 
-  useEffect(() => { setOpenNotification(true) }, [])
+  useEffect(() => {
+    setOpenNotification(true);
+  }, []);
 
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
@@ -60,7 +61,7 @@ export default function Index() {
       <FloatButton />
       <Background />
       <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">
-        <Image src={imageJesus} alt="imageJesus" />
+        <Image src={imageJesus} alt="imageJesus" loading="lazy" />
       </div>
       <div className="relative z-10 mx-auto flex h-full max-w-screen-lg items-center justify-center">
         <div className="mb:px-5 flex w-screen items-center justify-between px-10">
@@ -87,7 +88,7 @@ export default function Index() {
             </div>
           </div>
           <div className="hidden h-2/3 md:flex">
-            <Image src={imageJesus} alt="imageJesus" />
+            <Image src={imageJesus} alt="imageJesus" loading="lazy" />
           </div>
         </div>
       </div>

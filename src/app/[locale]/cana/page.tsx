@@ -53,7 +53,7 @@ function Cana() {
     <div className="flex flex-col justify-center gap-10 p-5">
       <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-around">
         <div className="flex flex-col gap-4">
-          <Image src={canaImage} alt="canaImage" />
+          <Image src={canaImage} alt="canaImage" loading="lazy" />
           <Button type="default" target="_blank" href="https://www.lovecana.org.tw/index.php">
             {t('cana.canaWeb')}
             <ArrowRightOutlined className="text-xs" />

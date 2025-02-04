@@ -26,7 +26,7 @@ function DonatePieChart({
         <div>{title2}</div>
       </div>
       <div className="w-20 sm:w-24">
-        <Image src={pieSrc} alt="pieChart_image" />
+        <Image src={pieSrc} alt="pieChart_image" loading="lazy" />
       </div>
       <div className="flex max-w-32 flex-col gap-1">
         <div className="flex items-center gap-2">

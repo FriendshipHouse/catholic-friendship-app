@@ -65,6 +65,7 @@ const CustomOption = ({ label, value, onRemoveImage, isLoading }: OptionRenderPr
           width={300}
           height="0"
           className="h-auto w-full max-w-[48px]"
+          loading="lazy"
         />
         <div>{label}</div>
       </div>

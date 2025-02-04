@@ -146,12 +146,12 @@ function CategoriesFormTable() {
           <div className="flex items-center gap-4">
             {url ? (
               <Image
-                priority
                 src={url}
                 alt="Image"
                 width={300}
                 height="0"
                 className="h-auto w-full max-w-[44px]"
+                loading="lazy"
               />
             ) : (
               <Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />

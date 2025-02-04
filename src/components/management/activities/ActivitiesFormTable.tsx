@@ -164,22 +164,22 @@ function ActivitiesFormTable() {
                 placement="bottom"
                 content={
                   <Image
-                    priority
                     src={url}
                     alt="Image"
                     width={300}
                     height="0"
                     className="h-auto w-full max-w-[160px]"
+                    loading="lazy"
                   />
                 }
               >
                 <Image
-                  priority
                   src={url}
                   alt="Image"
                   width={300}
                   height="0"
                   className="h-auto w-full max-w-[44px]"
+                  loading="lazy"
                 />
               </Popover>
             )}

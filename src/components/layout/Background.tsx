@@ -10,8 +10,8 @@ function Background() {
       <Image
         src={backgroundImage}
         alt="backgroundImage"
-        priority
         className="!max-w-none md:min-h-screen lg:w-full"
+        loading="lazy"
       />
     </div>
   );

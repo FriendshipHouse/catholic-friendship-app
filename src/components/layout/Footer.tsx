@@ -16,7 +16,7 @@ import LineModal from './LineModal';
 const linkItems = [
   { value: 'about', href: '/house/about' },
   { value: 'cana', href: '/cana' },
-  { value: 'events', href: '/events/activities' },
+  { value: 'events', href: '/events' },
   { value: 'upcoming', href: '/upcoming' },
   { value: 'contact', href: '/house/contact' },
   { value: 'donate', href: '/house/donate' },

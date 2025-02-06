@@ -14,6 +14,7 @@ import DateFormat from '@/components/DateFormat';
 import MyRegistrationModal from '@/components/user/MyRegistrationModal';
 
 import useMyRegistrations, { MyRegistration } from '@/hooks/useMyRegistrations';
+import { Link } from '@/i18n/routing';
 import { activityModal } from '@/jotai/activityModal';
 
 function User() {
@@ -154,8 +155,8 @@ function User() {
                     description={t('user.noActivities')}
                     className="!m-0"
                   />
-                  <Button type="primary" href="/upcoming" className="w-auto">
-                    {t('user.recentButton')}
+                  <Button type="primary" className="w-auto">
+                    <Link href="/upcoming">{t('user.recentButton')}</Link>
                   </Button>
                 </div>
               ),

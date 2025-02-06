@@ -161,31 +161,15 @@
     "title3": "with Miracle in Cana"
   },
   "footer": {
-    "friendshipCenter": "Catholic Friendship House"
+    "friendshipCenter": "Catholic Friendship House",
+    "line": "Miracle in Cana LINE ID:"
   },
   "about": {
     "member": "Members of House",
-    "priest": "Forever Shepherd - Father Alan",
+    "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
     "contact": "Contact Information",
     "friendship": "Friendship House"
-  },
-  "about-priest": {
-    "BookPriest": "About Father Alan",
-    "BookElder": "Elder Friends",
-    "BookYouth": "Youth Friends",
-    "BookColleague": "Colleague",
-    "watchVideo": "Watch the video"
-  },
-  "about-donate": {
-    "creditCard": "Credit Card Recurring Donation",
-    "onlinePay": "Online Single Donation",
-    "counterTransfer": "Counter Single Donation",
-    "cash": "Cash Donation",
-    "allocate": "Postal Remittance"
-  },
-  "cana": {
-    "canaWeb": "Miracle in Cana"
   },
   "pathname": {
     "index": "Index",
@@ -196,7 +180,7 @@
     "user": "Account",
     "poster": "Poster Sharing",
     "member": "Members of House",
-    "priest": "Forever Shepherd - Father Alan",
+    "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
     "contact": "Contact Information",
     "friendship": "Friendship House",
@@ -208,7 +192,7 @@
     "marriage": "Miracle In Cana",
     "cana": "Miracle In Cana",
     "activities": "Events",
-    "BookPriest": "About Father Alan",
+    "BookPriest": "About Father Ou",
     "BookElder": "Elder Friends",
     "BookYouth": "Youth Friends",
     "BookColleague": "Colleague",
@@ -300,5 +284,119 @@
   },
   "button": {
     "register": "Registration"
+  },
+  "indexMessage": {
+    "title": "We've Moved!",
+    "content": "Catholic Friendship House has moved to \"Tong'an St St.Joseph's Catholic Church.\" You're welcome to visit us!"
+  },
+  "cana": {
+    "canaWeb": "Miracle In Cana Marriage Network",
+    "description": "A service exclusively for Catholics,\nFrom pre-marriage religious education to helping unmarried youth find partners who share the same faith.\nMarriage is a sacrament, marking the love of God~\nLet us create a healthier future for our church.",
+    "title1": "Indoor/Outdoor Fellowship Activities",
+    "content1": "Through small group interactions, we help unmarried youth get to know more friends within the faith. In half a day, we help unmarried youth efficiently connect with like-minded friends in the midst of their busy lives.",
+    "title2": "One-on-One Introduction",
+    "content2": "Phone interviews to understand the situation and needs of unmarried youth, and find suitable matches from the list. We then assist in connecting or arranging the first meeting.",
+    "title3": "Miracle In Cana Marriage Network",
+    "content3": "Through the internet, we bring people closer, allowing unmarried Catholic youth from all over the country to meet. Online computer matching identifies potential partners who meet your expectations. The interaction begins online and may evolve into something more!",
+    "title4": "Religious Marriage Education",
+    "content4": "For a healthier future of the church, we invite about 200 parishes across Taiwan to collaborate in promoting this. Monthly educational articles are written and sent out, along with marriage proverbs and prayer intentions in Mass for unmarried youth in the church to build holy families."
+  },
+  "houseIndex": {
+    "title": "Pastoral Care · Faith · Growth · Communion",
+    "content": "Finding companions and communities that share the same faith in Taiwan is not always easy.\n\nThe Catholic Friendship House is a second home for young people, a place for personal growth, a gathering spot for friends, and a bridge on the journey of faith.\nIn addition to organizing various activities and workshops, we especially care for unmarried young adults in Taiwan's Church and those who have drifted away from their faith, hoping to bridge the gap and help them find a sense of belonging in our community.\nWe welcome all young people who are \"searching\" to join us in following the footsteps of Jesus~"
+  },
+  "houseMember": {
+    "positionPriest": "Spiritual Director",
+    "positionWorker": "Pastoral Worker",
+    "ma": "Fr. 馬智明",
+    "tang": "Ms. 唐曉倫",
+    "cai": "Ms. 蔡宜蓁",
+    "su": "Ms. 蘇美紗",
+    "qiu": "Ms. 邱加利",
+    "wang": "Ms. 王沛琪"
+  },
+  "housePriest": {
+    "priest": "Rev. Alan T. Doyle, MM (歐義明神父)",
+    "briefIntro": "Father Alan T. Doyle has been in Taiwan for 57 years. From 1955 to 1960, he served at Erlin (二林) Catholic Church and Zhushan (竹山) Catholic Church, and other apostolic works. Since 1963, Father Doyle served at the then 'Northern Catholic Fellowship Center (旅北教友中心)' (the predecessor of the Catholic Friendship House). He was the head of Friendship House and affectionately known as 'Old Ou' (老歐) by the members. Like a loving father, he guarded this home for the youth 24 hours a day.\nFather Doyle served as the Director of the center until his passing.",
+    "lifeStoryTitle": "Brief Biography",
+    "lifeStoryContent": "Father Alan T. Doyle was born on March 20, 1937, in New York, to a devout Catholic family.\nIn 1955, he was trained at the diocesan seminary.\nIn 1957, he joined the Maryknoll Fathers & Brothers for missionary work.\nOn June 13, 1964, he was ordained as a priest at the Maryknoll General House in New York. He came to Taiwan in September of the same year.\nIn 1966, he was assigned to Erlin (二林), Changhua (彰化), as an assistant pastor, helping Father Dehui Gao (高德輝神父) with pastoral work.\nIn 1968, he became the pastor of Zhushan (竹山) Catholic Church for three years.\nIn 1972, he studied Mandarin at the Hsinchu (新竹) Language School and helped with pastoral work in other parishes.\nIn February 1974, he served as the Executive Secretary of Catholic Taiwan Missionary Society.\nIn October 1974, he became the Associate Director of the Taipei Catholic Friendship House, and later served as the Director until his passing.\nIn 1987, he established the Maryknoll Language Center in Taipei.\nFrom 1981 to 1991, he served as the guiding priest of the 'Catholic Taichung Auto Repair Vocational School' (天主教臺中力行汽車修護補習班), training automotive repair professionals in Taiwan.\nFrom 1991 to 1997, he was the President of the Taiwan Province of the Maryknoll Fathers & Brothers.\nIn 2014, he promoted the 'Miracle in Cana' religious marriage service, working hard to help Catholics build Christian families.\nOn July 8, 2017, he was granted Taiwanese citizenship for his distinguished contributions to Taiwan and was issued a Republic of China identity card.\nOn May 9, 2021, at 2:48 PM, he passed away at National Taiwan University Hospital.\n\nFather Ou dedicated his life to pastoral work and evangelism, unafraid of challenges and always persevering. He cared deeply for the Northern Catholic youth who had moved away from home, and was passionate about supporting unmarried Catholics in building Christian families. His life of over a century was devoted to the youth of the Taiwan Church, and his devotion never wavered. Father Ou's contributions to the Church in Taiwan cannot be expressed in words, but in our sharing, we remember the moments when his life intersected with ours. Just as Father Ou always upheld: 'Christ is the center of my faith and life.'",
+    "videoTitle": "Video Share",
+    "videoLife": "The Life of Father Alan T. Doyle's Missionary Work in Taiwan",
+    "videoMass": "Highlights from the Memorial Mass on the Anniversary of His Passing",
+    "bookTitle": "Memorial Anthology on the Anniversary of His Passing",
+    "BookPriest": "About Father Ou",
+    "BookElder": "Elder Friends",
+    "BookYouth": "Youth Friends",
+    "BookColleague": "Colleague"
+  },
+  "houseDonate": {
+    "introTitle": "Dear Brothers and Sisters in Christ,",
+    "introContent": "May the love of God the Father and the grace of Christ be with you always. As we enter our fundraising season, we sincerely appreciate your generous support. Your encouragement remains deeply cherished in our hearts.\n\nThe various pastoral and evangelization efforts of our center, along with the 'Miracle In Cana' Catholic Marriage Ministry, are progressing actively. This initiative has brought new vitality to our center, as young Catholics gather here to build a stronger faith community. Recently, we have also welcomed a new group of young adults in their twenties, further reaffirming our mission: to ignite the fire of faith in young hearts, journey with them in their spiritual growth, and help them find a like-minded Catholic spouse to establish a Christ-centered family.",
+
+    "contentTitle": "When Catholics marry non-Catholics, they enter into a marriage and family life of different faiths.",
+    "content": "As shown in the chart above, differences in faith between spouses not only challenge individual beliefs but also lead to inconsistencies in raising children, causing marital tensions and religious indifference. Interfaith marriages often result in the Church losing Catholic families—once considered vital pillars of the faith community. We must not overlook the serious issue of 'Catholic attrition.'\n\nAccording to our research, 60% of unmarried Catholics hope to find a spouse within the Church. Recognizing this need, we have taken responsibility by actively promoting Catholic marriages through 'Miracle In Cana'. Over the past years, we have organized various events for unmarried Catholics, offering a rare opportunity for Taiwan's small 1% Catholic population—scattered across different regions—to meet and connect. However, single events alone, without sustained interactions, are insufficient for fostering deeper relationships. Building meaningful relationships requires time and consistent engagement. Thankfully, our Catholic Friendship House has long provided a nurturing community for young adult Catholics through weekly Masses, regular fellowship gatherings, and monthly activities such as workshops, spiritual retreats, faith formation groups, and outdoor excursions. These settings naturally allow young Catholics to deepen their faith while building meaningful relationships.\n\nThe Catholic Marriage Ministry in Taiwan has grown from humble beginnings to a flourishing movement, bringing forth joyful news of Catholic unions. Seeing new Catholic families being formed motivates us to continue our mission. Currently, 'Miracle In Cana' provides apostolic marriage ministry services, a Catholic matchmaking website, social events for unmarried Catholics, personalized matchmaking services, and educational programs. In addition to these existing services, we plan to expand into central and southern Taiwan to assist more young Catholics in finding faith-based relationships. In an era of rising costs, sustaining and expanding these initiatives requires dedicated pastoral professionals and substantial financial support.\n\nFamily is the cornerstone of the Church. The question of 'Should I accompany my spouse to a temple or go to Mass alone?' remains a persistent challenge in interfaith marriages. Studies show that 85% of Catholics who marry non-Catholics gradually drift away from the Church. This is an urgent matter that requires immediate attention! Strengthening Catholic marriages, supporting unmarried young Catholics, and addressing the challenges facing the Church's future are crucial steps toward fostering a thriving local Church. We must take action! Therefore, we earnestly seek your generous contributions and support.\n\nGive 'More in Depth'— We deeply appreciate your commitment. With your support, we can accomplish even greater things this year!\nGive 'More in Reach'— With financial limitations, we rely on you to spread the word and invite others to become regular donors!\n\nYour recognition fuels our mission forward!\nYour support ensures that 'Miracle In Cana' continues to advance the mission of Catholic marriage ministry without ceasing!",
+    "readMore": "Read More",
+    "marriageAndReligion": "Marriage and Faith"
+  },
+  "houseDonatePie": {
+    "religionFamily": "Catholic Families",
+    "nonReligionFamily": "Interfaith Families",
+    "highParticipation": "High Church Participation",
+    "lowParticipation": "Low Church Participation",
+    "under14": "Children Under 14",
+    "pie11": "9% Inactive",
+    "pie12": "91% Active and Still Involved in Church",
+    "pie21": "85% Inactive",
+    "pie22": "15% Active and Still Involved in Church",
+    "pie31": "6% Unbaptized",
+    "pie32": "94% Baptized",
+    "pie41": "64% Unbaptized",
+    "pie42": "36% Baptized (Even fewer participate in Sunday School)"
+  },
+  "houseDonateMethod": {
+    "creditCard": "Credit Card Recurring Donation",
+    "creditCardContent": "Recurring Donation Website",
+    "creditCardButton": "Recurring Donation Website",
+    "onlinePay": "One-Time Online Donation",
+    "onlinePayContent": "Credit Card / Web ATM / Online ATM Transfer\nConvenience Store Payment Code / Barcode Payment",
+    "onlinePayButton": "Online Donation Website",
+    "counterTransfer": "Bank Counter / ATM Transfer",
+    "counterTransferContent": "Bank Counter / ATM Transfer: 中華郵政復興橋郵局700\nAccount Number: 0001085-0456143\nAccount Name: 社團法人台灣旅北友誼交流協會",
+    "cash": "Cash Donation",
+    "cashContent": "You may donate in person or send cash via mail",
+    "allocate": "Postal Remittance",
+    "allocateContent": "Remittance Account Number: 50451219\nAccount Name: 社團法人台灣旅北友誼交流協會"
+  },
+  "houseContact": {
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressContent": "Section 2, Huanhe W Rd, Wanhua District, Taipei City, 108 (3F of Tong'an St St.Joseph's Catholic Church)",
+    "mass": "Mass",
+    "massContent": "Every Saturday at 7:00pm",
+    "mrt": "MRT",
+    "mrtContent": "Taipei Main Station - Transfer to MRT Guting Station, Exit 2 and walk about 10 minutes",
+    "bus": "BUS",
+    "busContent": "648. 644. 251. BL28. 252. 297. to MRT Guting Station (Roosevelt)",
+    "car": "CAR",
+    "carDescription": "Parking is available in the courtyard of Tong'an Street Catholic Church (limited parking)",
+    "carParking": "Nearby parking lots:",
+    "parking1": "1/ 博客停車場 (Total parking spaces: 17)",
+    "parking2": "2/ 嘟嘟房停車場 (Total parking spaces: 7)",
+    "parking3": "3/ Tongan St. Car Park (Total parking spaces: 21)"
+  },
+  "houseFriendship": {
+    "description": "This association is a legally established social organization that operates on a non-profit basis.",
+    "purpose": "Purpose of the Association:",
+    "purposeContent": "The association aims to assist young people and their families who have relocated from central, southern, and eastern Taiwan to Taipei area by providing opportunities for learning skills and participating in social services. This helps them adapt to the urban environment and stabilize their family life.",
+    "task": "Tasks of the Association:",
+    "taskItem1": "1.",
+    "taskItem2": "2.",
+    "taskItem3": "3.",
+    "taskItem4": "4.",
+    "taskContent1": "Organize courses on personal growth, relationship building, interpersonal communication, and leadership training, as well as activities that promote personal well-being and group cohesion.",
+    "taskContent2": "Assist members in forming various friendship and growth groups, such as book clubs, skill development classes, workshops, and prayer meetings.",
+    "taskContent3": "Periodically publish publications, books, CDs, and other materials related to the association's mission.",
+    "taskContent4": "Other matters related to the association's mission."
   }
 }

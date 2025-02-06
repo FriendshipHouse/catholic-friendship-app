@@ -25,15 +25,16 @@ type NotificationModalProps = {
 };
 
 function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>) {
+  const t = useTranslations();
   return (
     <Modal
       open={open}
       footer={null}
-      title={<div className="font-bold">我們搬家囉~</div>}
+      title={<div className="font-bold">{t('indexMessage.title')}</div>}
       onCancel={onCancel}
       destroyOnClose
     >
-      <div>{`教友中心搬家搬至"同安街聖若瑟天主堂"，歡迎來找我們玩玩~`}</div>
+      <div>{t('indexMessage.content')}</div>
     </Modal>
   );
 }

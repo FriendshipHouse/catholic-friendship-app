@@ -1,73 +1,92 @@
 'use client';
 
-import { Button } from 'antd';
 import React from 'react';
 
+import { Button } from 'antd';
+import { useLocale, useTranslations } from 'next-intl';
 import { GeoAlt, House, TruckFront } from 'react-bootstrap-icons';
 
 const carParking = [
-  { parkingLot: "1/ 博客停車場-家福同安場(總車位 17)", mapHref: "https://maps.app.goo.gl/XoDfuwo9a4bhmwtr9" },
-  { parkingLot: "2/ 嘟嘟房廈門站停車場(總車位 7)", mapHref: "https://maps.app.goo.gl/FRh5JcrprEoRavFn9" },
-  { parkingLot: "3/ 同安街平面停車場(總車位 21)", mapHref: "https://maps.app.goo.gl/qBw4xFKjM75XKoQG6" },
-]
-
-const carContent =
-  <div className="flex flex-col gap-1">
-    <div>同安街天主堂庭院可停車(數量有限)</div>
-    <div>附近停車場：</div>
-    {carParking.map(({ parkingLot, mapHref }) => <div className="flex gap-2 items-center
-    " key={parkingLot}>
-      <Button type="text" target="_blank" href={mapHref} className='!text-sm !p-0 !text-primary-70'><GeoAlt /></Button>
-      {parkingLot}
-    </div>)}
-  </div>
-
-
-const contactList = [
   {
-    value: 'contact',
-    icon: <House />,
-    children: [
-      {
-        title: '電話',
-        content: '（02）2314-1833',
-      },
-      {
-        title: '郵件',
-        content: 'friendyoung23141833@gmail.com',
-      },
-      {
-        title: '地址',
-        content: '台北市中正區同安街72巷19號(同安街聖若瑟天主堂3F)',
-      },
-      {
-        title: '彌撒時間',
-        content: '每周六晚上7:00',
-      },
-    ],
+    parkingLot: 'parking1',
+    mapHref: 'https://maps.app.goo.gl/XoDfuwo9a4bhmwtr9',
   },
   {
-    value: 'transport',
-    icon: <TruckFront />,
-    children: [
-      {
-        title: '捷運',
-        content:
-          '台北車站-轉捷運至古亭站，2號出口步行約10分鐘',
-      },
-      {
-        title: '公車',
-        content: '648. 644. 251. 藍28. 252. 297. 至捷運古亭站(羅斯福)',
-      },
-      {
-        title: '開車',
-        content: carContent,
-      },
-    ],
+    parkingLot: 'parking2',
+    mapHref: 'https://maps.app.goo.gl/DjdPddrfBdrqozqY8',
+  },
+  {
+    parkingLot: 'parking3',
+    mapHref: 'https://maps.app.goo.gl/qBw4xFKjM75XKoQG6',
   },
 ];
 
 function Contact() {
+  const t = useTranslations('houseContact');
+  const locale = useLocale();
+
+  const carContent = (
+    <div className="w-full flex flex-col gap-1">
+      <div>{t('carDescription')}</div>
+      <div>{t('carParking')}</div>
+      {carParking.map(({ parkingLot, mapHref }) => (
+        <div className="flex gap-1 items-center" key={parkingLot}>
+          <Button
+            type="text"
+            target="_blank"
+            href={mapHref}
+            className="!text-sm !pr-2 !pl-0 !text-primary-70"
+          >
+            <GeoAlt />
+          </Button>
+          {t(parkingLot)}
+        </div>
+      ))}
+    </div>
+  );
+  const contactList = [
+    {
+      value: 'contact',
+      icon: <House />,
+      children: [
+        {
+          title: 'phone',
+          content: '(02) 2314-1833',
+        },
+        {
+          title: 'email',
+          content: 'friendyoung23141833@gmail.com',
+        },
+        {
+          title: 'address',
+          content: t('addressContent'),
+        },
+        {
+          title: 'mass',
+          content: t('massContent'),
+        },
+      ],
+    },
+    {
+      value: 'transport',
+      icon: <TruckFront />,
+      children: [
+        {
+          title: 'mrt',
+          content: t('mrtContent'),
+        },
+        {
+          title: 'bus',
+          content: t('busContent'),
+        },
+        {
+          title: 'car',
+          content: carContent,
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto grid w-full flex-wrap gap-5 sm:grid-cols-2">
@@ -83,13 +102,12 @@ function Contact() {
             </div>
             <div className="mt-5 text-wrap">
               {children.map(({ title, content }, index) => (
-                <div
-                  key={title}
-                  className="flex flex-col gap-2 whitespace-pre-wrap  leading-6 pt-2"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-8 min-w-8 text-wrap font-bold">{title}</div>
-                    <div className="text-gray-60">{content}</div>
+                <div key={title} className="flex flex-col gap-2 whitespace-pre-wrap leading-6 pt-2">
+                  <div className="w-full flex items-center gap-4">
+                    <div className={`${locale === 'zh-TW' ? 'w-8 min-w-8' : 'w-20'} font-bold`}>
+                      {t(title)}
+                    </div>
+                    <div className="w-full text-gray-60 text-start">{content}</div>
                   </div>
                   {index !== children.length - 1 && <div className="border-b border-b-gray-20" />}
                 </div>

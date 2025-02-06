@@ -50,7 +50,7 @@ export default function Index() {
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
     { value: 'cana', pathname: '/cana' },
-    { value: 'events', pathname: '/events/activities' },
+    { value: 'events', pathname: '/events' },
     { value: 'upcoming', pathname: '/upcoming' },
     { value: 'poster', pathname: '/poster' },
   ];

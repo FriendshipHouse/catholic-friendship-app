@@ -149,14 +149,14 @@ function ActivityModal() {
           </div>
         </div>
         <p className="whitespace-pre-wrap leading-6">{description}</p>
-        <div className='sm:bg-primary-10 sm:border border-primary-30 rounded-md w-full'>
+        <div className="sm:bg-primary-10 sm:border border-primary-30 rounded-md w-full">
           <Image
             priority
             src={url}
             alt="Image"
             height={660}
             width={630}
-            className="h-auto w-full rounded-md px-14"
+            className="h-auto w-full rounded-md sm:px-14"
             loading="eager"
             quality={100}
           />

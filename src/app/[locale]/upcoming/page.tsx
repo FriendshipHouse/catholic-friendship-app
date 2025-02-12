@@ -10,6 +10,7 @@ import dayjs from 'dayjs';
 import isBetween from 'dayjs/plugin/isBetween';
 import { useAtom } from 'jotai';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 import ActivityCard from '@/components/ActivityCard';
 import ActivityModal from '@/components/activity/ActivityModal';
@@ -18,6 +19,7 @@ import DateSelectFilter from '@/components/upcoming/DateSelectFilter';
 import ActivityCalendar from '@/components/upcoming/views/ActivityCalendar';
 import ActivityList from '@/components/upcoming/views/ActivityList';
 
+import eventEmptyImage from '@/../public/general/img-empty.png';
 import useCategories from '@/hooks/useCategories';
 import useEvents from '@/hooks/useEvents';
 import useSearchActivities from '@/hooks/useSearchActivities';
@@ -131,6 +133,36 @@ function Upcoming() {
   ];
   const tabItems = [...defaultTabItems, ...calendarTabItem];
 
+  const isActivitiesEmpty = !isLoading && filteredData.length === 0;
+
+  const renderTabView = () => {
+    if (tabSelect === 'calendar') {
+      return <ActivityCalendar activities={calendarFilteredData} />;
+    }
+
+    if (isActivitiesEmpty) {
+      return (
+        <div className="mt-10 flex flex-col items-center justify-center gap-6">
+          <Image
+            src={eventEmptyImage}
+            alt="event_empty_image"
+            width={200}
+            height="0"
+            className="opacity-40"
+            loading="lazy"
+          />
+          <div className="font-bold text-gray-60">{t('emptyText.upcoming')}</div>
+        </div>
+      );
+    }
+
+    return tabSelect === 'grid' ? (
+      <ActivityCard activities={filteredData} isLoading={isLoading} />
+    ) : (
+      <ActivityList activities={filteredData} isLoading={isLoading} />
+    );
+  };
+
   return (
     <div className="flex flex-col gap-4">
       <div className="relative flex items-center justify-between gap-4">
@@ -141,7 +173,9 @@ function Upcoming() {
           onChange={(key) => setTabSelect(key)}
         />
         <div className="flex w-full max-w-[50%] justify-end gap-4">
-          <ActivitiesInputSearch loading={isLoading} onChange={setSearchData} />
+          {tabSelect !== 'calendar' && (
+            <ActivitiesInputSearch loading={isLoading} onChange={setSearchData} />
+          )}
         </div>
       </div>
       <div className="flex w-full flex-col items-start gap-2 text-nowrap sm:flex-row sm:items-center sm:gap-4">
@@ -183,9 +217,7 @@ function Upcoming() {
         </div>
         {tabSelect !== 'calendar' && <DateSelectFilter />}
       </div>
-      {tabSelect === 'grid' && <ActivityCard activities={filteredData} isLoading={isLoading} />}
-      {tabSelect === 'list' && <ActivityList activities={filteredData} isLoading={isLoading} />}
-      {tabSelect === 'calendar' && <ActivityCalendar activities={calendarFilteredData} />}
+      {renderTabView()}
       <ActivityModal />
     </div>
   );

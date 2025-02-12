@@ -1,8 +1,7 @@
 'use client';
 
-import { Card, Empty } from 'antd';
+import { Card } from 'antd';
 import { useSetAtom } from 'jotai';
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { ClockFill, GeoAltFill } from 'react-bootstrap-icons';
 
@@ -17,7 +16,6 @@ type ActivityCardType = {
 };
 
 function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
-  const t = useTranslations();
   const setOpenModal = useSetAtom(activityModal);
 
   const { Meta } = Card;
@@ -25,15 +23,7 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
   const { data: activityImages = [], isLoading: activityImagesIsLoading } =
     useImages('activities/images');
 
-  const activitiesEmpty = !isLoading && (!activities || activities.length === 0);
-
-  return activitiesEmpty ? (
-    <Empty
-      image={Empty.PRESENTED_IMAGE_SIMPLE}
-      description={t('emptyText.upcoming')}
-      className="border-b border-b-primary-30 pb-10 pt-2"
-    />
-  ) : (
+  return (
     <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
       {activities.map((activityData) => {
         const { _id, image, date, name, time, location } = activityData ?? {};

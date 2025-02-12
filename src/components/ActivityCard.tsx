@@ -25,7 +25,7 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
   const { data: activityImages = [], isLoading: activityImagesIsLoading } =
     useImages('activities/images');
 
-  const activitiesEmpty = activities === null || [];
+  const activitiesEmpty = !isLoading && (!activities || activities.length === 0);
 
   return activitiesEmpty ? (
     <Empty

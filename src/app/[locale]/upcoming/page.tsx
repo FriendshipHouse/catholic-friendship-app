@@ -11,12 +11,12 @@ import isBetween from 'dayjs/plugin/isBetween';
 import { useAtom } from 'jotai';
 import { useTranslations } from 'next-intl';
 
+import ActivityCard from '@/components/ActivityCard';
 import ActivityModal from '@/components/activity/ActivityModal';
 import ActivitiesInputSearch from '@/components/upcoming/ActivitiesInputSearch';
 import DateSelectFilter from '@/components/upcoming/DateSelectFilter';
 import ActivityCalendar from '@/components/upcoming/views/ActivityCalendar';
 import ActivityList from '@/components/upcoming/views/ActivityList';
-import ActivityCard from '@/components/ActivityCard';
 
 import useCategories from '@/hooks/useCategories';
 import useEvents from '@/hooks/useEvents';
@@ -28,7 +28,7 @@ function Upcoming() {
   const { SHOW_PARENT } = TreeSelect;
 
   const [treeData, setTreeData] = useState<Omit<DefaultOptionType, 'label'>[]>([]);
-  const [tabSelect, setTabSelect] = useState<string>('list');
+  const [tabSelect, setTabSelect] = useState<string>('grid');
 
   const [categoryIds, setCategoryIds] = useState<string[]>([]);
   const [eventIds, setEventIds] = useState<string[]>([]);
@@ -112,14 +112,14 @@ function Upcoming() {
 
   const defaultTabItems = [
     {
-      key: 'list',
-      label: t('upcoming.list'),
-      icon: <UnorderedListOutlined />,
-    },
-    {
       key: 'grid',
       label: t('upcoming.grid'),
       icon: <AppstoreOutlined />,
+    },
+    {
+      key: 'list',
+      label: t('upcoming.list'),
+      icon: <UnorderedListOutlined />,
     },
   ];
   const calendarTabItem = [
@@ -183,8 +183,8 @@ function Upcoming() {
         </div>
         {tabSelect !== 'calendar' && <DateSelectFilter />}
       </div>
-      {tabSelect === 'list' && <ActivityList activities={filteredData} isLoading={isLoading} />}
       {tabSelect === 'grid' && <ActivityCard activities={filteredData} isLoading={isLoading} />}
+      {tabSelect === 'list' && <ActivityList activities={filteredData} isLoading={isLoading} />}
       {tabSelect === 'calendar' && <ActivityCalendar activities={calendarFilteredData} />}
       <ActivityModal />
     </div>

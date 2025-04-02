@@ -136,7 +136,7 @@ function CategoriesFormTable() {
       key: 'image',
       className: 'min-w-[140px]',
       render: (_: any, { image }: CategoriesFormValue) => {
-        const { url = '' } =
+        const { url = '/general/img-empty.png' } =
           categoryImages.find((imageInfo) => {
             const filename = (imageInfo?.pathname ?? '').split('/').pop();
             return filename === image;

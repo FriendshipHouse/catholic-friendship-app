@@ -28,7 +28,7 @@ function ActivityCard({ activities, isLoading }: Readonly<ActivityCardType>) {
       {activities.map((activityData) => {
         const { _id, image, date, name, time, location } = activityData ?? {};
 
-        const { url = '' } =
+        const { url = '/general/img-empty.png' } =
           activityImages.find((imageInfo) => {
             const filename = (imageInfo?.pathname ?? '').split('/').pop();
             return filename === image;

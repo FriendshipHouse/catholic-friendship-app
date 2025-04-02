@@ -151,7 +151,7 @@ function ActivitiesFormTable() {
       key: 'image',
       className: 'min-w-[80px]',
       render: (_: any, { image }: ActivitiesFormValue) => {
-        const { url = '' } =
+        const { url = '/general/img-system-empty.png' } =
           activityImages.find((imageInfo) => {
             const filename = (imageInfo?.pathname ?? '').split('/').pop();
             return filename === image;

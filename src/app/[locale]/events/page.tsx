@@ -22,7 +22,7 @@ function EventsIndexPage() {
     <Spin spinning={isLoading}>
       <div className="xs:grid-cols-2 grid w-full flex-wrap justify-center gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {categories.map(({ _id: categoryId, name: categoryName, image, remark }) => {
-          const { url = '' } =
+          const { url = '/general/img-system-empty.png' } =
             categoryImages.find((imageInfo) => {
               const filename = (imageInfo?.pathname ?? '').split('/').pop();
               return filename === image;

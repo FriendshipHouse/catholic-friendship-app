@@ -66,7 +66,7 @@ function ActivityModal() {
     }
   };
 
-  const { url = '/general/img-system-empty.png' } =
+  const { url = '/general/img-empty.png' } =
     activityImages.find((imageInfo) => {
       const filename = (imageInfo?.pathname ?? '').split('/').pop();
       return filename === image;

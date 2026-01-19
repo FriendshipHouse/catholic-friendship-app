@@ -12,9 +12,17 @@ type ButtonProps = {
 
 function IndexButton({ children, pathname }: Readonly<ButtonProps>) {
   const router = useRouter();
+
+  const isExternal = pathname.startsWith('http://') || pathname.startsWith('https://');
+
   const onClick = () => {
-    router.push({ pathname });
+    if (isExternal) {
+      window.open(pathname, '_blank', 'noopener,noreferrer');
+    } else {
+      router.push({ pathname });
+    }
   };
+
   return (
     <Button
       type="default"

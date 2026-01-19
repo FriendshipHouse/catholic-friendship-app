@@ -175,10 +175,11 @@
     "index": "Index",
     "house": "About Us",
     "about": "About Us",
-    "events": "Events",
+    "events": "Past Events",
     "upcoming": "Upcoming",
     "user": "Account",
     "poster": "Poster Sharing",
+    "familyGroup": "2026 Activities",
     "member": "Members of House",
     "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
@@ -286,8 +287,8 @@
     "register": "Registration"
   },
   "indexMessage": {
-    "title": "We've Moved!",
-    "content": "Catholic Friendship House has moved to \"Tong'an St St.Joseph's Catholic Church.\" You're welcome to visit us!"
+    "title": "Notice",
+    "content": "Since Jan 2025, the Catholic Friendship House has been reorganized as the \"Family Group, Pastoral and Evangelization Office of the Archdiocese of Taipei,\" \nlocated at St. Joseph's Catholic Church on Tong'an Street."
   },
   "cana": {
     "canaWeb": "Miracle In Cana Marriage Network",

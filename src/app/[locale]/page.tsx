@@ -34,7 +34,7 @@ function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>)
       onCancel={onCancel}
       destroyOnClose
     >
-      <div>{t('indexMessage.content')}</div>
+      <div className="whitespace-pre-line">{t('indexMessage.content')}</div>
     </Modal>
   );
 }
@@ -49,11 +49,12 @@ export default function Index() {
   }, []);
 
   const themeButtonList = [
-    { value: 'about', pathname: '/house/about' },
+    { value: 'about', pathname: '/house/friendship' },
     { value: 'cana', pathname: '/cana' },
+    { value: 'familyGroup', pathname: 'https://taipeipeo.catholic.org.tw' },
     { value: 'events', pathname: '/events' },
-    { value: 'upcoming', pathname: '/upcoming' },
-    { value: 'poster', pathname: '/poster' },
+    // { value: 'upcoming', pathname: '/upcoming' },
+    // { value: 'poster', pathname: '/poster' },
   ];
 
   return (

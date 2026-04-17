@@ -34,7 +34,16 @@ function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>)
       onCancel={onCancel}
       destroyOnClose
     >
-      <div className="whitespace-pre-line">{t('indexMessage.content')}</div>
+      <div className="whitespace-pre-line">{t('indexMessage.content1')}</div>
+      <div className="whitespace-pre-line flex gap-1">
+        <p>{t('indexMessage.website')}</p>
+        <a href="https://www.lovecana.org.tw/index.php">https://www.lovecana.org.tw/index.php</a>
+      </div>
+      <div className="whitespace-pre-line flex gap-1">
+        <p>{t('indexMessage.facebook')}</p>
+        <a href="https://www.facebook.com/groups/553610488074232">愛在加納</a>
+      </div>
+      <div className="whitespace-pre-line">{t('indexMessage.content2')}</div>
     </Modal>
   );
 }

@@ -180,6 +180,7 @@
     "user": "Account",
     "poster": "Poster Sharing",
     "familyGroup": "2026 Activities",
+    "statement": "Emergency Important Statement",
     "member": "Members of House",
     "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
@@ -304,6 +305,21 @@
     "content3": "Through the internet, we bring people closer, allowing unmarried Catholic youth from all over the country to meet. Online computer matching identifies potential partners who meet your expectations. The interaction begins online and may evolve into something more!",
     "title4": "Religious Marriage Education",
     "content4": "For a healthier future of the church, we invite about 200 parishes across Taiwan to collaborate in promoting this. Monthly educational articles are written and sent out, along with marriage proverbs and prayer intentions in Mass for unmarried youth in the church to build holy families."
+  },
+
+  "statement": {
+    "paragraph": "Recently, it has come to our attention that unauthorized individuals have misappropriated the name and logo of \"Miracle in Cana\" to set up fake Facebook fan pages and official LINE accounts.\nWe kindly urge all parishioners to remain vigilant: do not join, do not reply, do not click on any links, do not provide personal information, and do not transfer money or invest.\n\nThe Catholic Friendship House and Miracle in Cana was integrated into the \"Family Section of the Pastoral and Evangelization Office of the Archdiocese of Taipei\" in December 2024, and the office has relocated to the Tong'an Street Catholic Church.\n\nWe have reported this issue to the Anti-Fraud Hotline [165, National Police Agency, Ministry of the Interior] and the Cyber Scam Report and Query Network [Ministry of Digital Affairs]. The Ministry of the Interior responded: \"Upon verification by the Ministry of the Interior, this has been confirmed as high-risk information. Please evaluate with caution.\"",
+    "official_channels_title": "Official Channels of Our Organization:",
+    "official_channels_website": "Official Website: ",
+    "official_channels_website_link": "Catholic Friendship House and Miracle in Cana",
+    "official_channels_ig_link": "Catholic Miracle in Cana",
+    "reminder": "Important Reminder:\nThe following accounts are currently known to be set up by unauthorized individuals. They are neither established nor authorized by our organization, and have no affiliation with us whatsoever.",
+    "fake_accounts_section_1": "1. Impersonating Facebook Fan Pages:\nMiracle in Cana. Faith-Based Matchmaking\nMiracle in Cana. Catholic Matchmaking",
+    "fake_accounts_section_2": "2. Impersonating LINE Account:\nLINE Account Name: Miracle in Cana",
+    "warning_paragraph": "To prevent unauthorized individuals from using the name of Miracle in Cana to cause misunderstanding and harm, we would like to especially remind the unmarried parishioners of the Church to pay close attention. Thank you, brothers and sisters, for your care and support. Please also help spread this statement to protect more people from being scammed.",
+    "warning_bold": "WARNING: Please do not click on any suspicious links, provide personal information, or make any remittances to avoid losses from fraud.",
+    "blessing": "May the Lord keep everyone safe.",
+    "signature": "Pastoral and Evangelization Office of the Archdiocese of Taipei\nCatholic Friendship House and Miracle in Cana Respectfully"
   },
   "houseIndex": {
     "title": "Pastoral Care · Faith · Growth · Communion",

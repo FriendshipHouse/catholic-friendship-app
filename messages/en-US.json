@@ -181,6 +181,10 @@
     "poster": "Poster Sharing",
     "familyGroup": "2026 Activities",
     "statement": "Emergency Important Statement",
+    "grow": "Spiritual Growth",
+    "testimony": "Testimony",
+    "prayer": "Marriage Prayer",
+    "milestone": "Cana Milestone",
     "member": "Members of House",
     "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
@@ -418,5 +422,19 @@
     "taskContent2": "Assist members in forming various friendship and growth groups, such as book clubs, skill development classes, workshops, and prayer meetings.",
     "taskContent3": "Periodically publish publications, books, CDs, and other materials related to the association's mission.",
     "taskContent4": "Other matters related to the association's mission."
+  },
+  "grow": {
+    "column": {
+      "title": "Cana Love Column",
+      "description": "Our Lord Jesus Christ was present at the Wedding at Cana, where He transformed water into wine, turning insufficiency into abundance and enriching that which was already plentiful. This reveals the Lord's profound love for humanity and grants fullness of life to those united in His love. This series of articles, originally published in the 'Catholic Weekly - Cana Love Column,' is dedicated to helping the faithful deepen their understanding of the holiness of the family."
+    },
+    "marriage": {
+      "title": "Catholic Matrimony",
+      "description": "In the Catholic Church, marriage is a Sacrament. As Pope Francis reminds us, 'The Lord can increase our love for one another, for His love is inexhaustible.' For Catholic couples, building a Christ-centered family through a Catholic marriage is a mission of supreme importance. We invite you to join us in this reflection."
+    },
+    "monthly": {
+      "title": "Wings of Unity Monthly",
+      "description": "The 'Wings of Unity' series is a curated formation library designed for Catholic youth and families, featuring 35 essential issues covering the depths of matrimony. This column aims to assist the faithful in exploring the sanctity of marriage and the core values of the family through the lens of Catholic faith. Whether you are a young person discerning a vocation, a couple preparing for the Sacrament of Matrimony, or married spouses seeking to deepen your bond, you will find abundant spiritual nourishment and practical guidance here."
+    }
   }
 }

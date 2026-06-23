@@ -10,6 +10,8 @@ import SubTitle from '@/components/layout/SubTitle';
 
 import { usePathname } from '@/i18n/routing';
 
+const excludedPaths = ['/house/grow/', '/house/testimony/', '/house/prayer/'];
+
 function AboutLayout({ children }: Readonly<RootProvider>) {
   const pathname = usePathname();
   const t = useTranslations('');
@@ -18,19 +20,24 @@ function AboutLayout({ children }: Readonly<RootProvider>) {
     if (!pathname || pathname === '/') return null;
 
     const pathnames = pathname.split('/');
-    const pageName = pathnames[pathnames.length - 1];
+    const pageName = pathnames.at(-1) || null;
 
     return pageName;
   }, [pathname]);
+
+  const isExcluded =
+    excludedPaths.some((path) => pathname.startsWith(path)) && !excludedPaths.includes(pathname);
 
   return (
     <div className="flex w-full flex-col">
       <Background />
       <div className="relative z-10 mx-auto flex h-full w-full max-w-screen-lg flex-col justify-between bg-white shadow-4xl">
         <div className="flex h-full flex-col">
-          <div className="px-5 pt-5 md:px-10 md:pt-10">
-            <SubTitle title={t(`pathname.${title}`)} />
-          </div>
+          {!isExcluded && (
+            <div className="px-5 pt-5 md:px-10 md:pt-10">
+              <SubTitle title={t(`pathname.${title}`)} />
+            </div>
+          )}
           <div className="h-full p-5 md:p-10">{children}</div>
         </div>
         <Footer />

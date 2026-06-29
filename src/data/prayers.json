@@ -1,0 +1,180 @@
+[
+  {
+    "category": "text",
+    "content": [
+      { "id": "text_01", "label": "一起祈禱的家人 擁有彼此緊靠的心", "imageCount": [] },
+      { "id": "text_02", "label": "你的婚姻生活 就是你向孩子宣講的最佳福音", "imageCount": [] },
+      { "id": "text_03", "label": "基督徒婚姻的基石 是相互的愛、尊重與順服", "imageCount": [] },
+      {
+        "id": "text_04",
+        "label": "一對健全的伴侶能體認到 愛是一種選擇 而不是一種感覺",
+        "imageCount": []
+      },
+      { "id": "text_05", "label": "凡事要謙遜、溫和、忍耐 在愛德中彼此擔待", "imageCount": [] },
+      { "id": "text_06", "label": "幸福的婚姻 建構自兩位願意寬恕的盟友", "imageCount": [] },
+      { "id": "text_07", "label": "願我的婚姻越來越像基督 遠離世俗化的樣貌", "imageCount": [] },
+      { "id": "text_08", "label": "並非「愛」來支撐承諾 而是「承諾」支撐著愛", "imageCount": [] },
+      { "id": "text_09", "label": "接受另一半的原貌 別試圖改變對方", "imageCount": [] },
+      {
+        "id": "text_10",
+        "label": "一個好的婚姻並非「找尋而得」 而是在你的一生中持續「耕耘而來」",
+        "imageCount": []
+      },
+      {
+        "id": "text_11",
+        "label": "成功的婚姻如團隊工作般 需學習說「謝謝」和「對不起」",
+        "imageCount": []
+      },
+      { "id": "text_12", "label": "家庭被視為是 「家庭教會與生命的聖所」", "imageCount": [] },
+      {
+        "id": "text_13",
+        "label": "夫妻彼此相愛地對對方說好話 試著展現他好的一面 而非其軟弱和過失",
+        "imageCount": []
+      },
+      {
+        "id": "text_14",
+        "label": "愛與不完美共存；愛能包容一切 並平靜接納所愛之人的「有限」",
+        "imageCount": []
+      },
+      {
+        "id": "text_15",
+        "label": "婚姻是友誼極致的呈現 尋求對方的益處 共享生命中的平穩. 親密與溫暖",
+        "imageCount": []
+      },
+      {
+        "id": "text_16",
+        "label": "不吝惜說請、謝謝、對不起 適當的時機說適切的話語 保守愛情日日滋長",
+        "imageCount": []
+      },
+      {
+        "id": "text_17",
+        "label": "因著愛與寬恕 夫妻在衝突中仍相偕踏上 成長和轉化的旅程",
+        "imageCount": []
+      },
+      {
+        "id": "text_18",
+        "label": "基督徒夫婦是天主聖愛的反映； 這愛藉著說話、目光、援助、 撫摸和擁抱，給對方安慰。",
+        "imageCount": []
+      },
+      {
+        "id": "text_19",
+        "label": "家庭彼此爭執和疏忽，應寬容大量 給予所要求的諒解寬恕。 這是親情，也是基督愛德。",
+        "imageCount": []
+      },
+      {
+        "id": "text_20",
+        "label": "基督信徒有以喜樂和信念 去宣報有關家庭好消息的使命",
+        "imageCount": []
+      },
+      { "id": "text_21", "label": "寬恕 是婚姻生活中活出慈悲的動力", "imageCount": [] },
+      { "id": "text_22", "label": "偶爾一個善意的舉動 給另一伴一個驚喜", "imageCount": [] },
+      { "id": "text_23", "label": "婚姻是 天主、丈夫和妻子間的盟約", "imageCount": [] },
+      { "id": "text_24", "label": "每天祈求天主幫助我 愛我的另一伴", "imageCount": [] },
+      {
+        "id": "text_25",
+        "label": "婚姻是直到「死亡」將我們分開 而非「失和」而分開",
+        "imageCount": []
+      },
+      { "id": "text_26", "label": "夫妻原是相互成聖 彼此豐富靈性生命", "imageCount": [] },
+      {
+        "id": "text_27",
+        "label": "夫妻攜手同行， 交託在天主的手中， 這就是婚姻。 ---教宗方濟各",
+        "imageCount": []
+      },
+      {
+        "id": "text_28",
+        "label": "幸福的婚姻取決於願意， 且愉悅地做些微小的犧牲。",
+        "imageCount": []
+      },
+      {
+        "id": "text_29",
+        "label": "夫妻若明瞭 兩人其實是同一陣線， 婚姻會更美好。",
+        "imageCount": []
+      },
+      { "id": "text_30", "label": "美好的婚姻 是一場慷慨對待的競賽。", "imageCount": [] },
+      { "id": "text_31", "label": "婚姻需要三人行， 天主、丈夫和妻子。", "imageCount": [] },
+      {
+        "id": "text_32",
+        "label": "當你看待另一半， 如同天主看待他時， 你們的關係將永遠不一樣。",
+        "imageCount": []
+      }
+    ]
+  },
+  {
+    "category": "edm",
+    "content": [
+      {
+        "id": "edm_01",
+        "label": "夫妻彼此相愛地為對方說好話；試著展現他好的一面，而非其軟弱和過失。",
+        "imageCount": []
+      },
+      { "id": "edm_02", "label": "一起祈禱的家人，擁有彼此緊靠的心", "imageCount": [] },
+      { "id": "edm_03", "label": "你的婚姻生活，就是你向孩子宣講的最佳福音", "imageCount": [] },
+      { "id": "edm_04", "label": "基督徒婚姻的基石，是相互的愛、尊重與順服", "imageCount": [] },
+      { "id": "edm_05", "label": "並非「愛」來支撐承諾，而是「承諾」支撐著愛", "imageCount": [] },
+      { "id": "edm_06", "label": "凡事要謙遜、溫和、忍耐，在愛德中彼此擔待", "imageCount": [] },
+      { "id": "edm_07", "label": "「信仰」是婚姻的水泥，有了信仰，家才會穩固", "imageCount": [] },
+      { "id": "edm_08", "label": "偶爾一個善意的舉動，給另一半一個驚喜！", "imageCount": [] },
+      { "id": "edm_09", "label": "願我的婚姻越來越像基督，遠離世俗化的樣貌", "imageCount": [] },
+      { "id": "edm_10", "label": "幸福的婚姻，建構自兩位願意寬恕的盟友", "imageCount": [] },
+      {
+        "id": "edm_11",
+        "label": "夫妻攜手同行，將你們放在天主大能的手中，這就是婚姻！---教宗方濟各",
+        "imageCount": []
+      },
+      { "id": "edm_12", "label": "每天祈求天主，愛我的另一半", "imageCount": [] },
+      {
+        "id": "edm_13",
+        "label": "愛能與不完美共存；愛能包容一切，並平靜接納所愛之人的「有限」",
+        "imageCount": []
+      },
+      { "id": "edm_14", "label": "婚姻是天主、丈夫和妻子間的盟約", "imageCount": [] },
+      {
+        "id": "edm_15",
+        "label": "婚姻是友誼極致的呈現，尋求對方的益處，共享生命中的平穩，親密與溫暖",
+        "imageCount": []
+      },
+      {
+        "id": "edm_16",
+        "label": "為另一半做小事永不歇，讓婚姻煥然一新的，往往是全心全意做的小事",
+        "imageCount": []
+      },
+      { "id": "edm_17", "label": "夫妻原是相互成聖，彼此豐富對方的屬靈生活", "imageCount": [] },
+      {
+        "id": "edm_18",
+        "label": "基督徒夫婦是天主聖愛的反映；這愛藉著說話、目光、援助、撫摸和擁抱，給對方安慰。",
+        "imageCount": []
+      },
+      {
+        "id": "edm_19",
+        "label": "一個好的婚姻並非「找尋而得」，而是在你的一生中持續「耕耘而來」",
+        "imageCount": []
+      },
+      {
+        "id": "edm_20",
+        "label": "沒有所謂完美家庭，但家庭能藉日日彼此寬恕而不斷成長。",
+        "imageCount": []
+      }
+    ]
+  },
+  {
+    "category": "prayer",
+    "content": [
+      {
+        "id": "prayer_01",
+        "label": "婚姻聖召祈禱文",
+        "imageCount": ["01", "02"]
+      },
+      {
+        "id": "prayer_02",
+        "label": "單身信友祈禱文",
+        "imageCount": ["01", "02"]
+      },
+      {
+        "id": "prayer_03",
+        "label": "信友禱詞",
+        "imageCount": ["01", "02"]
+      }
+    ]
+  }
+]

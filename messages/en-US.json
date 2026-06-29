@@ -446,5 +446,17 @@
       "title": "Video Testimonials",
       "description": "In the Catholic Church, marriage is a Sacrament. Pope Francis reminds us, 'The Lord can increase our love for one another, for His love is inexhaustible.' For Catholic couples, building a Christ-centered family is a mission of supreme importance. We invite you to join us in these reflections."
     }
+  },
+  "prayer": {
+    "download": "Download",
+    "text": {
+      "title": "Marriage Sayings - Text Version"
+    },
+    "edm": {
+      "title": "Marriage Sayings - Image Version"
+    },
+    "prayer": {
+      "title": "Marriage Vocation Prayer"
+    }
   }
 }

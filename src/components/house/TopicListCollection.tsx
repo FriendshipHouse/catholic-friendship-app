@@ -7,7 +7,7 @@ import ClickableList from './ClickableList';
 type TopicListCollectionTypes = {
   heading: string;
   title: string;
-  description: string;
+  description?: string;
   clickableListItems: {
     id: string;
     label: string;
@@ -26,7 +26,7 @@ function TopicListCollection({
   return (
     <div className="flex flex-col gap-4 leading-6 whitespace-pre-wrap">
       <div className="text-lg font-bold">{t(title)}</div>
-      <p className="text-md">{t(description)}</p>
+      {description && <p className="text-md">{t(description)}</p>}
       <ul className="list-disc pl-5">
         {clickableListItems.map(({ id, label, onClick }) => (
           <ClickableList key={id} heading={heading} items={[{ id, label, onClick }]} />

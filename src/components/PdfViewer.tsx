@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
+import { Spin } from 'antd';
 import * as pdfjsLib from 'pdfjs-dist';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
@@ -73,19 +74,16 @@ export default function PdfViewer({ url }: Readonly<PdfViewerProps>) {
     };
   }, [url]);
 
-  if (error) return <p className="text-red-500 text-sm">{error}</p>;
+  if (error) return <p className="text-sm text-red-500">{error}</p>;
 
   return (
-    <div>
-      {loading && (
-        <div className="flex items-center justify-center py-16 text-gray-400 text-sm">
-          載入中...
-        </div>
-      )}
-      <div ref={containerRef} />
-      {!loading && numPages > 0 && (
-        <p className="text-xs text-gray-400 text-center mt-2">共 {numPages} 頁</p>
-      )}
-    </div>
+    <Spin spinning={loading}>
+      <div className="min-h-[200px]">
+        <div ref={containerRef} />
+        {!loading && numPages > 0 && (
+          <p className="mt-2 text-center text-xs text-gray-400">共 {numPages} 頁</p>
+        )}
+      </div>
+    </Spin>
   );
 }

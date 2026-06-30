@@ -169,7 +169,8 @@
     "priest": "Forever Shepherd - Father Ou",
     "donate": "Donation Support",
     "contact": "Contact Information",
-    "friendship": "Friendship House"
+    "friendship": "Friendship House",
+    "family": "Family Section of the Pastoral and Evangelization Office"
   },
   "pathname": {
     "index": "Index",
@@ -326,8 +327,10 @@
     "signature": "Pastoral and Evangelization Office of the Archdiocese of Taipei\nCatholic Friendship House and Miracle in Cana Respectfully"
   },
   "houseIndex": {
-    "title": "Pastoral Care · Faith · Growth · Communion",
-    "content": "Finding companions and communities that share the same faith in Taiwan is not always easy.\n\nThe Catholic Friendship House is a second home for young people, a place for personal growth, a gathering spot for friends, and a bridge on the journey of faith.\nIn addition to organizing various activities and workshops, we especially care for unmarried young adults in Taiwan's Church and those who have drifted away from their faith, hoping to bridge the gap and help them find a sense of belonging in our community.\nWe welcome all young people who are \"searching\" to join us in following the footsteps of Jesus~"
+    "title1": "Pastoral Care · Faith · Growth · Communion",
+    "content1": "In Taiwan, finding like-minded companions and communities who share your faith is no easy task. For years, the Taipei Catholic Friendship Youth Center has served as a second home for young people—a place for individual growth, a gathering spot for friends, and, above all, a bridge on the faith journey for countless youths.\nIn addition to organizing various activities and workshops, we care deeply about unmarried young adults within the Taiwanese church and parishioners who have drifted away. We hope to shorten their distance from faith and help them find a community to call home at our center.",
+    "title2": "The Successful Completion of Our Mission and Transition",
+    "content2": "With the passage of time and the changing pastoral environment, the Friendship Youth Center’s mission of accompaniment for this past stage has borne beautiful fruit. To sustain this love and provide more comprehensive family ministry services for our parishioners, the Catholic Friendship Center and Love in Cana officially transitioned in December 2024. We are now part of the \"Family Section of the Pastoral and Evangelization Office, Archdiocese of Taipei,\" and our office has relocated to the Tong'an Street Catholic Church.\nIn the past, we welcomed all young companions who were \"seeking\" to join us in following Jesus. Today, these precious footprints of grace will be preserved on this website as a historical memorial, while we continue our dedication to building godly families and delivering pastoral care under this new structure."
   },
   "houseMember": {
     "positionPriest": "Spiritual Director",

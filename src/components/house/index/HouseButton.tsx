@@ -13,10 +13,13 @@ function HouseButton({ value }: Readonly<HouseButtonType>) {
   const t = useTranslations('about');
   const router = useRouter();
 
+  const pushLink =
+    value === 'family' ? 'https://taipeipeo.catholic.org.tw/family' : `/house/${value}`;
+
   return (
     <Button
       type="default"
-      onClick={() => router.push(`/house/${value}`)}
+      onClick={() => router.push(pushLink)}
       className="!w-full !text-wrap !bg-white/20 !py-8 !shadow-4xl !backdrop-blur"
     >
       {t(`${value}`)}

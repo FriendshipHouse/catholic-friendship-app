@@ -10,7 +10,9 @@ import SubTitle from '@/components/layout/SubTitle';
 
 import { usePathname } from '@/i18n/routing';
 
-const excludedPaths = ['/house/grow/', '/house/testimony/', '/house/prayer/'];
+const excludedSubPaths = ['/house/grow/', '/house/testimony/', '/house/prayer/'];
+
+const excludedExactPaths = new Set(['/house/milestone']);
 
 function AboutLayout({ children }: Readonly<RootProvider>) {
   const pathname = usePathname();
@@ -26,7 +28,9 @@ function AboutLayout({ children }: Readonly<RootProvider>) {
   }, [pathname]);
 
   const isExcluded =
-    excludedPaths.some((path) => pathname.startsWith(path)) && !excludedPaths.includes(pathname);
+    (excludedSubPaths.some((path) => pathname.startsWith(path)) &&
+      !excludedSubPaths.includes(pathname)) ||
+    excludedExactPaths.has(pathname);
 
   return (
     <div className="flex w-full flex-col">

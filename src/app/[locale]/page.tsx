@@ -1,8 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-
-import { Modal } from 'antd';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
@@ -19,54 +16,18 @@ import Background from '@/components/layout/Background';
 
 import imageJesus from '@/../public/general/img-index.png';
 
-type NotificationModalProps = {
-  open: boolean;
-  onCancel: () => void;
-};
-
-function NotificationModal({ open, onCancel }: Readonly<NotificationModalProps>) {
-  const t = useTranslations();
-  return (
-    <Modal
-      open={open}
-      footer={null}
-      title={<div className="font-bold">{t('indexMessage.title')}</div>}
-      onCancel={onCancel}
-      destroyOnClose
-    >
-      <div className="whitespace-pre-line">{t('indexMessage.content1')}</div>
-      <div className="whitespace-pre-line flex gap-1">
-        <p>{t('indexMessage.website')}</p>
-        <a href="https://www.lovecana.org.tw/index.php">https://www.lovecana.org.tw/index.php</a>
-      </div>
-      <div className="whitespace-pre-line flex gap-1">
-        <p>{t('indexMessage.facebook')}</p>
-        <a href="https://www.facebook.com/groups/553610488074232">愛在加納</a>
-      </div>
-      <div className="whitespace-pre-line">{t('indexMessage.content2')}</div>
-    </Modal>
-  );
-}
-
 export default function Index() {
   const t = useTranslations();
-
-  const [openNotification, setOpenNotification] = useState(false);
-
-  useEffect(() => {
-    setOpenNotification(true);
-  }, []);
 
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
     { value: 'cana', pathname: '/cana' },
-    { value: 'familyEvents', pathname: '/https://taipeipeo.catholic.org.tw/announcement' },
+    { value: 'familyEvents', pathname: '/https://taipeipeo.catholic.org.tw/family' },
     { value: 'familyGroup', pathname: 'https://taipeipeo.catholic.org.tw/family' },
   ];
 
   return (
     <div className="relative w-full">
-      <NotificationModal open={openNotification} onCancel={() => setOpenNotification(false)} />
       <FloatButton />
       <Background />
       <div className="fixed z-0 flex h-full w-full items-center justify-center opacity-20 md:hidden">

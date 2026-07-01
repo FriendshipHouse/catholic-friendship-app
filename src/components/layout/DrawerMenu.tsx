@@ -111,7 +111,7 @@ function DrawerMenu() {
     {
       key: 'familyEvents',
       label: (
-        <Link href="https://taipeipeo.catholic.org.tw/announcement" className="darkGrayLink">
+        <Link href="https://taipeipeo.catholic.org.tw/family" className="darkGrayLink">
           {t(`pathname.familyEvents`)}
         </Link>
       ),

@@ -14,7 +14,7 @@ function CanaButton({ value }: Readonly<HouseButtonType>) {
   const router = useRouter();
 
   const pushLink =
-    value === 'canaEvents' ? 'https://taipeipeo.catholic.org.tw/cana' : `/cana/${value}`;
+    value === 'canaEvents' ? 'https://taipeipeo.catholic.org.tw/family' : `/cana/${value}`;
 
   return (
     <Button

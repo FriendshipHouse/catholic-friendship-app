@@ -31,7 +31,7 @@ function DonateMethodCard({
         <div className="flex flex-col items-center gap-2">
           <div className="text-lg font-bold">{t(`${value}`)}</div>
           {buttonLabel && buttonLink && (
-            <Button type="default" href={buttonLink}>
+            <Button type="default" href={buttonLink} target="_blank">
               {t(`${buttonLabel}`)}
               <ArrowRightOutlined className="text-xs" />
             </Button>

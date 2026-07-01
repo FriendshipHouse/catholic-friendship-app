@@ -49,7 +49,7 @@ function Prayer() {
             id: id,
             label: label,
             onClick: () => {
-              router.push(`/house/prayer/${id}`);
+              router.push(`/cana/prayer/${id}`);
             },
           }))}
         />

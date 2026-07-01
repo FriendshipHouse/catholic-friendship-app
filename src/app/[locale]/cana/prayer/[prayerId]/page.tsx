@@ -39,7 +39,7 @@ function PrayerIdPage() {
     return (
       <div className="h-full w-full flex flex-col items-center justify-center gap-4 text-center">
         <p className="text-grey-80 font-bold">找不到此文章(ID: {prayerID})，或文章已被移除。</p>
-        <Button onClick={() => router.push('/house/prayer')} className="w-fit">
+        <Button onClick={() => router.push('/cana/prayer')} className="w-fit">
           返回列表
         </Button>
       </div>
@@ -50,7 +50,7 @@ function PrayerIdPage() {
     <div className="flex flex-col md:gap-6 gap-4">
       <div className="flex flex-col gap-4 sm:gap-10">
         <div className="flex flex-wrap gap-4 items-end sm:flex-row">
-          <Link href={'/house/prayer'}>
+          <Link href={'/cana/prayer'}>
             <LeftCircleOutlined className="text-3xl" />
           </Link>
           <TitleHighlight>{currentContent.label}</TitleHighlight>

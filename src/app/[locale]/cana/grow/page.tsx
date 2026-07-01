@@ -24,7 +24,7 @@ function Grow() {
               id: id,
               label: article,
               onClick: () => {
-                router.push(`/house/grow/${id}`);
+                router.push(`/cana/grow/${id}`);
               },
             }))}
           />

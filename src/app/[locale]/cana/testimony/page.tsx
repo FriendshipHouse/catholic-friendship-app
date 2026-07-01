@@ -24,7 +24,7 @@ function Testimony() {
               id: id,
               label: article,
               onClick: () => {
-                router.push(`/house/testimony/${id}`);
+                router.push(`/cana/testimony/${id}`);
               },
             }))}
           />

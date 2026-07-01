@@ -11,7 +11,7 @@ function Logos() {
       </Link>
       <div className="h-4 rotate-12 border-l border-primary-70" />
       <Link
-        href="https://www.lovecana.org.tw/index.php"
+        href="/house/cana"
         target="_blank"
         className="headerLink h-8 w-auto"
         aria-label="Go out to love cana page"

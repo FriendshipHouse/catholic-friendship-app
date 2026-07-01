@@ -82,7 +82,7 @@ function PageHeader() {
                 </Space>
               </Button>
             </Dropdown>
-            <Link href="/cana" className="headerLink !p-0 !font-semibold">
+            <Link href="/house/cana" className="headerLink !p-0 !font-semibold">
               {t('pathname.cana')}
             </Link>
             <Dropdown

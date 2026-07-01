@@ -83,7 +83,7 @@ function DrawerMenu() {
     {
       key: 'cana',
       label: (
-        <Link href="/cana" className="darkGrayLink">
+        <Link href="/house/cana" className="darkGrayLink">
           {t(`pathname.cana`)}
         </Link>
       ),

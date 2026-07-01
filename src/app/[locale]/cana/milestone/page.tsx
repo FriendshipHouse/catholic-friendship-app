@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 import { useTranslations } from 'use-intl';
 
-import MilestoneYear from '@/components/house/milestone/MilestoneYear';
-import YearNav from '@/components/house/milestone/YearNav';
-import YearWatermark from '@/components/house/milestone/YearWatermark';
+import MilestoneYear from '@/components/cana/milestone/MilestoneYear';
+import YearNav from '@/components/cana/milestone/YearNav';
+import YearWatermark from '@/components/cana/milestone/YearWatermark';
 import SubTitle from '@/components/layout/SubTitle';
 
 import milestones from '@/data/milestones.json';

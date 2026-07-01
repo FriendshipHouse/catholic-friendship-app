@@ -23,9 +23,19 @@ const aboutList = [
   { value: 'about' },
   { value: 'member' },
   { value: 'priest' },
-  { value: 'donate' },
   { value: 'contact' },
   { value: 'friendship' },
+];
+
+const canaList = [
+  { value: 'canaAbout' },
+  { value: 'moreCana' },
+  { value: 'statement' },
+  { value: 'milestone' },
+  { value: 'donate' },
+  { value: 'grow' },
+  { value: 'prayer' },
+  { value: 'testimony' },
 ];
 
 function DrawerMenu() {
@@ -69,6 +79,15 @@ function DrawerMenu() {
     ),
   }));
 
+  const canaListItems = canaList.map(({ value }) => ({
+    key: value,
+    label: (
+      <Link href={`/cana/${value}`} className="darkGrayLink">
+        {t(`pathname.${value}`)}
+      </Link>
+    ),
+  }));
+
   const eventListItems = [
     { key: 'activities', label: <Link href={`/events`}>{t(`pathname.activities`)}</Link> },
     ...eventList,
@@ -82,11 +101,8 @@ function DrawerMenu() {
     },
     {
       key: 'cana',
-      label: (
-        <Link href="/house/cana" className="darkGrayLink">
-          {t(`pathname.cana`)}
-        </Link>
-      ),
+      label: t(`pathname.cana`),
+      children: canaListItems,
     },
     {
       key: 'events',
@@ -94,10 +110,10 @@ function DrawerMenu() {
       children: eventListItems,
     },
     {
-      key: 'upcoming',
+      key: 'familyEvents',
       label: (
-        <Link href="/upcoming" className="darkGrayLink">
-          {t(`pathname.upcoming`)}
+        <Link href="https://taipeipeo.catholic.org.tw/announcement" className="darkGrayLink">
+          {t(`pathname.familyEvents`)}
         </Link>
       ),
     },

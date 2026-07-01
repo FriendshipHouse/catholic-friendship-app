@@ -8,7 +8,7 @@ import debounce from 'lodash/debounce';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import DonateMethodCard from '@/components/house/donate/DonateMethodCard';
+import DonateMethodCard from '@/components/cana/donate/DonateMethodCard';
 
 import iconActivity from '@/../public/about/donate/icon-activity.svg';
 import iconApostle from '@/../public/about/donate/icon-apostle.svg';

@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 
-import TopicListCollection from '@/components/house/TopicListCollection';
-import ImageCollection from '@/components/house/prayer/ImageCollection';
+import TopicListCollection from '@/components/cana/TopicListCollection';
+import ImageCollection from '@/components/cana/prayer/ImageCollection';
 
 import prayers from '@/data/prayers.json';
 import { useRouter } from '@/i18n/routing';

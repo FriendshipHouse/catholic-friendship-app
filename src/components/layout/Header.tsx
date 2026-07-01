@@ -2,8 +2,6 @@
 
 import React from 'react';
 
-import { DownOutlined } from '@ant-design/icons';
-import { Button, Dropdown, Space } from 'antd';
 import type { MenuProps } from 'antd';
 import { useTranslations } from 'next-intl';
 
@@ -16,12 +14,7 @@ import { Link } from '@/i18n/routing';
 import AccountDropdown from './AccountDropdown';
 import DrawerMenu from './DrawerMenu';
 import LanguageSwitcher from './LanguageSwitcher';
-
-type menuItemType = {
-  key: string;
-  label: string | React.ReactNode;
-  children?: menuItemType;
-}[];
+import NavDropdown from './NavDroopdown';
 
 function PageHeader() {
   const t = useTranslations();
@@ -45,18 +38,27 @@ function PageHeader() {
     ...eventList,
   ];
 
-  const aboutList: menuItemType = [
-    { key: 'about', label: 'about' },
-    { key: 'member', label: 'member' },
-    { key: 'priest', label: 'priest' },
-    { key: 'donate', label: 'donate' },
-    { key: 'contact', label: 'contact' },
-    { key: 'friendship', label: 'friendship' },
+  const aboutKeys = ['about', 'member', 'priest', 'contact', 'friendship'];
+
+  const aboutListItems: MenuProps['items'] = aboutKeys.map((key) => ({
+    key,
+    label: <Link href={`/house/${key}`}>{t(`pathname.${key}`)}</Link>,
+  }));
+
+  const canaKeys = [
+    'canaAbout',
+    'moreCana',
+    'statement',
+    'milestone',
+    'donate',
+    'grow',
+    'prayer',
+    'testimony',
   ];
 
-  const aboutListItems: MenuProps['items'] = aboutList.map(({ key, label }) => ({
+  const canaListItems: MenuProps['items'] = canaKeys.map((key) => ({
     key,
-    label: <Link href={`/house/${label}`}>{t(`pathname.${label}`)}</Link>,
+    label: <Link href={`/cana/${key}`}>{t(`pathname.${key}`)}</Link>,
   }));
 
   return (
@@ -65,43 +67,16 @@ function PageHeader() {
         <Logos />
         <div className="hidden items-center justify-end gap-4 md:flex lg:gap-7">
           <div className="flex items-center gap-4 lg:gap-6">
-            <Dropdown
-              menu={{ items: aboutListItems }}
-              trigger={['click']}
-              overlayClassName="!pt-5"
-              className="headerLink"
-            >
-              <Button
-                type="link"
-                onClick={(e) => e.preventDefault()}
-                className="!p-0 !font-semibold"
-              >
-                <Space>
-                  {t('pathname.about')}
-                  <DownOutlined className="text-[10px] font-black" />
-                </Space>
-              </Button>
-            </Dropdown>
-            <Link href="/house/cana" className="headerLink !p-0 !font-semibold">
-              {t('pathname.cana')}
-            </Link>
-            <Dropdown
-              menu={{ items: eventListItems }}
-              trigger={['click']}
+            <NavDropdown label={t('pathname.about')} items={aboutListItems} />
+
+            <NavDropdown label={t('pathname.cana')} items={canaListItems} />
+
+            <NavDropdown
+              label={t('pathname.events')}
+              items={eventListItems}
               overlayClassName="!pt-5 w-36"
-              className="headerLink"
-            >
-              <Button
-                type="link"
-                onClick={(e) => e.preventDefault()}
-                className="!p-0 !font-semibold"
-              >
-                <div className="flex gap-2">
-                  {t('pathname.events')}
-                  <DownOutlined className="text-[10px]" />
-                </div>
-              </Button>
-            </Dropdown>
+            />
+
             <Link href="/upcoming" className="headerLink !p-0 !font-semibold">
               {t('pathname.upcoming')}
             </Link>
@@ -119,4 +94,5 @@ function PageHeader() {
     </div>
   );
 }
+
 export default PageHeader;

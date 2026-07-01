@@ -14,12 +14,14 @@ import { Link } from '@/i18n/routing';
 import LineModal from './LineModal';
 
 const linkItems = [
-  { value: 'about', href: '/house/about' },
-  { value: 'cana', href: '/house/cana' },
-  { value: 'events', href: '/events' },
-  { value: 'upcoming', href: '/upcoming' },
+  { value: 'about', href: '/house' },
+  { value: 'cana', href: '/cana' },
   { value: 'contact', href: '/house/contact' },
-  { value: 'donate', href: '/house/donate' },
+  { value: 'donate', href: '/cana/donate' },
+  { value: 'grow', href: '/cana/grow' },
+  { value: 'prayer', href: '/cana/prayer' },
+  { value: 'testimony', href: '/cana/testimony' },
+  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw/family' },
 ];
 
 function Footer() {
@@ -43,7 +45,7 @@ function Footer() {
         </div>
         <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex" />
         <Link
-          href="https://www.lovecana.org.tw/index.php"
+          href="/cana"
           target="_blank"
           className="footerLogoLink"
           aria-label="Go out to love cana page"

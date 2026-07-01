@@ -1,13 +1,19 @@
 'use client';
 
+import { useState } from 'react';
+
+import { Button } from 'antd';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import canaImage from '@/../public/general/img-pouring.png';
+import LineModal from '@/components/layout/LineModal';
+
+import canaImage from '@/../public/general/img-cana.png';
 import { Link } from '@/i18n/routing';
 
 function Statement() {
   const t = useTranslations('statement');
+  const [lineModalOpen, setLineModalOpen] = useState(false);
 
   return (
     <div className="flex flex-col justify-center gap-10 p-5">
@@ -23,7 +29,18 @@ function Statement() {
               <div className="leading-7 whitespace-pre-wrap">{t('official_channels_website')}</div>
               <Link href="/">{t('official_channels_website_link')}</Link>
             </div>
-            <div>LINE ID: lovecana2015</div>
+            <div className="flex gap-2 items-center">
+              <p>LINE ID: </p>
+              <Button
+                type="text"
+                className="text-lg !p-0 hover:!bg-transparent !text-primary hover:!text-primary-40"
+                onClick={() => setLineModalOpen(true)}
+                aria-label="Show a model of Line ID"
+              >
+                lovecana2015
+              </Button>
+              <LineModal open={lineModalOpen} setOpen={setLineModalOpen} />
+            </div>
             <div className="flex gap-2 items-center">
               <div className="leading-7 whitespace-pre-wrap">IG: </div>
               <Link href="https://www.instagram.com/miracle_in_cana/">

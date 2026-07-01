@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 
-import PieChart from '@/components/house/moreCana/PieChart';
+import PieChart from '@/components/cana/moreCana/PieChart';
 
 import imageDonatePie1 from '@/../public/about/img-donate-pie1.png';
 import imageDonatePie2 from '@/../public/about/img-donate-pie2.png';

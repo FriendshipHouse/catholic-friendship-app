@@ -2,21 +2,21 @@
 
 import React from 'react';
 
-import TopicListCollection from '@/components/house/TopicListCollection';
+import TopicListCollection from '@/components/cana/TopicListCollection';
 
-import testimonyArticles from '@/data/testimonyArticles.json';
+import growArticles from '@/data/growArticles.json';
 import { useRouter } from '@/i18n/routing';
 
-function Testimony() {
+function Grow() {
   const router = useRouter();
 
   return (
     <div>
       <div className="flex flex-col gap-14 leading-6 whitespace-pre-wrap">
-        {testimonyArticles.map(({ category, articles }) => (
+        {growArticles.map(({ category, articles }) => (
           <TopicListCollection
             key={category}
-            heading={`testimony.${category}`}
+            heading={`grow.${category}`}
             title={'title'}
             description={'description'}
             clickableListItems={articles.map(({ id, article }) => ({
@@ -24,7 +24,7 @@ function Testimony() {
               id: id,
               label: article,
               onClick: () => {
-                router.push(`/house/testimony/${id}`);
+                router.push(`/house/grow/${id}`);
               },
             }))}
           />
@@ -34,4 +34,4 @@ function Testimony() {
   );
 }
 
-export default Testimony;
+export default Grow;

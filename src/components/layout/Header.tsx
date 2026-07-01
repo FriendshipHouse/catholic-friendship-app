@@ -77,8 +77,11 @@ function PageHeader() {
               overlayClassName="!pt-5 w-36"
             />
 
-            <Link href="/upcoming" className="headerLink !p-0 !font-semibold">
-              {t('pathname.upcoming')}
+            <Link
+              href="https://taipeipeo.catholic.org.tw/family"
+              className="headerLink !p-0 !font-semibold"
+            >
+              {t('pathname.familyEvents')}
             </Link>
           </div>
           <div className="h-3 border-l text-primary-70" />

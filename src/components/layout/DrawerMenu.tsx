@@ -29,7 +29,6 @@ const aboutList = [
 
 const canaList = [
   { value: 'canaAbout' },
-  { value: 'moreCana' },
   { value: 'statement' },
   { value: 'milestone' },
   { value: 'donate' },

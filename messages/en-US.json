@@ -304,16 +304,47 @@
     "content2": "Currently identified fraudulent Facebook accounts include:\n愛在加納．信仰交友 | Taipei\n愛在加納，天主教交友\n\nWe urge all unmarried parishioners to remain vigilant.\n\nCrucial Reminders:\nDo not join or interact\nDo not provide personal information\nDo not transfer money or invest\n\nFamily Section, Pastoral Evangelization Office, Archdiocese of Taipei\nLoveCana Catholic Marriage Network\nApril 17, 2026"
   },
   "cana": {
-    "canaWeb": "Miracle In Cana Marriage Network",
-    "description": "A service exclusively for Catholics,\nFrom pre-marriage religious education to helping unmarried youth find partners who share the same faith.\nMarriage is a sacrament, marking the love of God~\nLet us create a healthier future for our church.",
-    "title1": "Indoor/Outdoor Fellowship Activities",
-    "content1": "Through small group interactions, we help unmarried youth get to know more friends within the faith. In half a day, we help unmarried youth efficiently connect with like-minded friends in the midst of their busy lives.",
-    "title2": "One-on-One Introduction",
-    "content2": "Phone interviews to understand the situation and needs of unmarried youth, and find suitable matches from the list. We then assist in connecting or arranging the first meeting.",
-    "title3": "Miracle In Cana Marriage Network",
-    "content3": "Through the internet, we bring people closer, allowing unmarried Catholic youth from all over the country to meet. Online computer matching identifies potential partners who meet your expectations. The interaction begins online and may evolve into something more!",
-    "title4": "Religious Marriage Education",
-    "content4": "For a healthier future of the church, we invite about 200 parishes across Taiwan to collaborate in promoting this. Monthly educational articles are written and sent out, along with marriage proverbs and prayer intentions in Mass for unmarried youth in the church to build holy families."
+    "naming": "It is named 'Love in Cana' because 'at the beginning of His public life, Jesus performed His first miracle at a wedding feast at the request of His mother. The Church attaches great importance to Jesus' presence at the wedding at Cana. Here, the Church sees Jesus affirming the goodness of 'marriage' and understands Jesus' proclamation: from then on, marriage would become an efficacious sign of Christ's presence.'",
+    "content": "In May 2021, the founder of 'Love in Cana', Father Ou Yi-Ming of the Maryknoll Society, was called to the Lord.\nThe 'Love in Cana' project was taken over and continued by Archbishop Thomas Chung An-zu of the Archdiocese of Taipei.\n\nAt the end of 2024, because the 'Love in Cana' and Catholic Friendship Center team serves unmarried young adults in the Church with the goal of building Christian families, Archbishop Chung invited this team to join the Family Section, Office of Pastoral Care and Evangelization, Archdiocese of Taipei.\nWith this team building upon the foundation of 'Love in Cana' in establishing Catholic families, it continues to expand and extend into family services for the Archdiocese of Taipei.\n\nOn Pentecost in 2025, Archbishop Chung promulgated the Pastoral Letter of the Archdiocese of Taipei: 'Walking on the Path of Hope'.\nThe Archbishop mentioned that pastoral and evangelization work requires collective wisdom and joint efforts. To this end, he set four directional goals, inviting every believer to jointly respond, support, and practice them at the personal, family, and parish levels.\n\nAmong these four directional goals, an important part is: 'Valuing family relationships and being open to life'.\nIts connotation is to strengthen family pastoral care, including aspects such as premarital counseling, couples' spirituality, parent-child education, and caring for the elderly, in order to serve more families in need.\nTo accompany every family through the ups and downs of life, and encourage believers to pass on the values of faith and life within the family.",
+    "moreCana": "About Us",
+    "introduction": "Catholics account for only 1% of the total population in Taiwan, making it very difficult for a Catholic to find a Catholic marriage partner.\n\nIn the Church's pastoral work, it is often observed that many devoted single believers deeply desire to meet a partner of the same faith within the church community to build a happy and blessed Christian family together. Indeed, if both spouses share the same faith and values, devoutly serve the Lord together, and take the Holy Family of Nazareth—Jesus, Mary, and Joseph—as their model, they can resist all external threats that contradict Christian family values. This is because the Christian family is the first place where children receive the proclamation of faith; it is a community of prayer and grace, and a school of human virtues and Christian charity. Therefore, it is extremely important for a family of believers to be a vibrant garden of faith and a center radiating the light of faith.",
+    "pie": {
+      "religionFamily": "Catholic Marriages",
+      "nonReligionFamily": "Interfaith Marriages",
+      "participation": "Church Participation",
+      "under14": "Children Under 14",
+      "description2": "15% Zealous and still active in the Church",
+      "description4": "36% Baptized (even fewer attend Sunday school)",
+      "description1": "91% Zealous and still active in the Church",
+      "description3": "94% Baptized"
+    },
+    "statistics_description": "Today, over 75% of Catholics marry non-Catholics, entering into what are known as 'interfaith' marriages. According to a study, more than half of the Catholics in these marriages have become alienated from the Church, 34% have become less zealous (attending Mass only occasionally), and only 15% are able to maintain their fervor for the faith. Furthermore, only one-third of the children in interfaith families are baptized.\nThe same study shows that in Catholic marriages, only 9% are alienated from the Church, 28% attend Mass monthly, and 63% remain zealous, with 94% of their children being baptized. Obviously, interfaith marriages have become a pattern for the loss of parishioners in the Church.",
+    "project_title": "The 'Love in Cana' national project consists of four main plans:",
+    "project_plans": [
+      {
+        "title": "1. Education and Advocacy",
+        "content": "Starting with the deepening of education, we produce age-appropriate Sunday school and youth lesson plans; adult RCIA (Rite of Christian Initiation of Adults) lesson plans; and manuals for young adults and parents. Education and advocacy can raise Catholics' awareness of the issue of Catholic marriage, with the hope that it becomes a part of the consciousness of Catholics in Taiwan."
+      },
+      {
+        "title": "2. Parish Marriage Apostles System",
+        "content": "Each parish appoints a Marriage Apostle who has sufficient knowledge of the Catholics in the parish to implement care for single parishioners locally."
+      },
+      {
+        "title": "3. Singles Social Events",
+        "content": "We encourage cross-parish, diocesan, and even cross-diocesan social events, and have been hosting an annual National Single Youth Day since 2015."
+      },
+      {
+        "title": "4. Catholic Marriage Website",
+        "content": "A Catholic marriage website established specifically for single Catholics in Taiwan. 'Love in Cana - Catholic Marriage Network' is a marriage website guided by the Chinese Regional Bishops' Conference (Taiwan) and planned and executed by the Catholic Friendship Center."
+      }
+    ],
+    "web_origin": {
+      "content": "The use of the internet has become a habit for the vast majority of modern youth. Many young Catholics already search for partners online. However, major dating sites today are full of implications and dangers of premarital sex, such as cohabitation, seeking intimate relationships, and casual encounters, and even issues like fraud, cheating, and compensated dating emerge endlessly. Therefore, the 'Love in Cana - Catholic Marriage Network' designed a marriage website exclusively for Catholics. Starting from the premise of finding a marriage partner with a shared faith, and through various member interactions and multiple verifications, we expect that under strict control and guidance, we can help more young believers find their other half in life.\nTo respond to the global marriage crisis and family problems, Pope Francis planned to convene an 'Extraordinary General Assembly of the Synod of Bishops' to discuss 'The Pastoral Challenges to the Family in the Context of Evangelization.' We chose to launch the 'Love in Cana' project in the 2014 Year of the Family, not only to respond to the needs of the 'Year of the Family', but also to hope that through the joint efforts of all parties in the Church, we can help parishioners strengthen their faith, sanctify their families, and bear witness to the world through Christian living.\n\n(Note: Due to the website's transition, the online dating and matchmaking functions of the original 'Love in Cana Catholic Marriage Network' have successfully completed their phased missions, and are now transitioning to provide static marriage pastoral resources and historical archives.)"
+    },
+    "transition": {
+      "title": "Completion of Phased Missions and Organizational Transition",
+      "content": "'Love in Cana' officially became part of the 'Family Section, Office of Pastoral Care and Evangelization, Archdiocese of Taipei' in December 2024, and the office has relocated to the Tong'an Street Catholic Church. In the past, we accompanied young people on the front lines to find partners; now, under a brand-new system, we will continue this love and mission to provide parishioners with more comprehensive static resources for family pastoral care."
+    }
   },
   "statement": {
     "paragraph": "Recently, it has come to our attention that unauthorized individuals have misappropriated the name and logo of \"Miracle in Cana\" to set up fake Facebook fan pages and official LINE accounts.\nWe kindly urge all parishioners to remain vigilant: do not join, do not reply, do not click on any links, do not provide personal information, and do not transfer money or invest.\n\nThe Catholic Friendship House and Miracle in Cana was integrated into the \"Family Section of the Pastoral and Evangelization Office of the Archdiocese of Taipei\" in December 2024, and the office has relocated to the Tong'an Street Catholic Church.\n\nWe have reported this issue to the Anti-Fraud Hotline [165, National Police Agency, Ministry of the Interior] and the Cyber Scam Report and Query Network [Ministry of Digital Affairs]. The Ministry of the Interior responded: \"Upon verification by the Ministry of the Interior, this has been confirmed as high-risk information. Please evaluate with caution.\"",
@@ -418,47 +449,6 @@
     "taskContent2": "Assist members in forming various friendship and growth groups, such as book clubs, skill development classes, workshops, and prayer meetings.",
     "taskContent3": "Periodically publish publications, books, CDs, and other materials related to the association's mission.",
     "taskContent4": "Other matters related to the association's mission."
-  },
-  "moreCana": {
-    "introduction": "Catholics account for only 1% of the total population in Taiwan, making it very difficult for a Catholic to find a Catholic marriage partner.\n\nIn the Church's pastoral work, it is often observed that many devoted single believers deeply desire to meet a partner of the same faith within the church community to build a happy and blessed Christian family together. Indeed, if both spouses share the same faith and values, devoutly serve the Lord together, and take the Holy Family of Nazareth—Jesus, Mary, and Joseph—as their model, they can resist all external threats that contradict Christian family values. This is because the Christian family is the first place where children receive the proclamation of faith; it is a community of prayer and grace, and a school of human virtues and Christian charity. Therefore, it is extremely important for a family of believers to be a vibrant garden of faith and a center radiating the light of faith.",
-    "pie": {
-      "religionFamily": "Catholic Marriages",
-      "nonReligionFamily": "Interfaith Marriages",
-      "participation": "Church Participation",
-      "under14": "Children Under 14",
-      "description2": "15% Zealous and still active in the Church",
-      "description4": "36% Baptized (even fewer attend Sunday school)",
-      "description1": "91% Zealous and still active in the Church",
-      "description3": "94% Baptized"
-    },
-    "statistics_description": "Today, over 75% of Catholics marry non-Catholics, entering into what are known as 'interfaith' marriages. According to a study, more than half of the Catholics in these marriages have become alienated from the Church, 34% have become less zealous (attending Mass only occasionally), and only 15% are able to maintain their fervor for the faith. Furthermore, only one-third of the children in interfaith families are baptized.\nThe same study shows that in Catholic marriages, only 9% are alienated from the Church, 28% attend Mass monthly, and 63% remain zealous, with 94% of their children being baptized. Obviously, interfaith marriages have become a pattern for the loss of parishioners in the Church.",
-    "project_title": "The 'Love in Cana' national project consists of four main plans:",
-    "project_plans": [
-      {
-        "title": "1. Education and Advocacy",
-        "content": "Starting with the deepening of education, we produce age-appropriate Sunday school and youth lesson plans; adult RCIA (Rite of Christian Initiation of Adults) lesson plans; and manuals for young adults and parents. Education and advocacy can raise Catholics' awareness of the issue of Catholic marriage, with the hope that it becomes a part of the consciousness of Catholics in Taiwan."
-      },
-      {
-        "title": "2. Parish Marriage Apostles System",
-        "content": "Each parish appoints a Marriage Apostle who has sufficient knowledge of the Catholics in the parish to implement care for single parishioners locally."
-      },
-      {
-        "title": "3. Singles Social Events",
-        "content": "We encourage cross-parish, diocesan, and even cross-diocesan social events, and have been hosting an annual National Single Youth Day since 2015."
-      },
-      {
-        "title": "4. Catholic Marriage Website",
-        "content": "A Catholic marriage website established specifically for single Catholics in Taiwan. 'Love in Cana - Catholic Marriage Network' is a marriage website guided by the Chinese Regional Bishops' Conference (Taiwan) and planned and executed by the Catholic Friendship Center."
-      }
-    ],
-    "naming_origin": {
-      "title": "It is named 'Love in Cana' because 'at the beginning of His public life, Jesus performed His first miracle at a wedding feast at the request of His mother. The Church attaches great importance to Jesus' presence at the wedding at Cana. Here, the Church sees Jesus affirming the goodness of 'marriage' and understands Jesus' proclamation: from then on, marriage would become an efficacious sign of Christ's presence.'",
-      "content": "The use of the internet has become a habit for the vast majority of modern youth. Many young Catholics already search for partners online. However, major dating sites today are full of implications and dangers of premarital sex, such as cohabitation, seeking intimate relationships, and casual encounters, and even issues like fraud, cheating, and compensated dating emerge endlessly. Therefore, the 'Love in Cana - Catholic Marriage Network' designed a marriage website exclusively for Catholics. Starting from the premise of finding a marriage partner with a shared faith, and through various member interactions and multiple verifications, we expect that under strict control and guidance, we can help more young believers find their other half in life.\nTo respond to the global marriage crisis and family problems, Pope Francis planned to convene an 'Extraordinary General Assembly of the Synod of Bishops' to discuss 'The Pastoral Challenges to the Family in the Context of Evangelization.' We chose to launch the 'Love in Cana' project in the 2014 Year of the Family, not only to respond to the needs of the 'Year of the Family', but also to hope that through the joint efforts of all parties in the Church, we can help parishioners strengthen their faith, sanctify their families, and bear witness to the world through Christian living.\n\n(Note: Due to the website's transition, the online dating and matchmaking functions of the original 'Love in Cana Catholic Marriage Network' have successfully completed their phased missions, and are now transitioning to provide static marriage pastoral resources and historical archives.)"
-    },
-    "transition": {
-      "title": "Completion of Phased Missions and Organizational Transition",
-      "content": "'Love in Cana' officially became part of the 'Family Section, Office of Pastoral Care and Evangelization, Archdiocese of Taipei' in December 2024, and the office has relocated to the Tong'an Street Catholic Church. In the past, we accompanied young people on the front lines to find partners; now, under a brand-new system, we will continue this love and mission to provide parishioners with more comprehensive static resources for family pastoral care."
-    }
   },
   "grow": {
     "column": {

@@ -45,16 +45,7 @@ function PageHeader() {
     label: <Link href={`/house/${key}`}>{t(`pathname.${key}`)}</Link>,
   }));
 
-  const canaKeys = [
-    'canaAbout',
-    'moreCana',
-    'statement',
-    'milestone',
-    'donate',
-    'grow',
-    'prayer',
-    'testimony',
-  ];
+  const canaKeys = ['canaAbout', 'statement', 'milestone', 'donate', 'grow', 'prayer', 'testimony'];
 
   const canaListItems: MenuProps['items'] = canaKeys.map((key) => ({
     key,

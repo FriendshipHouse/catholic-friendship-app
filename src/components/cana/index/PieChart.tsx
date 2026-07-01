@@ -12,7 +12,7 @@ type PieChartProps = {
 };
 
 function PieChart({ value, title1, title2, pieSrc, description }: Readonly<PieChartProps>) {
-  const t = useTranslations('moreCana.pie');
+  const t = useTranslations('cana.pie');
   return (
     <div key={value} className="flex w-30 flex-col items-center gap-4">
       <div className="flex flex-col gap-1 text-center font-bold">

@@ -43,13 +43,12 @@ function Statement() {
             </div>
             <div className="flex gap-2 items-center">
               <div className="leading-7 whitespace-pre-wrap">IG: </div>
-              <Link href="https://www.instagram.com/miracle_in_cana/">
+              <Link href="https://www.instagram.com/miracle_in_cana/" target="_blank">
                 miracle_in_cana / {t('official_channels_ig_link')}
               </Link>
             </div>
             <div className="flex gap-2 items-center">
-              <div className="leading-7 whitespace-pre-wrap">Email: </div>
-              <Link href="mailto:lovecana2015@gmail.com">lovecana2015@gmail.com</Link>
+              <div className="leading-7 whitespace-pre-wrap">Email: lovecana2015@gmail.com</div>
             </div>
           </div>
 

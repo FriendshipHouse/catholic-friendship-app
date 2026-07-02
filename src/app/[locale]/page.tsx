@@ -45,13 +45,23 @@ export default function Index() {
               <ArrowRightShort />
             </div>
             <div>
-              <div className="flex flex-col flex-wrap gap-2 sm:gap-4">
-                <TitleHighlight>{t('index.title1')}</TitleHighlight>
-                <TitleHighlight>{t('index.title2')}</TitleHighlight>
-                <TitleHighlight>{t('index.title3')}</TitleHighlight>
+              <div className="relative">
+                <div className="flex flex-col flex-wrap gap-2 sm:gap-4">
+                  <div className="relative inline-block w-fit">
+                    <TitleHighlight>{t('index.title1')}</TitleHighlight>
+                    <Link
+                      href="/cana/statement"
+                      className="absolute -top-6 -right-20 w-16 animate-wiggle md:hidden"
+                    >
+                      <Image src={notice} alt="notice" loading="lazy" />
+                    </Link>
+                  </div>
+                  <TitleHighlight>{t('index.title2')}</TitleHighlight>
+                  <TitleHighlight>{t('index.title3')}</TitleHighlight>
+                </div>
               </div>
             </div>
-            <div className="flex max-w-md flex-wrap gap-4 md:max-w-xl md:gap-5">
+            <div className="flex max-w-md flex-wrap gap-x-4 gap-y-2 md:max-w-xl md:gap-5">
               {themeButtonList.map(({ value, pathname }) => (
                 <IndexButton key={value} pathname={pathname}>
                   {t(`pathname.${value}`)}

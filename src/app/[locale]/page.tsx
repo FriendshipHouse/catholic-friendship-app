@@ -15,6 +15,8 @@ import IndexButton from '@/components/index/IndexButton';
 import Background from '@/components/layout/Background';
 
 import imageJesus from '@/../public/general/img-index.png';
+import notice from '@/../public/general/img-notice.svg';
+import { Link } from '@/i18n/routing';
 
 export default function Index() {
   const t = useTranslations();
@@ -57,8 +59,11 @@ export default function Index() {
               ))}
             </div>
           </div>
-          <div className="hidden h-2/3 md:flex">
+          <div className="relative hidden h-2/3 md:flex">
             <Image src={imageJesus} alt="imageJesus" loading="lazy" />
+            <Link href="/cana/statement" className="absolute -top-4 -right-2 w-16 animate-wiggle">
+              <Image src={notice} alt="notice" loading="lazy" />
+            </Link>
           </div>
         </div>
       </div>

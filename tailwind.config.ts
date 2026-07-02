@@ -49,6 +49,15 @@ const config: Config = {
       boxShadow: {
         '4xl': '0 0 40px 0 rgb(0 0 0 /0.05)',
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 0.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

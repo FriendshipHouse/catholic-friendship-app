@@ -46,11 +46,11 @@ const pieList = [
 
 const aboutButtonList = [
   { value: 'statement' },
-  { value: 'milestone' },
+  { value: 'testimony' },
   { value: 'donate' },
   { value: 'grow' },
   { value: 'prayer' },
-  { value: 'testimony' },
+  { value: 'milestone' },
   { value: 'canaEvents' },
 ];
 

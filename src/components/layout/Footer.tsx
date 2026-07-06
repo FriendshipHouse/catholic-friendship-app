@@ -21,7 +21,7 @@ const zhLinkItems = [
   { value: 'grow', href: '/cana/grow' },
   { value: 'prayer', href: '/cana/prayer' },
   { value: 'testimony', href: '/cana/testimony' },
-  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw/family' },
+  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw' },
 ];
 
 const enLinkItems = [
@@ -29,7 +29,7 @@ const enLinkItems = [
   { value: 'cana', href: '/cana' },
   { value: 'contact', href: '/house/contact' },
   { value: 'donate', href: '/cana/donate' },
-  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw/family' },
+  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw' },
 ];
 
 function Footer() {

@@ -69,7 +69,7 @@ function PageHeader() {
             />
 
             <Link
-              href="https://taipeipeo.catholic.org.tw/family"
+              href="https://taipeipeo.catholic.org.tw"
               className="headerLink !p-0 !font-semibold"
             >
               {t('pathname.familyEvents')}

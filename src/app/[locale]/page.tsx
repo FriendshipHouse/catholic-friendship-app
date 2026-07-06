@@ -24,8 +24,8 @@ export default function Index() {
   const themeButtonList = [
     { value: 'about', pathname: '/house/about' },
     { value: 'cana', pathname: '/cana' },
-    { value: 'familyEvents', pathname: '/https://taipeipeo.catholic.org.tw/family' },
-    { value: 'familyGroup', pathname: 'https://taipeipeo.catholic.org.tw/family' },
+    { value: 'familyEvents', pathname: '/https://taipeipeo.catholic.org.tw' },
+    { value: 'familyGroup', pathname: 'https://taipeipeo.catholic.org.tw' },
   ];
 
   return (

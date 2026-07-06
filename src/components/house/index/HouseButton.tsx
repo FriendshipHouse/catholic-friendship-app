@@ -13,8 +13,7 @@ function HouseButton({ value }: Readonly<HouseButtonType>) {
   const t = useTranslations('about');
   const router = useRouter();
 
-  const pushLink =
-    value === 'family' ? 'https://taipeipeo.catholic.org.tw/family' : `/house/${value}`;
+  const pushLink = value === 'family' ? 'https://taipeipeo.catholic.org.tw' : `/house/${value}`;
 
   return (
     <Button

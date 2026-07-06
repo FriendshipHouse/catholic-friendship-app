@@ -71,6 +71,7 @@ function PageHeader() {
             <Link
               href="https://taipeipeo.catholic.org.tw"
               className="headerLink !p-0 !font-semibold"
+              target="_blank"
             >
               {t('pathname.familyEvents')}
             </Link>

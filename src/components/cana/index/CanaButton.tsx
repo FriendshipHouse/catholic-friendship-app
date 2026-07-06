@@ -20,6 +20,7 @@ function CanaButton({ value }: Readonly<HouseButtonType>) {
       type="default"
       onClick={() => router.push(pushLink)}
       className="!w-full !text-wrap !bg-white/20 !py-8 !shadow-4xl !backdrop-blur"
+      target={value === 'canaEvents' ? '_blank' : '_self'}
     >
       {t(`${value}`)}
     </Button>

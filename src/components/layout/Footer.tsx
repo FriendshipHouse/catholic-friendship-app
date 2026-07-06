@@ -58,12 +58,7 @@ function Footer() {
           <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>
         <div className="hidden h-4 rotate-12 border-l border-gray-70 md:flex" />
-        <Link
-          href="/cana"
-          target="_blank"
-          className="footerLogoLink"
-          aria-label="Go out to love cana page"
-        >
+        <Link href="/cana" className="footerLogoLink" aria-label="Go out to love cana page">
           <LogoCana />
         </Link>
       </div>
@@ -77,6 +72,7 @@ function Footer() {
               href={href}
               className="footerTextLink"
               aria-label={`Go to ${value} page`}
+              target={value === 'familyEvents' ? '_blank' : '_self'}
             >
               {t(`pathname.${value}`)}
             </Link>

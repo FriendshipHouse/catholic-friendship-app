@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 import { Button } from 'antd';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Facebook, Line } from 'react-bootstrap-icons';
 
 import LogoCana from '@/components/icon/LogoCana';
@@ -13,7 +13,7 @@ import { Link } from '@/i18n/routing';
 
 import LineModal from './LineModal';
 
-const linkItems = [
+const zhLinkItems = [
   { value: 'about', href: '/house' },
   { value: 'cana', href: '/cana' },
   { value: 'contact', href: '/house/contact' },
@@ -24,8 +24,20 @@ const linkItems = [
   { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw/family' },
 ];
 
+const enLinkItems = [
+  { value: 'about', href: '/house' },
+  { value: 'cana', href: '/cana' },
+  { value: 'contact', href: '/house/contact' },
+  { value: 'donate', href: '/cana/donate' },
+  { value: 'familyEvents', href: 'https://taipeipeo.catholic.org.tw/family' },
+];
+
 function Footer() {
   const t = useTranslations();
+  const locale = useLocale();
+
+  const isEn = locale === 'en-US';
+  const linkItems = isEn ? enLinkItems : zhLinkItems;
 
   const [lineModalOpen, setLineModalOpen] = useState(false);
 
@@ -39,7 +51,9 @@ function Footer() {
             aria-label="Go to index page"
           >
             <LogoFS />
-            <div className="hidden text-sm font-medium lg:flex">{t('footer.friendshipCenter')}</div>
+            <div className={isEn ? 'hidden' : 'hidden text-sm font-medium lg:flex'}>
+              {t('footer.friendshipCenter')}
+            </div>
           </Link>
           <div className="h-4 rotate-12 border-l border-gray-70 md:hidden" />
         </div>

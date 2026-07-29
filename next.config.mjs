@@ -22,6 +22,30 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/school.htm',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/school.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/school',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/:locale/house/donate',
+        destination: '/:locale/cana/donate',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withSentryConfig(withNextIntl(nextConfig), {

@@ -16,7 +16,7 @@ type ImageCollectionType = {
     label: string;
     onClick: () => void;
   }[];
-  selectedImage: { src: string; label: string } | null;
+  selectedImage: { src: string; downloadSrc: string; label: string } | null;
   onModalClose: () => void;
 };
 
@@ -77,7 +77,7 @@ function ImageCollection({
                 icon={<DownloadOutlined />}
                 onClick={() => {
                   if (selectedImage) {
-                    downloadImage(selectedImage.src, selectedImage.label);
+                    downloadImage(selectedImage.downloadSrc, selectedImage.label);
                   }
                 }}
                 className="!text-xs"

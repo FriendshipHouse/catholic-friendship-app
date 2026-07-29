@@ -13,7 +13,11 @@ const filterImageCategory = prayers.filter((item) => item.category !== 'prayer')
 
 function Prayer() {
   const router = useRouter();
-  const [selectedImage, setSelectedImage] = useState<{ src: string; label: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{
+    src: string;
+    downloadSrc: string;
+    label: string;
+  } | null>(null);
 
   return (
     <div className="flex flex-col gap-14 leading-6 whitespace-pre-wrap">
@@ -27,7 +31,8 @@ function Prayer() {
             label: label,
             onClick: () => {
               setSelectedImage({
-                src: `/prayer/${category}/original/img_${id}.png`,
+                src: `/prayer/${category}/thumbnail/img_${id}.webp`,
+                downloadSrc: `/prayer/${category}/original/img_${id}.png`,
                 label,
               });
             },

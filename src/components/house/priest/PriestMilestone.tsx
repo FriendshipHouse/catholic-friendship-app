@@ -73,14 +73,14 @@ function EventCard({ event, align }: Readonly<{ event: MilestoneEvent; align: 'l
       {align === 'left' && <div className="hidden sm:block sm:flex-1" />}
 
       {hasImage && (
-        <Modal open={open} onCancel={() => setOpen(false)} footer={null} centered width="auto">
+        <Modal open={open} onCancel={() => setOpen(false)} footer={null} centered width={800}>
           <div className="flex flex-col gap-3 pt-6">
             <Image
               src={`/priest/img/img_${event.image}`}
               alt={event.period}
               width={800}
               height={800}
-              className="max-h-[70vh] w-auto rounded-md object-contain"
+              className="max-h-[40vh] w-auto rounded-md object-contain"
             />
             <div className="flex flex-col gap-1">
               <p className="text-base font-semibold text-primary-70">{event.period}</p>
